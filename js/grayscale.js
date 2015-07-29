@@ -65,27 +65,28 @@ function init() {
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Custom Map Marker Icon 
 
+    // Custom Map Marker Icon 
     var image = new google.maps.MarkerImage(
-        'img/pin.png',
+        
+        'img/blue-pin.png', //'img/pin.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
-        new google.maps.Size(20,35)
+        new google.maps.Size(28,37)
     );  
     var neuroTechSF = new google.maps.Marker({
         position: new google.maps.LatLng(37.7833, -122.4167),
         map: map,
         icon: image,
-        title: 'NeuroTech San Francisco',
+        title: 'NeuroTechSF',
         animation: google.maps.Animation.DROP
     });
     var neuroTechTO = new google.maps.Marker({
         position: new google.maps.LatLng(43.7000, -79.4000),
         map: map,
         icon: image,
-        title: 'NeuroTech Toronto',
+        title: 'NeuroTechTO',
         animation: google.maps.Animation.DROP
     });
 
@@ -93,15 +94,23 @@ function init() {
         position: new google.maps.LatLng(40.7127, -74.0059),
         map: map,
         icon: image,
-        title: 'NeuroTech NYC',
+        title: 'NeuroTechNYC',
         animation: google.maps.Animation.DROP
     });
 
-    var neuroTechFR = new google.maps.Marker({
+    var neuroTechParis = new google.maps.Marker({
         position: new google.maps.LatLng(48.8567, 2.3508),
         map: map,
         icon: image,
-        title: 'NeuroTech Paris',
+        title: 'NeuroTechParis',
+        animation: google.maps.Animation.DROP
+    });
+
+    var neuroTechTLV = new google.maps.Marker({
+        position: new google.maps.LatLng(32.0667, 34.8000),
+        map: map,
+        icon: image,
+        title: 'NeuroTechTLV',
         animation: google.maps.Animation.DROP
     });
     
@@ -114,25 +123,73 @@ function init() {
         animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(neuroTechMTL, 'click', function() {
-    window.location.href = 'http://bcimontreal.org';
-    });
-    google.maps.event.addListener(neuroTechSF, 'click', function() {
-    window.location.href = 'http://www.explorecogtech.com';
-    });
-    google.maps.event.addListener(neuroTechTO, 'click', function() {
-    window.location.href = 'http://neurotechx.com/TO';
-    });
-    google.maps.event.addListener(neuroTechFR, 'click', function() {
-    window.location.href = 'http://www.coglab.fr';
-    });
 
-    var contentNYC = '<div style="color: black;font-family: \"Helvetica Neue\";"><b>NeuroTechNYC</b><br><i>The New York City chapter of NeuroTechX</i><br><b><a href="http://openbci.com" target="_blank">nyc.neurotechx.com</a></b></div>';
+
+    // neuroTechNYC
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                  + '<b>NeuroTechNYC</b><br>New York City chapter of NeuroTechX<br>'
+                  + '<b><a href="http://openbci.com" target="_blank">nyc.neurotechx.com</a></b></div>';
     var infowindowNYC = new google.maps.InfoWindow({
-      content: contentNYC
+      content: content
     });
     google.maps.event.addListener(neuroTechNYC, 'click', function() {
       infowindowNYC.open(map,neuroTechNYC);
+    });
+
+    // neuroTechMTL
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechMTL</b><br>Montréal chapter of NeuroTechX<br>'
+                + '<b><a href="http://bcimontreal.org" target="_blank">mtl.neurotechx.com</a></b></div>';
+    var infowindowMTL = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechMTL, 'click', function() {
+      infowindowMTL.open(map,neuroTechMTL);
+    });
+
+    // neuroTechTO
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechTO</b><br>Toronto chapter of NeuroTechX<br>'
+                + '<b><a href="http://choosemuse.com" target="_blank">to.neurotechx.com</a></b></div>';
+    var infowindowTO = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechTO, 'click', function() {
+      infowindowTO.open(map,neuroTechTO);
+    });
+
+
+    // neuroTechSF
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechSF</b><br>San Francisco chapter of NeuroTechX<br>'
+                + '<b><a href="http://explorecogtech.com" target="_blank">sf.neurotechx.com</a></b></div>';
+    var infowindowSF = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechSF, 'click', function() {
+      infowindowSF.open(map,neuroTechSF);
+    });
+
+    // neuroTechParis
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechParis</b><br>Paris chapter of NeuroTechX<br>'
+                + '<b><a href="http://coglab.fr" target="_blank">paris.neurotechx.com</a></b></div>';
+    var infowindowParis = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechParis, 'click', function() {
+      infowindowParis.open(map,neuroTechParis);
+    });
+
+    // neuroTechTLV
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechTLV</b><br>Tel-Aviv chapter of NeuroTechX<br>'
+                + '<b><a href="http://brainihack.org" target="_blank">tlv.neurotechx.com</a></b></div>';
+    var infowindowTLV = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechTLV, 'click', function() {
+      infowindowTLV.open(map,neuroTechTLV);
     });
 
 }
