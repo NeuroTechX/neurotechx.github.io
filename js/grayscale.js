@@ -68,7 +68,7 @@ function init() {
     // Custom Map Marker Icon 
 
     var image = new google.maps.MarkerImage(
-        'img/pin-black.png',
+        'img/pin.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
