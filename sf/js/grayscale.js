@@ -91,7 +91,7 @@ function init() {
     // neuroTechSF
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechSF</b><br>San Francisco chapter of NeuroTechX<br>'
-                + '<b><a href="http://explorecogtech.com" target="_blank">sf.neurotechx.com</a></b></div>';
+                + '<b><a href="http://meetup.com/NeuroTechSF" target="_blank">NeuroTechSF Meetup Page</a></b></div>';
     var infowindowSF = new google.maps.InfoWindow({
       content: content
     });
