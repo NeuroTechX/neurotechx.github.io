@@ -168,7 +168,7 @@ function init() {
     // neuroTechTLV
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechTLV</b><br>Tel-Aviv chapter of NeuroTechX<br>'
-                + '<b><a href="http://brainihack.com" target="_blank">tlv.neurotechx.com</a></b></div>';
+                + '<b><a href="http://brainihack.org" target="_blank">tlv.neurotechx.com</a></b></div>';
     var infowindowTLV = new google.maps.InfoWindow({
       content: content
     });
