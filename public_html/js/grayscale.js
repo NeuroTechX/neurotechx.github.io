@@ -122,7 +122,7 @@ function init() {
     // neuroTechNYC
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                   + '<b>NeuroTechNYC</b><br>New York City chapter of NeuroTechX<br>'
-                  + '<b><a href="http://nyc.neurotechx.com" target="_blank">nyc.neurotechx.com</a></b></div>';
+                  + '<b><a href="http://meetup.com/NeuroTechNYC" target="_blank">nyc.neurotechx.com</a></b></div>';
     var infowindowNYC = new google.maps.InfoWindow({
       content: content
     });
@@ -133,7 +133,7 @@ function init() {
     // neuroTechMTL
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechMTL</b><br>Montréal chapter of NeuroTechX<br>'
-                + '<b><a href="http://mtl.neurotechx.com" target="_blank">mtl.neurotechx.com</a></b></div>';
+                + '<b><a href="http://meetup.com/NeuroTechMTL" target="_blank">mtl.neurotechx.com</a></b></div>';
     var infowindowMTL = new google.maps.InfoWindow({
       content: content
     });
@@ -144,7 +144,7 @@ function init() {
     // neuroTechTO
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechTO</b><br>Toronto chapter of NeuroTechX<br>'
-                + '<b><a href="http://to.neurotechx.com" target="_blank">to.neurotechx.com</a></b></div>';
+                + '<b><a href="http://meetup.com/NeuroTechTO" target="_blank">to.neurotechx.com</a></b></div>';
     var infowindowTO = new google.maps.InfoWindow({
       content: content
     });
@@ -156,7 +156,7 @@ function init() {
     // neuroTechSF
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechSF</b><br>San Francisco chapter of NeuroTechX<br>'
-                + '<b><a href="http://sf.neurotechx.com" target="_blank">sf.neurotechx.com</a></b></div>';
+                + '<b><a href="http://meetup.com/NeuroTechSF" target="_blank">sf.neurotechx.com</a></b></div>';
     var infowindowSF = new google.maps.InfoWindow({
       content: content
     });
@@ -168,7 +168,7 @@ function init() {
     // neuroTechTLV
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
                 +'<b>NeuroTechTLV</b><br>Tel-Aviv chapter of NeuroTechX<br>'
-                + '<b><a href="http://tlv.neurotechx.com" target="_blank">tlv.neurotechx.com</a></b></div>';
+                + '<b><a href="http://brainihack.com" target="_blank">tlv.neurotechx.com</a></b></div>';
     var infowindowTLV = new google.maps.InfoWindow({
       content: content
     });
