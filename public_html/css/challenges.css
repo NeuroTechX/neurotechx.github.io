@@ -150,7 +150,7 @@ a:focus {
         padding: 50px 0;
         color: #fff;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                    url(../img/student_bg1.jpg) no-repeat center center fixed;
+                    url(../img/student_bg4.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -291,6 +291,9 @@ CSS classes for each section of the page for easy customization & parallax thing
 
 */
 
+
+
+
 .content-section {
       padding-top: 100px
      
@@ -315,8 +318,14 @@ CSS classes for each section of the page for easy customization & parallax thing
    
 }
 
+/*---------------------
 
-.content-challenges {
+  ONLINE CONTENT 
+
+------------------------*/
+
+
+.content-online {
       padding-top: 50px;
       width: 100%;
         padding: 50px 0;
@@ -336,33 +345,13 @@ CSS classes for each section of the page for easy customization & parallax thing
    
 }
 
-
-.content-register {
-      padding-top: 50px;
-      width: 100%;
-        padding: 50px 0;
-        color: #000;
-        background-color : #d9d9d9;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-    -o-background-size: cover;
-    
-    
-    text-align: center;
-    
-    display: table;
-    
-   
-}
-
-
-.content-why {
+.content-onlineRules {
       padding-top: 50px;
       width: 100%;
         padding: 50px 0;
         color: #fff;
-        background: url(../img/student_bg3.jpg) no-repeat center center fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1.2)), 
+                    url(../img/student_bg2.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -377,12 +366,13 @@ CSS classes for each section of the page for easy customization & parallax thing
 }
 
 
-.content-participants {
+.content-onlinePrizes {
       padding-top: 50px;
       width: 100%;
         padding: 50px 0;
-         color: #fff;
+        color: #fff;
         background-color : #333;
+      
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -396,7 +386,27 @@ CSS classes for each section of the page for easy customization & parallax thing
    
 }
 
-.content-sponsor{
+.content-onlineJudges {
+     padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+         color: #fff;
+          background: linear-gradient(rgba(0, 0, 0, 1.2), rgba(0, 0, 0, 1.8)), 
+                    url(../img/student_bg2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+.content-onlineSponsors{
       padding-top: 50px;
       width: 100%;
         padding: 50px 0;
@@ -415,34 +425,224 @@ CSS classes for each section of the page for easy customization & parallax thing
    
 }
 
-
-.content-ntx {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/student_bg4.jpg) no-repeat bottom center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+.content-onlineRegister {
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+         color: #fff;
+       background: linear-gradient(rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 2.4)), 
+                    url(../img/student_bg2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
     -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+    
+   
 }
 
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
+/*---------------------
+
+  ON-SITE CONTENT 
+
+------------------------*/
+
+
+
+.intronsite {
+    
+      width: 100%;
+        padding: 50px 0;
+        color: #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(../img/student_bg2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   /* width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url(../img/neuron.jpg) no-repeat bottom center fixed;
-    -webkit-background-size: cover;
+    display: table;
+    background-color(#000);
+   -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
+}
+
+.intronsite .intronsite-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intronsite .intronsite-body .brand-heading {
+    font-size: 40px;
+}
+
+.intronsite .intronsite-body .intronsite-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intronsite {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intronsite .intronsite-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intronsite .intronsite-body .intronsite-text {
+        font-size: 26px;
+    }
 }
 
 
 
- 
+
+
+.content-onsite {
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+        color: #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(../img/student_bg4.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+.content-onsiteRules {
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+        color: #fff;
+               background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(../img/student_bg4.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+
+.content-onsitePrizes {
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+        color: #fff;
+        background-color : #333;
+      
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+.content-onsiteJudges {
+     padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+         color: #fff;
+                  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(../img/student_bg4.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+.content-onsiteSponsors{
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+         color: #000;
+        background-color : #eee;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+   
+}
+
+.content-onsiteRegister {
+      padding-top: 50px;
+      width: 100%;
+        padding: 50px 0;
+         color: #fff;
+              background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1.6)), 
+                    url(../img/student_bg4.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    -o-background-size: cover;
+    
+    
+    text-align: center;
+    
+    display: table;
+    
+    
+   
+}
+
+
+
+
+
 
 
 /*
@@ -483,6 +683,9 @@ CSS classes for each section of the page for easy customization & parallax thing
 }
 
 
+
+
+
 /*map section*/
 
 #map {
@@ -516,28 +719,24 @@ CSS classes for each section of the page for easy customization & parallax thing
     transition: all .3s ease-in-out;
 }
 
-
-
-
 .btn-default {
-	
-    
-    border: 1px solid #000;
-    color: #fff;
-    background-color: #b9b9b9;
+    border: 1px solid #78cbfd;
+    color: #78cbfd;
+    background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #78cbfd;
     outline: 0;
-    color: #78cbfd;
-    background-color: #000;
+    color: #000;
+    background-color: #78cbfd;
 }
 
 ul.banner-social-buttons {
     margin-top: 0;
 }
+
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
