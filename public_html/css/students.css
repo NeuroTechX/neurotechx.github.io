@@ -20,11 +20,18 @@ html {
 h1,
 h2,
 h3,
-h4,
+
 h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h4{
+    margin: 0 0 10px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -381,8 +388,8 @@ CSS classes for each section of the page for easy customization & parallax thing
       padding-top: 50px;
       width: 100%;
         padding: 50px 0;
-         color: #fff;
-        background-color : #333;
+         color: #111;
+        background-color : #ddd;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
