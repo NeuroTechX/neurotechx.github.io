@@ -214,12 +214,6 @@ a:focus {
 *   Slider Area
 *
 **********************************/
-.p_small {
-    margin: 0 0 25px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-}
 
 
 /*----slider area-----*/
@@ -477,8 +471,8 @@ a:focus {
     text-align: center;
     color: #fff;
     background-color: #000;  
-    background: linear-gradient(rgba(0, 0, 0, 1.9), rgba(0, 0, 0,0.6)), 
-                    url(../img/vrvana.jpg) no-repeat center top fixed;
+    background: linear-gradient(rgba(0, 0, 0, 3.8), rgba(0, 0, 0,0.6)), 
+                    url(../img/bg_placeholder.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -648,7 +642,7 @@ a:focus {
         padding: 50px 0;
         color: #fff;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                    url(../img/events_darkened_small.png) no-repeat center center fixed;
+                    url(../img/bg_placeholder.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -1073,7 +1067,7 @@ div[data-dimension] {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline;
-  float: none;
+  float: left;
   min-height: 350px;
   padding: 80px 0;
   position: relative;
@@ -1114,15 +1108,6 @@ div[data-dimension] {
 
 
 .fa-2x {
-  color: #23b3c6;
-  display: table;
-  float: none;
-  margin: 0 auto;
-  font-size: 40px;
-}
-
-.fa-5x {
-  color: #23b3c6;
   display: table;
   float: none;
   margin: 0 auto;
@@ -1228,8 +1213,8 @@ div[data-dimension] {
     padding: 50px 0;
     color: #fff;
     background-color : #000;
-background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)), 
-                    url(../img/neurons.jpg) no-repeat center top fixed;
+        background: linear-gradient(rgba(0, 0, 0, 3.8), rgba(0, 0, 0,0.6)), 
+                    url(../img/bg_placeholder.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
