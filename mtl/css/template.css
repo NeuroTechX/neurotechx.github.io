@@ -478,7 +478,7 @@ a:focus {
     color: #fff;
     background-color: #000;  
     background: linear-gradient(rgba(0, 0, 0, 1.9), rgba(0, 0, 0,0.6)), 
-                    url(../img/vrvana.jpg) no-repeat center top fixed;
+                    url(../img/backgrounds/01.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -648,7 +648,7 @@ a:focus {
         padding: 50px 0;
         color: #fff;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                    url(../img/events_darkened_small.png) no-repeat center center fixed;
+                    url(../img/backgrounds/02.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -837,7 +837,7 @@ background-color: #000;
 	width: 100%;
 	min-height: 350px;
 	padding: 85px 0px;
-	background-image: url(img/skills_bg.jpg);
+	background-image: url(img/backgrounds/04.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: relative;
@@ -1069,9 +1069,7 @@ div[data-dimension] {
 
 
 .counter_section {
-  background-image: url("img/works_counterbg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color:#000;
   display: inline;
   float: none;
   min-height: 350px;
@@ -1138,7 +1136,7 @@ div[data-dimension] {
 
 
 .portfolio_area {
-  background-image: url("img/bg_placeholder.jpg");
+  background-image: url("img/backgrounds/04.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 	margin-left: 20%
@@ -1229,7 +1227,7 @@ div[data-dimension] {
     color: #fff;
     background-color : #000;
 background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)), 
-                    url(../img/neurons.jpg) no-repeat center top fixed;
+                    url(../img/backgrounds/03.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1369,7 +1367,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 
 /******************************
 *
-*   Download section
+*   Download/contact section
 *
 ******************************/
 
@@ -1379,11 +1377,13 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding: 50px 0;
     color: #fff;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url(../img/neuron.jpg) no-repeat bottom center scroll;
+                url(../img/backgrounds/04.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-align: center;
+    display: table;
 }
 
 #map {
