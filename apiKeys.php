@@ -6,6 +6,10 @@
 			"key_secret"=>" ",
 			"token"=>" ",
 			"token_secret"=>" "
+		),
+
+		"meetup"=> array(
+			"key"=>""
 		)
 	);
 
