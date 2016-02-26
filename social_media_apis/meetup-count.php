@@ -1,6 +1,7 @@
 <?php
 
-  error_reporting(0); // hide all errors
+  error_reporting(0);
+  // ini_set('display_errors', 0);
 
   include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
   include(dirname(__FILE__) . "/apikeys.php");
@@ -28,9 +29,9 @@
 
     $totalCount += $membersCount;
 
-    };
 
-  }
+
+  };
 
 
   // Get members count for the Paris-CogLab-Meetup-Cognitive-Science-Open-Lab group
@@ -41,7 +42,7 @@
 
   $membersCount = $response->results[0]->members;
 
-  $Paris_CogLab = $membersCount
+  $Paris_CogLab = $membersCount;
 
   $totalCount += $membersCount;
 
