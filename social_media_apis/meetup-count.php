@@ -1,6 +1,6 @@
 <?php
-  require_once('../libs/MeetupAPI.php');
-  require_once('/apikeys.php');
+  include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
+  include(dirname(__FILE__) . "/apikeys.php");
 
   $cities = array('MTL', 'TO', 'SF', 'BOS', 'PAR', 'AMS', 'LAX', 'NYC', 'LDN', 'LIMA');
   $totalCount = 0;
@@ -23,13 +23,13 @@
 
       // Assign the members count of a city's meetup group to a unique variable.
       // ex. the member count of Montreal's meetup group will be $MTL_meetup_count
-      ${$city . '_meetup_count'} = $membersCount
-      $totalCount += $membersCount
+      ${$city . '_meetup_count'} = $membersCount;
+      $totalCount += $membersCount;
 
     } else {
 
       // Assign the variable to any empty string if $membersCount is not an integer. This will prevent an error message from displaying on the site
-      ${$city . '_meetup_count'} = ""
+      ${$city . '_meetup_count'} = "";
 
     };
 
