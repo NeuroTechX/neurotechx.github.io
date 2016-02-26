@@ -24,4 +24,15 @@
 
   }
 
+
+  // Get members count for the Paris-CogLab-Meetup-Cognitive-Science-Open-Lab group
+
+  $response = $meetup->getGroups(array(
+    'group_urlname' => "Paris-CogLab-Meetup-Cognitive-Science-Open-Lab"
+  ));
+
+  $Paris_CogLab = $response->results[0]->members;
+
+  $totalCount += $response->results[0]->members;
+
 ?>
