@@ -1,6 +1,6 @@
 <?php
   require_once('../libs/MeetupAPI.php');
-  require_once('../apikeys.php');
+  require_once('../social_media_apis/apikeys.php');
 
   $meetup = new Meetup(array(
     'key' => $mtl_keys_and_tokens["meetup"]['key']
