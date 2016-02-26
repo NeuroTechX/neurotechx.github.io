@@ -6,7 +6,7 @@
   $totalCount = 0;
 
   $meetup = new Meetup(array(
-    'key' => $mtl_keys_and_tokens["meetup"]['key']
+    'key' => $meetup_key
   ));
 
   $response = $meetup->getGroups(array(
