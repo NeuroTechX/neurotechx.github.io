@@ -9,11 +9,19 @@
     'key' => $meetup_key
   ));
 
-  $response = $meetup->getGroups(array(
-    'group_urlname' => 'NeuroTechMTL'
-  ));
 
-  $members_count = $response->results[0]->members;
+  foreach ($cities as $city) {
 
-  echo $members_count;
+    $response = $meetup->getGroups(array(
+      'group_urlname' => "NeuroTech{$city}"
+    ));
+
+    // Assign the members count of a city's meetup group to a separate variable.
+    // For example, the member count of Montreal's meetup group will be $MTL_meetup_count
+    ${$city . '_meetup_count'} = $response->results[0]->members;
+
+    $totalCount += $response->results[0]->members;
+
+  }
+
 ?>
