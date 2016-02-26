@@ -1,6 +1,6 @@
 <?php
-  require_once('../libs/TwitterAPIExchange.php'); //get it from https://github.com/J7mbo/twitter-api-php
-  require_once('../social_media_apis/apikeys.php');
+  include(dirname(__FILE__, 2) . "/libs/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
+  include(dirname(__FILE__) . "/apikeys.php");
 
   $keys_and_tokens = $mtl_keys_and_tokens["twitter"];
 
