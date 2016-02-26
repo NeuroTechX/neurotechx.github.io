@@ -1,5 +1,7 @@
 <?php
 
+  error_reporting(0); //hide all errors
+
   include(dirname(__FILE__, 2) . "/libs/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
   include(dirname(__FILE__) . "/apikeys.php");
 
