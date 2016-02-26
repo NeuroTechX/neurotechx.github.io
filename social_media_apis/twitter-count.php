@@ -12,11 +12,10 @@
       'consumer_key' => $twitter_keys_and_tokens["key"],
       'consumer_secret' => $twitter_keys_and_tokens["key_secret"]
   );
-
   $url = 'https://api.twitter.com/1.1/followers/ids.json';
   $requestMethod = 'GET';
 
-
+  //Get followers count of each twitter account
   foreach ($twitterHandleSuffixes as $suffix) {
 
     $getfield = '?screen_name=Neurotech' . $suffix;
@@ -27,6 +26,8 @@
                  ->performRequest();
     $data = json_decode($follow_count, true);
 
+    // Assign the followers count of each twitter account to a unique variable.
+    // Ex. the follows count of the NeurotechX account will be assigned to $neurotechx_followers_count
     ${'neurotech' . ($suffix) . '_followers_count'} = count($data['ids']);
 
   };
