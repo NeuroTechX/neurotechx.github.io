@@ -9,12 +9,23 @@
 /*jshint strict: true */
 
 
-// jQuery to collapse the navbar on scroll
+
+//jQuery to hide menu on load
+$(document).ready(function () {
+    "use strict";
+	// hide .navbar first
+	$(".navbar").hide();
+	
+});
+
+// jQuery to unhide + collapse the navbar on scroll
 $(window).scroll(function () {
 	"use strict";
     if ($(".navbar").offset().top > 50) {
+		$(".navbar").fadeIn();
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
+		$(".navbar").fadeOut();
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
