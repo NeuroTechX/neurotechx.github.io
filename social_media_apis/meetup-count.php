@@ -1,8 +1,7 @@
 <?php
 
   // error_reporting(0); //hide all errors
-include dirname(__FILE__) . '/cache/top-cache.php';
-  // include(dirname(__FILE__) . "cache/top-cache.php");
+  include dirname(__FILE__) . '/cache/top-cache.php';
   include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
   include(dirname(__FILE__) . "/apikeys.php");
 
