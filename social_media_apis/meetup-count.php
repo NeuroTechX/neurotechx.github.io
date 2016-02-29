@@ -10,7 +10,7 @@ include dirname(__FILE__) . '/cache/top-cache.php';
   $totalCount = 0;
 
   $meetup = new Meetup(array(
-    'key' => '5b1a581d172287c7e593740737254b'
+    'key' => $meetup_key
   ));
 
   $members_count_array = array('meetupMembersCount' => array());
