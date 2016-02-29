@@ -5,7 +5,7 @@ $break = Explode('/', $url);
 
 $file = $break[count($break) - 1];
 
-$cachefile = 'cached-'.substr_replace($file ,"",-4).'.JSON';
+$cachefile = dirname(__FILE__).'/cached-'.substr_replace($file ,"",-4).'.JSON';
 $cachetime = 30;
 
 // Serve from the cache if it is younger than $cachetime
