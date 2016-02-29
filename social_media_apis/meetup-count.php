@@ -2,6 +2,7 @@
 
   error_reporting(0); //hide all errors
 
+  include(dirname(__FILE__) . "/cache/top-cache.php");
   include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
   include(dirname(__FILE__) . "/apikeys.php");
 
@@ -12,6 +13,7 @@
     'key' => $meetup_key
   ));
 
+  $members_count_array = array('meetupMembersCount' => array());
 
   //Get members count of each meetup group in the $cities array
   foreach ($cities as $city) {
@@ -42,5 +44,7 @@
   $Paris_CogLab = $membersCount;
 
   $totalCount += $membersCount;
+
+  include(dirname(__FILE__) . "/cache/bottom-cache.php");
 
 ?>
