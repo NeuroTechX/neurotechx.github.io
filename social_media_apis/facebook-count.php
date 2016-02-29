@@ -1,5 +1,6 @@
 <?php
 
+include dirname(__FILE__) . '/cache/top-cache.php';
 include(dirname(__FILE__, 2) . "/vendor/autoload.php");
 include(dirname(__FILE__) . "/apikeys.php");
 
@@ -23,5 +24,7 @@ $members_count = count($response->getGraphEdge()) + 14;
 $members_count_array['facebookMembersCount']['neurotechx'] = $members_count;
 
 echo json_encode($members_count_array);
+
+include dirname(__FILE__) . '/cache/bottom-cache.php';
 
 ?>
