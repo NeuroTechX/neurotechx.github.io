@@ -1,8 +1,8 @@
 <?php
 
-  error_reporting(0); //hide all errors
-
-  include(dirname(__FILE__) . "/cache/top-cache.php");
+  // error_reporting(0); //hide all errors
+include dirname(__FILE__) . '/cache/top-cache.php';
+  // include(dirname(__FILE__) . "cache/top-cache.php");
   include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
   include(dirname(__FILE__) . "/apikeys.php");
 
@@ -10,12 +10,12 @@
   $totalCount = 0;
 
   $meetup = new Meetup(array(
-    'key' => $meetup_key
+    'key' => '5b1a581d172287c7e593740737254b'
   ));
 
   $members_count_array = array('meetupMembersCount' => array());
 
-  //Get members count of each meetup group in the $cities array
+  // Get members count of each meetup group in the $cities array
   foreach ($cities as $city) {
 
     $response = $meetup->getGroups(array(
@@ -23,28 +23,24 @@
     ));
 
     $membersCount = $response->results[0]->members;
-
-    // Assign the members count of a city's meetup group to a unique variable.
-    // Ex. the members count of Montreal's meetup group will be assigned to $mtl_meetup_count
-    ${($city) . '_meetup_count'} = $membersCount;
-
+    $members_count_array['meetupMembersCount'][$city] = $membersCount;
     $totalCount += $membersCount;
 
   };
 
-
   // Get members count for the Paris-CogLab-Meetup-Cognitive-Science-Open-Lab group
-
   $response = $meetup->getGroups(array(
     'group_urlname' => "Paris-CogLab-Meetup-Cognitive-Science-Open-Lab"
   ));
 
   $membersCount = $response->results[0]->members;
-
-  $Paris_CogLab = $membersCount;
-
+  $members_count_array['meetupMembersCount']['parisCogLab'] = $membersCount;
   $totalCount += $membersCount;
+  $members_count_array['meetupMembersCount']['total'] = $totalCount;
 
-  include(dirname(__FILE__) . "/cache/bottom-cache.php");
+  // This JSON object will stored in cache
+  echo json_encode($members_count_array);
+
+  include dirname(__FILE__) . '/cache/bottom-cache.php';
 
 ?>
