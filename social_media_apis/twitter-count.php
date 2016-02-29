@@ -1,11 +1,12 @@
 <?php
 
-  error_reporting(0); //hide all errors
-
+  // error_reporting(0); //hide all errors
+  include dirname(__FILE__) . '/cache/top-cache.php';
   include(dirname(__FILE__, 2) . "/libs/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
   include(dirname(__FILE__) . "/apikeys.php");
 
   $twitterHandleSuffixes = array('x', 'mtl', 'sf', 'bos', 'to', 'nyc', 'xnews');
+  $followers_count_array = array('twitterFollowersCount' => array());
 
   /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
   $settings = array(
@@ -17,7 +18,7 @@
   $url = 'https://api.twitter.com/1.1/followers/ids.json';
   $requestMethod = 'GET';
 
-  //Get followers count of each twitter account
+  //Get number of followers of each twitter account and add them to an array
   foreach ($twitterHandleSuffixes as $suffix) {
 
     $getfield = '?screen_name=Neurotech' . $suffix;
@@ -28,10 +29,13 @@
                  ->performRequest();
     $data = json_decode($follow_count, true);
 
-    // Assign the followers count of each twitter account to a unique variable.
-    // Ex. the follows count of the NeurotechX account will be assigned to $neurotechx_followers_count
-    ${'neurotech' . ($suffix) . '_followers_count'} = count($data['ids']);
+    $followers_count = count($data['ids']);
+    $twitter_count_array['twitterFollowersCount']['neurotech' . ucfirst($suffix)] = $followers_count;
 
   };
 
+  // This JSON object will stored in cache
+  echo json_encode($twitter_count_array);
+
+  include dirname(__FILE__) . '/cache/bottom-cache.php';
 ?>
