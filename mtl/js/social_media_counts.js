@@ -3,6 +3,6 @@ $.getJSON( "../social_media_apis/meetup-count.php", function( countsArray ) {
 });
 
 $.getJSON( "../social_media_apis/twitter-count.php", function( countsArray ) {
-	$(".twitter-count").text(countsArray.twitterFollowersCount.mtl);
+	$(".twitter-count").text(countsArray.twitterFollowersCount.neurotechMtl);
 });
 
