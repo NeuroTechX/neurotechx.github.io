@@ -173,17 +173,7 @@ function init() {
     });
 
 
-
-    // neuroTechNYC
-    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
-                  + '<b>NeuroTechNYC</b><br>New York City chapter of NeuroTechX<br>'
-                  + '<b><a href="http://meetup.com/NeuroTechNYC" target="_blank">nyc.neurotechx.com</a></b></div>';
-    var infowindowNYC = new google.maps.InfoWindow({
-      content: content
-    });
-    google.maps.event.addListener(neuroTechNYC, 'click', function() {
-      infowindowNYC.open(map,neuroTechNYC);
-    });
+    // Chapter details popup
 
     // neuroTechMTL
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
@@ -207,6 +197,27 @@ function init() {
       infowindowTO.open(map,neuroTechTO);
     });
 
+    // neuroTechBOS
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechBOS</b><br>Boston chapter of NeuroTechX<br>'
+                + '<b><a href="http://mtl.neurotechx.com" target="_blank">bos.neurotechx.com</a></b></div>';
+    var infowindowBOS = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechBOS, 'click', function() {
+      infowindowBOS.open(map,neuroTechBOS);
+    });
+
+    // neuroTechNYC
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                  + '<b>NeuroTechNYC</b><br>New York City chapter of NeuroTechX<br>'
+                  + '<b><a href="http://meetup.com/NeuroTechNYC" target="_blank">nyc.neurotechx.com</a></b></div>';
+    var infowindowNYC = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechNYC, 'click', function() {
+      infowindowNYC.open(map,neuroTechNYC);
+    });
 
     // neuroTechSF
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
@@ -219,6 +230,60 @@ function init() {
       infowindowSF.open(map,neuroTechSF);
     });
 
+    // neuroTechLAX
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechLAX</b><br>Los Angeles chapter of NeuroTechX<br>'
+                + '<b><a href="http://meetup.com/NeuroTechLAX" target="_blank">lax.neurotechx.com</a></b></div>';
+    var infowindowLAX = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechLAX, 'click', function() {
+      infowindowLAX.open(map,neuroTechLAX);
+    });
+
+    // neuroTechAMS
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechAMS</b><br>Amsterdam chapter of NeuroTechX<br>'
+                + '<b><a href="http://meetup.com/NeuroTechAMS" target="_blank">ams.neurotechx.com</a></b></div>';
+    var infowindowAMS = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechAMS, 'click', function() {
+      infowindowAMS.open(map,neuroTechAMS);
+    });
+
+    // neuroTechPAR
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechPAR</b><br>Paris chapter of NeuroTechX<br>'
+                + '<b><a href="http://meetup.com/NeuroTechPAR" target="_blank">par.neurotechx.com</a></b></div>';
+    var infowindowPAR = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechPAR, 'click', function() {
+      infowindowPAR.open(map,neuroTechPAR);
+    });
+
+    // neuroTechLDN
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechLDN</b><br>London chapter of NeuroTechX<br>'
+                + '<b><a href="http://meetup.com/NeuroTechLDN" target="_blank">ldn.neurotechx.com</a></b></div>';
+    var infowindowLDN = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechLDN, 'click', function() {
+      infowindowLDN.open(map,neuroTechLDN);
+    });
+
+    // neuroTechBCN
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechBCN</b><br>Barcelona chapter of NeuroTechX<br>'
+                + '<b><a href="http://meetup.com/NeuroTechBCN" target="_blank">bcn.neurotechx.com</a></b></div>';
+    var infowindowBCN = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechBCN, 'click', function() {
+      infowindowBCN.open(map,neuroTechBCN);
+    });
 
     // neuroTechTLV
     var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
@@ -230,5 +295,17 @@ function init() {
     google.maps.event.addListener(neuroTechTLV, 'click', function() {
       infowindowTLV.open(map,neuroTechTLV);
     });
+
+    // neuroTechLIMA
+    var content = '<div style="color: black;font-family: \"Helvetica Neue\";">'
+                +'<b>NeuroTechLIMA</b><br>Lima chapter of NeuroTechX<br>'
+                + '<b><a href="http://brainihack.org" target="_blank">lima.neurotechx.com</a></b></div>';
+    var infowindowLIMA = new google.maps.InfoWindow({
+      content: content
+    });
+    google.maps.event.addListener(neuroTechLIMA, 'click', function() {
+      infowindowLIMA.open(map,neuroTechLIMA);
+    });
+
 
 }
