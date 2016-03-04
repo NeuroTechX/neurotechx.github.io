@@ -10,7 +10,7 @@ function init() {
         zoom: 3,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.7127, -74.0059),  // Centered on NYC-ish / East coast because this is where you have most chapters for now
+        center: new google.maps.LatLng(40, -45),  // Centered on Atlantic Ocean
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
