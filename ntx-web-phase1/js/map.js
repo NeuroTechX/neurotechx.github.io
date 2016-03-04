@@ -10,7 +10,7 @@ function init() {
         zoom: 3,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40, -45),  // Centered on Atlantic Ocean
+        center: new google.maps.LatLng(27, -60),  // Centered on Atlantic Ocean
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -275,6 +275,4 @@ function init() {
     google.maps.event.addListener(neuroTechLIMA, 'click', function() {
       infowindowLIMA.open(map,neuroTechLIMA);
     });
-
-
 }
