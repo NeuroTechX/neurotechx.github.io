@@ -4,7 +4,7 @@
  * NEUROTECHX CHAPTER TEMPLATE
  * aka THE FRANKENTHEME v1.8
  * Ana Tavera Mendoza
- * Latest revision: 22/11/2015
+ * Latest revision: 1/03/2016
  *
  * a rather shameless mashup of Grayscale by StartBootstrap
  * and of SinglePro by WPFreeWare.
@@ -38,7 +38,10 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: Armata;
+
+	/*font-weight: 600;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
     color: #fff;
     background-color: #000;
 }
@@ -51,20 +54,37 @@ html {
 h1{
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    font-size: 48px;
+    font-family: Orbitron;
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-size: 48px;
+    font-weight: 400;
     letter-spacing: 1px;
 }
-h2,
-h3,
+
+h2{
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Orbitron;
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+h3{
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Armata;
+	font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 h4,
 h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: Armata;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -134,7 +154,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Aldrich,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
@@ -170,7 +190,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #23b2c6;
     background-color: transparent;
 }
 
@@ -185,7 +205,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: #23b2c6;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -573,7 +593,7 @@ th, td {
     width: 40px;
     height: 40px;
     margin-top: 8px;
-    padding: 3px 8px;
+    padding: 5px 8px;
     border: 1px solid #fff;
     border-radius: 100%!important;
     font-size: 20px;
@@ -612,6 +632,13 @@ th, td {
 }
 
 
+
+
+.open > .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #23b2c6;
+  border-color: #23b2c6;
+}
 
 
 
@@ -688,8 +715,46 @@ th, td {
     padding-top: 50px;
     width: 100%;
     padding: 50px 0;
+    color: #333;
+    background-color : #eee;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+    text-align: center;
+
+    display: table;
+
+
+}
+
+.noBG-section-dark{
+    padding-top: 50px;
+    width: 100%;
+    padding: 50px 0;
     color: #fff;
-    background-color : #000;
+    background-color : #222;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+    text-align: center;
+
+    display: table;
+
+
+}
+
+.noBG-section-dark2{
+    padding-top: 50px;
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background-color : #555;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -764,7 +829,7 @@ th, td {
 	display: inline-block;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Orbitron;
 	font-size: 40px;
 	line-height: 40px;
 
@@ -775,7 +840,7 @@ th, td {
 	display: inline-block;
 	margin-bottom: 30px;
 	padding-bottom: 10px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Orbitron;
 	font-size: 30px;
 	line-height: 30px;
 
@@ -786,7 +851,7 @@ th, td {
 	display: inline-block;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Orbitron;
 	font-size: 25px;
 	line-height: 25px;
 
