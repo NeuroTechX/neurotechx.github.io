@@ -1,20 +1,34 @@
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 var map;
+var mapZoom;
 
 google.maps.event.addDomListener(window, 'load', initialize);
 google.maps.event.addDomListener(window, "resize", function() {
      var center = map.getCenter();
      google.maps.event.trigger(map, "resize");
      map.setCenter(center);
+
+     setMapZoom();
+     map.setZoom(mapZoom);
 });
 
+function setMapZoom(){
+    if($(window).width() > 945){
+        mapZoom = 3;
+    }else{
+        mapZoom = 2;
+    };
+};
+
 function initialize() {
+
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    setMapZoom();
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 3,
+        zoom: mapZoom,
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(27, -44),  // Centered on Atlantic Ocean
