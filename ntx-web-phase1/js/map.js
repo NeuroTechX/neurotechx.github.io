@@ -1,9 +1,15 @@
 // Google Maps Scripts
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', init);
+var map;
 
-function init() {
+google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, "resize", function() {
+     var center = map.getCenter();
+     google.maps.event.trigger(map, "resize");
+     map.setCenter(center);
+});
+
+function initialize() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -11,7 +17,7 @@ function init() {
         zoom: 3,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(27, -60),  // Centered on Atlantic Ocean
+        center: new google.maps.LatLng(27, -44),  // Centered on Atlantic Ocean
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -33,7 +39,7 @@ function init() {
     var mapElement = document.getElementById('map');
 
     // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions);
 
 
     // Custom Map Marker Icon
