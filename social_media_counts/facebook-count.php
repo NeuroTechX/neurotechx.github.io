@@ -1,6 +1,6 @@
 <?php
 
-// include dirname(__FILE__) . '/cache/top-cache.php';
+include dirname(__FILE__) . '/cache/top-cache.php';
 include(dirname(__FILE__, 2) . "/vendor/autoload.php");
 include(dirname(__FILE__) . "/apikeys.php");
 
@@ -32,6 +32,6 @@ $members_and_likes_array['facebookPageLikesCount']['neurotechx'] = $likes_count;
 
 echo json_encode($members_and_likes_array);
 
-// include dirname(__FILE__) . '/cache/bottom-cache.php';
+include dirname(__FILE__) . '/cache/bottom-cache.php';
 
 ?>

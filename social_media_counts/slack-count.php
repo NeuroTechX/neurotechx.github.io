@@ -1,5 +1,6 @@
 <?php
 
+include dirname(__FILE__) . '/cache/top-cache.php';
 include(dirname(__FILE__) . "/apikeys.php");
 
 $url = 'https://slack.com/api/users.list?token=' . $slack_token;
@@ -22,5 +23,7 @@ $members_count_array = array('slackMembersCount' => array());
 $members_count_array['slackMembersCount'] = count($decoded->members);
 
 echo json_encode($members_count_array);
+
+include dirname(__FILE__) . '/cache/bottom-cache.php';
 
 ?>
