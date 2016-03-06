@@ -1,6 +1,6 @@
 <?php
 
-  // include dirname(__FILE__) . '/cache/top-cache.php';
+  include dirname(__FILE__) . '/cache/top-cache.php';
   include(dirname(__FILE__, 2) . "/libs/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
   include(dirname(__FILE__) . "/apikeys.php");
 
@@ -38,5 +38,5 @@
   // This JSON object will stored in cache
   echo json_encode($twitter_count_array);
 
-  // include dirname(__FILE__) . '/cache/bottom-cache.php';
+  include dirname(__FILE__) . '/cache/bottom-cache.php';
 ?>
