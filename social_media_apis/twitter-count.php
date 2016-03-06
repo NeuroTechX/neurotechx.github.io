@@ -32,8 +32,7 @@
     $followers_count = count($data['ids']);
     $totalFollowers += $followers_count;
     $twitter_count_array['twitterFollowersCount']['neurotech' . ucfirst($suffix)] = $followers_count;
-    $twitter_count_array['twitterFollowersCount']['total'] = $followers_count;
-
+    $twitter_count_array['twitterFollowersCount']['total'] = $totalFollowers;
   };
 
   // This JSON object will stored in cache
