@@ -1,6 +1,6 @@
 <?php
 
-  // include dirname(__FILE__) . '/cache/top-cache.php';
+  include dirname(__FILE__) . '/cache/top-cache.php';
   include dirname(__FILE__) . "/meetupAPI.php";
   include dirname(__FILE__) . "/apiKeys.php";
 
@@ -57,6 +57,6 @@
   $members_and_events_array['meetupEventsCount']['total'] = $totalEvents;
 
   echo json_encode($members_and_events_array);
-  // include dirname(__FILE__) . '/cache/bottom-cache.php';
+  include dirname(__FILE__) . '/cache/bottom-cache.php';
 
 ?>
