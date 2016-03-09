@@ -16,16 +16,12 @@ class Meetup {
         return $this->get('/2/photos', $parameters)->results;
     }
 
-    public function getDiscussionBoards(array $parameters = array()) {
-        return $this->get('/:urlname/boards', $parameters);
-    }
-
     public function getGroup(array $parameters = array()) {
         return $this->get('/:urlname/', $parameters);
     }
 
-    public function getGroupEvents(array $parameters = array()) {
-        return $this->get('/:urlname/events', $parameters);
+    public function getDiscussionBoards(array $parameters = array()) {
+        return $this->get('/:urlname/boards', $parameters);
     }
 
     public function getDiscussions(array $parameters = array()) {
@@ -37,7 +33,7 @@ class Meetup {
     }
 
     public function getGroups(array $parameters = array()) {
-        return $this->get('/2/', $parameters);
+        return $this->get('/2/groups', $parameters);
     }
 
     public function getNext($response) {
