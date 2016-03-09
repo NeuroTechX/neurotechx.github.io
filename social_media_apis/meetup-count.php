@@ -1,7 +1,7 @@
 <?php
 
   include dirname(__FILE__) . '/cache/top-cache.php';
-  include(dirname(__FILE__, 2) . "/libs/MeetupAPI.php");
+  include dirname(__FILE__) . "/meetupAPI.php";
   include(dirname(__FILE__) . "/apikeys.php");
 
   $cities = array('MTL', 'TO', 'SF', 'BOS', 'PAR', 'AMS', 'LAX', 'NYC', 'LDN', 'LIMA');
