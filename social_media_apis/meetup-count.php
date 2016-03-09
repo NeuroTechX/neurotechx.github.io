@@ -20,8 +20,8 @@
       'urlname' => "NeuroTech{$city}"
     ));
 
-    $eventsResponse = $meetup->getGroupEvents(array(
-      'urlname' => "NeuroTech{$city}",
+    $eventsResponse = $meetup->getEvents(array(
+      'group_urlname' => "NeuroTech{$city}",
       'status' => "upcoming,past"
     ));
 
@@ -42,8 +42,8 @@
     'urlname' => $ParisCogLab
   ));
 
-  $eventsResponse = $meetup->getGroupEvents(array(
-    'urlname' => $ParisCogLab,
+  $eventsResponse = $meetup->getEvents(array(
+    'group_urlname' => $ParisCogLab,
     'status' => "upcoming,past"
   ));
 
