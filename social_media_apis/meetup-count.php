@@ -2,7 +2,7 @@
 
   // include dirname(__FILE__) . '/cache/top-cache.php';
   include dirname(__FILE__) . "/meetupAPI.php";
-  include(dirname(__FILE__) . "/apikeys.php");
+  include dirname(__FILE__) . "/apiKeys.php";
 
   $cities = array('MTL', 'TO', 'SF', 'BOS', 'PAR', 'AMS', 'LAX', 'NYC', 'LDN', 'LIMA');
   $totalMembers = 0;
