@@ -1,7 +1,7 @@
 <?php
 
 include dirname(__FILE__) . '/cache/top-cache.php';
-include(dirname(__FILE__, 2) . "/vendor/autoload.php");
+require_once __DIR__ . '/facebook-php-sdk-v4-5.0.0/src/Facebook/autoload.php';
 include(dirname(__FILE__) . "/apikeys.php");
 
 $members_and_likes_array = array('facebookGroupMembersCount' => array(), 'facebookPageLikesCount' => array());
