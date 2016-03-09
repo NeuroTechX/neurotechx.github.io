@@ -2,7 +2,7 @@
 
   include dirname(__FILE__) . '/cache/top-cache.php';
   include(dirname(__FILE__) . "/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
-  include(dirname(__FILE__) . "/apikeys.php");
+  include(dirname(__FILE__) . "/apiKeys.php");
 
   $twitterHandleSuffixes = array('x', 'mtl', 'sf', 'bos', 'to', 'nyc', 'xnews');
   $followers_count_array = array('twitterFollowersCount' => array());

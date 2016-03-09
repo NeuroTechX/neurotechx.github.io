@@ -1,7 +1,7 @@
 <?php
 
 include dirname(__FILE__) . '/cache/top-cache.php';
-include(dirname(__FILE__) . "/apikeys.php");
+include(dirname(__FILE__) . "/apiKeys.php");
 
 $url = 'https://slack.com/api/users.list?token=' . $slack_token;
 
