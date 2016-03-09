@@ -209,7 +209,7 @@ function init() {
     // neuroTechVAN
 		contentVAN = '<div style="color: black;font-family: \"Helvetica Neue\";">'
         + '<b>NeuroTechVAN</b><br>Montréal chapter of NeuroTechX<br>'
-        + '<b><a href="http://mtl.neurotechx.com" target="_blank">mtl.neurotechx.com</a></b></div>',
+        + '<b><a href="http://van.neurotechx.com" target="_blank">van.neurotechx.com</a></b></div>',
 		infowindowVAN = new google.maps.InfoWindow({
 			content: contentVAN
 		}),
