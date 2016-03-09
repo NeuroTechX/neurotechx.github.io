@@ -1,7 +1,7 @@
 <?php
 
   include dirname(__FILE__) . '/cache/top-cache.php';
-  include(dirname(__FILE__, 2) . "/libs/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
+  include(dirname(__FILE__) . "/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
   include(dirname(__FILE__) . "/apikeys.php");
 
   $twitterHandleSuffixes = array('x', 'mtl', 'sf', 'bos', 'to', 'nyc', 'xnews');
