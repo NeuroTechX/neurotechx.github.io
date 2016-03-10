@@ -218,6 +218,8 @@ jQuery(function($){
 	});
 };
 
+
+// Get Meetup Members and Events numbers from cache
 $.ajax({
   async: "false",
   url: "http://testing.neurotechx.com/social_media_apis/cache/cached-meetup-count.JSON",
@@ -228,8 +230,8 @@ $.ajax({
   }
 });
 
+// Get Twitter, Facebook and Slack numbers from cache, then add them to the 'onlineCommunity' variable
 var onlineCommunity = 0;
-console.log(onlineCommunity);
 
 $.ajax({
   async: "false",
@@ -267,6 +269,7 @@ var getSlackCount = function(){
   });
 };
 
+// Make API calls and update the cache files
 $.getJSON( "http://testing.neurotechx.com/social_media_apis/meetup-count.php" );
 $.getJSON( "http://testing.neurotechx.com/social_media_apis/twitter-count.php" );
 $.getJSON( "http://testing.neurotechx.com/social_media_apis/facebook-count.php" );
