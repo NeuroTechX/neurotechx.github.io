@@ -98,8 +98,9 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  6. Project Counter
 	/* ----------------------------------------------------------- */
-
+ var test = function() {
 	(function ($) {
+
 		$.fn.countTo = function (options) {
 			options = options || {};
 
@@ -215,7 +216,61 @@ jQuery(function($){
 		$this.countTo(options);
 	  }
 	});
+};
 
+$.ajax({
+  async: "false",
+  url: "http://testing.neurotechx.com/social_media_apis/cache/cached-meetup-count.JSON",
+  dataType: "json",
+  success: function(data) {
+  	$(".meetup-members").attr("data-to",data.meetupMembersCount.total);
+  	$(".meetup-events").attr("data-to",data.meetupEventsCount.total);
+  }
+});
+
+var onlineCommunity = 0;
+console.log(onlineCommunity);
+
+$.ajax({
+  async: "false",
+  url: "http://testing.neurotechx.com/social_media_apis/cache/cached-twitter-count.JSON",
+  dataType: "json",
+  success: function(data) {
+    onlineCommunity += data.twitterFollowersCount.total;
+    getFacebookCount();
+  }
+});
+
+var getFacebookCount = function(){
+  $.ajax({
+    async: "false",
+    url: "http://testing.neurotechx.com/social_media_apis/cache/cached-facebook-count.JSON",
+    dataType: "json",
+    success: function(data) {
+	    onlineCommunity += data.facebookGroupMembersCount.neurotechx;
+    	onlineCommunity += data.facebookPageLikesCount.neurotechx;
+	    getSlackCount();
+    }
+  });
+}
+
+var getSlackCount = function(){
+  $.ajax({
+    async: "false",
+    url: "http://testing.neurotechx.com/social_media_apis/cache/cached-slack-count.JSON",
+    dataType: "json",
+    success: function(data) {
+	    onlineCommunity += data.slackMembersCount;
+	    $(".community-members").attr("data-to", onlineCommunity);
+	    test();
+    }
+  });
+};
+
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/meetup-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/twitter-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/facebook-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/slack-count.php" );
 
 
 	/* ----------------------------------------------------------- */
