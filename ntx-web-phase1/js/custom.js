@@ -98,8 +98,9 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  6. Project Counter
 	/* ----------------------------------------------------------- */
-
+ var test = function() {
 	(function ($) {
+
 		$.fn.countTo = function (options) {
 			options = options || {};
 
@@ -215,7 +216,64 @@ jQuery(function($){
 		$this.countTo(options);
 	  }
 	});
+};
 
+
+// Get Meetup Members and Events numbers from cache
+$.ajax({
+  async: "false",
+  url: "http://testing.neurotechx.com/social_media_apis/cache/cached-meetup-count.JSON",
+  dataType: "json",
+  success: function(data) {
+  	$(".meetup-members").attr("data-to",data.meetupMembersCount.total);
+  	$(".meetup-events").attr("data-to",data.meetupEventsCount.total);
+  }
+});
+
+// Get Twitter, Facebook and Slack numbers from cache, then add them to the 'onlineCommunity' variable
+var onlineCommunity = 0;
+
+$.ajax({
+  async: "false",
+  url: "http://testing.neurotechx.com/social_media_apis/cache/cached-twitter-count.JSON",
+  dataType: "json",
+  success: function(data) {
+    onlineCommunity += data.twitterFollowersCount.total;
+    getFacebookCount();
+  }
+});
+
+var getFacebookCount = function(){
+  $.ajax({
+    async: "false",
+    url: "http://testing.neurotechx.com/social_media_apis/cache/cached-facebook-count.JSON",
+    dataType: "json",
+    success: function(data) {
+	    onlineCommunity += data.facebookGroupMembersCount.neurotechx;
+    	onlineCommunity += data.facebookPageLikesCount.neurotechx;
+	    getSlackCount();
+    }
+  });
+}
+
+var getSlackCount = function(){
+  $.ajax({
+    async: "false",
+    url: "http://testing.neurotechx.com/social_media_apis/cache/cached-slack-count.JSON",
+    dataType: "json",
+    success: function(data) {
+	    onlineCommunity += data.slackMembersCount;
+	    $(".community-members").attr("data-to", onlineCommunity);
+	    test();
+    }
+  });
+};
+
+// Make API calls and update the cache files
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/meetup-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/twitter-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/facebook-count.php" );
+$.getJSON( "http://testing.neurotechx.com/social_media_apis/slack-count.php" );
 
 
 	/* ----------------------------------------------------------- */
