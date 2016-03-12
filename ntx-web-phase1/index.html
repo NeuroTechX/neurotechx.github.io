@@ -78,7 +78,12 @@
     <!-- Custom Fonts
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 
+
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
+
+
 	<link href="//fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
+
 	<link href='https://fonts.googleapis.com/css?family=Aldrich:400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 
@@ -95,6 +100,18 @@
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<!--Facebook Feed Script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=940162346069615";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
@@ -107,7 +124,7 @@
 
                     <!-- Change "Chapter Name" for your chapter's abbreviation  -->
 					<a class="navbar-brand page-scroll" href="#page-top">
-						<i class="icon-neurotechx-vector"></i> NeuroTech<span style="color:#23b3c6">X</span></a>
+						<i class="icon-neurotechx-vector"></i> <span style="color:#fff; font-family:Orbitron"> NeuroTech</span><span style="color:#23b3c6; font-family:Orbitron">X</span></a>
 
                 </div>
 
@@ -171,6 +188,7 @@
                         <!-- Name, Logo, and Blurb go here. To change the background, go to template.css' .intro class or replace the image in the Backgrounds folder. -->
 
                         <img src="img/logo_transparent.png" onerror="this.style.display='none'"style="width:40%;height:40%;">
+						<br><br>
 						<h1><span style="color:#23b3c6">Neurotech</span>X</h1>
 
                         <h2>The International <span style="color:#23b3c6">Neurotechnology</span> Network</h2><br><br>
@@ -178,8 +196,8 @@
 
 							<div class="col-xs-4"></div>
 							<div class="col-xs-2">
-							<a href="http://eepurl.com/bEQDKX" class="btn-default btn-lg page-scroll">STAY TUNED</a></div>
-							<div class="col-xs-2"><a href="#" class="btn-default btn-lg page-scroll">LET'S TALK</a>
+							<a href="http://eepurl.com/bEQDKX" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Orbitron;">STAY TUNED</a></div>
+							<div class="col-xs-2"><a href="#JoinUs" class="subscribeButton inverted btn btn-default btn-lg " style="font-family:Orbitron;">JOIN US</a>
 							<div class="col-xs-4">
 							</div>
 							</div>
@@ -187,7 +205,7 @@
 						</div>
 					    <br><br><br>
                         <a href="#WhoWeAre" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
+                        <i class="fa fa-angle-double-down "></i>
                         </a><br><br><br>
                     </div>
                 </div>
@@ -206,29 +224,39 @@
 			<div class="row">
 				<div class="col-xs-8 col-xs-offset-2">
 
-				<p>NeuroTechX is a non-profit organization whose mission is to connect and empower the global neurotechnology community and to promote the advancement of neuroscience and innovation.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
+				<p>NeuroTechX is a non-profit organization whose mission is to build a strong global neurotechnology community by providing key resources and learning opportunities, and by being leaders in local and world-wide technological initiatives.
+					<br>We bring enthusiasts, hackers, and experts together to drive innovation and foster collaboration at local and international scales. We envision an inclusive and collaborative ecosystem of researchers, experts, hackers and enthusiasts and accessible resources and learning opportunities for all.
+					<br>By joining our community, NeuroTechX members can immediately gain access to a global network of talented neurotechies through our city chapters and student clubs, participate in world-class conferences such as the NeuroTechXSummit, stay up to date on the latest NeuroTechNews, learn by doing at events such as Hackathons, collaborate on NeuroTechXMoonshots and nurture their brains at NeuroTechXEDU.</p></div>
 				</div>
-		</div>
+
+			</div>
+
+
+
 
 		<div class= "row text-center">
-		<div class= "col-xs-10 col-xs-offset-1">
-			<table style="width:100%; padding:20px;">
+		<div class= "col-xs-8 col-xs-offset-2">
+			<table style="width:100%;">
 				<tr>
-				<td style="background:#333; padding:20px;">
-				<img src="http://placehold.it/250x150"><h4 style= "color:#fff">Innovation</h4>
-				<p style= "color:#fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<td style="background:#333;">
+				<img src="img/column_community.jpg" height="200px">
+					<h4 style= "color:#fff">Community</h4>
+				<p style="color:#fff; font-size:16px; font-weight:400; ">To become a practical reality, brain technology needs to be supported by a diverse and dynamic community of experts, entrepreneurs and enthusiasts. NeuroTechX is a connector of this community and a facilitator of important and inclusive conversations about the future of neurotechnology.</p>
 				</td>
 				<td></td>
-				<td style="background:#333; padding:20px;">
-				<img src="http://placehold.it/250x150"><h4 style= "color:#fff">Humanity</h4>
-				<p style= "color:#fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+				<td style="background:#333;">
+				<img src="img/column_innovation.JPG" height="200px">
+					<h4 style= "color:#fff">Innovation</h4>
+				<p style= "color:#fff; font-size:16px; font-weight:400;">NeuroTechX fosters a culture of innovation through its many initiatives and by connecting talent through its events and global network. We hope to inspire our community members to address today's challenges and opportunities with creativity and confidence. </p>
 				</td>
+
 				<td></td>
-				<td style="background:#333; padding:20px;">
-				<img src="http://placehold.it/250x150"><h4 style= "color:#fff">Passion</h4>
-				<p style= "color:#fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				<td style="background:#333;">
+				<img src="img/column_education.JPG" height="200px">
+					<h4 style= "color:#fff" class="heading">Education</h4>
+				<p style= "color:#fff; font-size:16px; font-weight:400;">NeuroTechX firmly believes that the brain conversation must include absolutely everyone. That is why we offer accessible resources and learning opportunities for beginners or experts and everyone in between. Together, we can inspire and create neurotechnology that benefits all of society.</p>
 				</td>
 				</tr>
 				</table>
@@ -245,21 +273,25 @@
 	<br>
 	<br>
 	<br>
-      <div class="heading text-center">
+      <div class="row heading text-center">
 
 
           <h2>Where We Are</h2>
-		  <div class="col-xs-8 col-xs-offset-2">
-			  <p>11 chapters  near you ! Our network currently extends to Montreal, San Francisco, New York, Amsterdam, Paris, London, Toronto, Los Angeles, Barcelona, Tel Aviv, and Lima.</p></div></div>
-         <br>
+		  </div>
+
+		 <!-- Ana: John, I placed this extra div to contain the map, it might be an error caused by a conflict
+			  but the map keeps overflowing to the right.-->
+		 <div  class="col-xs-10 col-xs-offset-1">
+		 <p style="font-size:16px; font-weight:400;">NeuroTechX has chapters in over 11 cities in North America, Europe and Latin America.
+			  <br>Meet other neurotech enthusiasts in your local community, learn and exchange knowledge through our meetups, build innovative and collaborative projects at our Hack Nights and have access to the latest technologies at our events. If your city isn't included on our map, contact us to help bring NeuroTechX to your community!</p>
         <div id="map">
 
-         </div>
-        <br>
-
+		 </div>
+		 </div>
 		 <!-- this is where I'm not sure how to proceed. Obviously, there's the map Div + a slider for chapter info.
 		yeah. For the map, go to template.js to see how it's been made.
          -->
+
 	</section>
 <!--============= STATS PROTOTYPE==========================-->
  <section id= "stats" class=" noBG-section-dark2 text-center">
@@ -326,59 +358,65 @@
 		<div class="col-xs-10 col-xs-offset-1">
 	<table style="width:90%;" >
   <tr>
-    <td rowspan="2"><img src="http://placehold.it/200x220"><div class= "header"><h5>NeurotechXNews</h5><p style="font-size:12px;"> The News Platform for Everything Neurotech</p></div></td>
-    <td ><img src="http://placehold.it/200x150"></td>
-    <td ><img src="http://placehold.it/200x150"></td>
-    <td ><img src="http://placehold.it/200x150"></td>
-  </tr>
+    <td  style="background:#333;"><img src="img/whatwedo/student_comp.jpg" style="width:200px;">
+		<h4 style="color:#fff">International Student Competition</h4>
+		<p style="font-size:12px; color:#fff;">The world’s first neurotech undergraduate student competition</p>  </td>
+
+	  <td></td>
+    <td style="background:#333;" ><img src="img/whatwedo/chapters.jpg" style="width:200px;">
+		<h4 style="color:#fff">City Chapters</h4><p style="font-size:12px; color:#fff"> Connect with your local community</p>  </td><td></td>
+    <td style="background:#333;"><img src="img/whatwedo/summit.JPG" style="width:200px;">
+		<h4 style="color:#fff">NeuroTechXSummit</h4><p style="font-size:12px; color:#fff">Where great minds connect</p>  </td><td></td>
+    <td style="background:#333;"><img src="img/whatwedo/ntx_edu.jpg" style="width:200px;">
+		<h4 style="color:#fff">NeuroTechXEDU</h4><p style="font-size:12px; color:#fff">Learn everything neurotech</p>  </td>
+
+  </tr><tr><td></td></tr>
   <tr>
-    <td ><img src="http://placehold.it/200x150"></td>
-    <td  colspan="2"><img src="http://placehold.it/420x150"></td>
+	  <td style="background:#333;"><img src="img/whatwedo/ntnews.png" style="width:200px;"><div class= "header">
+		<h4 style="color:#fff" >NeurotechXNews</h4><p style="font-size:12px; color:#fff"> The News Platform for Everything Neurotech</p></div></td>
+    <td></td>
+
+	  <td style="background:#333;" ><img src="img/whatwedo/student_clubs.jpg" style="width:200px;">
+		  <h4 style="color:#fff">Student Clubs</h4>
+		<p style="font-size:12px; color:#fff">Supporting neurotech student clubs all over the world</p>  </td><td></td>
+   <td style="background:#333;" ><img src="img/whatwedo/hackathon.JPG" style="width:200px;">
+	   <h4 style="color:#fff">Hackathon</h4>
+		<p style="font-size:12px;color:#fff">We build things together</p>  </td><td></td>
+	   <td style="background:#333;" ><img src="img/whatwedo/moonshots.JPG" style="width:200px;">
+		   <h4 style="color:#fff">Moonshots</h4>
+		<p style="font-size:12px; color:#fff">For bold thinkers who shoot for the moon</p></td>
   </tr>
-   <tr>
-	   <td colspan="2"><img src="http://placehold.it/420x150"></td>
-	   <td colspan ="2"><img src="http://placehold.it/420x150"></td>
-   </tr>
+
 </table>
 		</div>
 	</div>
 	<br><br>
 	<div class= "row">
-		<div class="col-xs-6 col-xs-offset-2">
+		<div class="col-xs-6 col-xs-offset-2"><br><br>
 		<p>“NeuroTechX does great work making the field of Brain Computer Interfaces more accessible and bringing people together who can really contribute to it.”</p>
 		</div>
-		<div class="col-xs-1" align="right"><i class="fa fa-user fa-3x"></i></div>
-		<div class="col-xs-2" align="left" > TOM HOBSON<br>
-Evangelist at InteraXon</div>
+		<div class="col-xs-2">
+				<div class="team_img">
+        <img src="img/tom_profile.jpg" alt="img" width="100px">
+				</div>
+
+
+		<div class="row" > TOM HOBSON<br>
+Evangelist at InteraXon</div></div>
 			<br><br><br>
 	</div>
 </section>
 
-<section id= "socialwall" class="container noBG-section text-center" style="background:#333;">
 
-	<div class= "row">
-	<div class="col-xs-10 col-xs-offset-1">
-	<table class="tg"  style="width:90%;" >
-  <tr>
-    <td rowspan="2" colspan="2"><img src="http://placehold.it/400x400"></td>
-    <td ><img src="http://placehold.it/200x190"></td>
-    <td ><img src="http://placehold.it/200x190"></td>
-  </tr>
-  <tr>
-    <td colspan="2"><img src="http://placehold.it/440x180"></td>
-  </tr>
-</table>
-		<br><br><br>
 
-	</div>
-</div>
 
-</section>
+
 
 <!--==================CTA'S =========================-->
 
 
-<section id="JoinUs" class= "container noBG-section text-center">
+<section id="JoinUs" class= "container parallaxBG-section text-center">
+
 
 	<br>
 	<br>
@@ -387,99 +425,205 @@ Evangelist at InteraXon</div>
               <h2>Join Us</h2>
 	</div>
 
+
+
+
+
  <div class= "row text-center" style="color:#fff">
+
 		<div class= "col-xs-10 col-xs-offset-1">
-			<table style="width:100%; padding:20px;">
-				<tr>
-				<td style="background:#222; padding:20px;">
-				<h4>Follow the Community</h4>
-				<img src="http://placehold.it/250x150">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</td>
-				<td></td>
-				<td style="background:#222; padding:20px;">
-				<h4>Get Involved</h4>
-				<img src="http://placehold.it/250x150">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</td>
-				<td></td>
-				<td style="background:#222; padding:20px;">
-				<h4>Sponsor Us</h4>
-				<img src="http://placehold.it/250x150">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</td>
-				</tr>
-				</table>
+
+			<div class="row" >
+			<div class="col-xs-4" style=" padding:20px;">
+				<i class="fa fa-users fa-5x" ></i>
+			<p style="font-size:16px; font-weight:400">Every day, our community is making incredible things happen. Take part in the brain conversation and help shape the future of neurotechnology!<br><br><br>
+					 <a href="https://neurotechx.herokuapp.com/" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Join The Conversation</a>
+
+          <p><script async defer src="http://neurotechx.herokuapp.com/slackin.js?large"></script>
+			  </p><br>
+
+				</div>
+
+			<div class="col-xs-4" style=" padding:20px;">
+				<i class="fa fa-lightbulb-o fa-5x" ></i>
+				<p style="font-size:16px; font-weight:400">We are constantly on the look-out for people who share our passion for the brain and for technology. To get involved, please fill out the form!<br><br><br>
+				 <a href="https://docs.google.com/forms/d/1y8p0NXhzwSCfuYTtixQMwRnbzHR9hWdG7ZqRAeQFy1o/viewform?c=0&w=1" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Get Involved</a></p>
+				</div>
+				<div class="col-xs-4" style="padding:20px;">
+					<i class="fa fa-check-circle fa-5x" ></i>
+				<p style="font-size:16px; font-weight:400">We are committed to finding partners and sponsors in line with our core values, who share our passion for sharing knowledge, creating new communities and advancing science.<br><br>
+					 <a href="" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Sponsor Us</a>
+				</p>
+				</div>
+
 			</div>
-	</div>
-	<br><br>
-	<div class="row text-center">
-	 <div class="col-xs-10 col-xs-offset-1">
-		<table style="width:100%; padding:20px;" >
-  <tr>
-    <td colspan="3" style="background:#222; color:#fff" >
-		 Stay tuned/Newsletter
-	  </td>
-	  <td></td>
-	  <td style="background:#222; color:#fff" >
-		Get your Press Kit
-		</td>
-			</tr>
-		 </table>
+
+
+
+	<div class="row">
+	 <div class="col-xs-5 ">
+		 <img src="http:placehold.it/450x200"><br><br>
+		 <a href="" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Subscribe to the Newsletter</a>
 		</div>
+		 <div class="col-xs-5 col-xs-offset-1">
+		 <img src="http:placehold.it/450x200"><br><br>
+		 <a href="" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Get Your Press Kit</a>
+		</div>
+
+	</div>
+	 </div>
 	</div>
 
 		</section>
 
+	<!-- ================== SOCIAL WALL ========================== -->
+
+<section id= "socialwall" class="container noBG-section-dark2 text-center" style="background:#000;">
+
+
+	<div class= "row">
+		<div class="col-xs-4 col-xs-offset-1 ">
+		<div class="fb-page"
+		 data-href="https://www.facebook.com/neurotechx"
+		 data-tabs="timeline,events"
+		 data-width="400"
+		 data-height="300"
+		 data-small-header="true"
+		 data-adapt-container-width="true"
+		 data-hide-cover="false"
+		 data-show-facepile="true">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/neurotechx"><a href="https://www.facebook.com/neurotechx">NeuroTechX</a></blockquote></div></div>
+		</div>
+	<div class="col-xs-4 col-xs-offset-1">
+		<a class="twitter-timeline" href="https://twitter.com/NeuroTechX" data-widget-id="657264287556202496">Tweets by @NeuroTechX</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+	</div>
+</div>
+
+</section>
+
+
+
 		<section id="aboutNTX" class="container noBG-section-dark text-left">
+
 
 			<div class="row heading">
 			<div class="col-xs-6 col-xs-offset-1">
 			<h4>About NeurotechX</h4>
-			 <p>Dolor ipsum amet etc etc etc</p>
-			</div>
-				<div class="col-xs-4" style="background:#222;">
-					<h4>Chapters</h4>
+				<div class ="row">
+			 <p>NeuroTechX brings hackers, enthusiasts and experts together to drive innovation and foster collaboration at local and international scales. Our core mission is to build a strong global neurotech community by providing key resources, learning opportunities, and by being leaders in local and worldwide technological initiatives.
 
-	<select name="chapters" style = "color:#000">
-	<option value="">Choose a City...</option>
-	<option value="AMS">Amsterdam, Netherlands</option>
-	<option value="BCN">Barcelona, Spain</option>
-	<option value="BOS">Boston, United States</option>
-	<option value="LIMA">Lima, Peru</option>
-	<option value="LDN">London, United Kingdom</option>
-	<option value="LAX">Los Angeles, United States</option>
-	<option value="MTL">Montreal, Canada</option>
-	<option value="NYC">New York City, United States</option>
-	<option value="PAR">Paris, France</option>
-	<option value="SF">San Francisco, United States</option>
-	<option value="TO">Toronto, Canada</option>
-	</select>
-
-		<a href="#" class="btn-default btn-sm page-scroll">GO</a>
-</div>
-
+We believe neurotechnology is key to better understanding and to improving who we are. Join us to take part in the conversation and help shape the future of neurotechnology!</p>
 				</div>
 			</div>
 
-	<div class="row text-left">
-	<div class="col-xs-1 col-xs-offset-2">
-		 <a href="https://facebook.com/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-facebook animated-small"></i></a>
-		</div>
-		<div class="col-xs-1">
 
-							<a href="https://twitter.com/NeuroTechX" target="_blank" class="btn btn-circle-small"><i class="fa fa-twitter animated-small"></i></a>
-		</div>
-		<div class="col-xs-1 ">
+				<div class="col-xs-4" style="background:#222;">
 
+					<h4>Chapter Meetups</h4>
+	<div class="row">
+	<form name="linkForm" method="POST" action="" id="form">
+
+	<select name="chapters" style = "color:#000"  onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+	<option value="">Choose a City...</option>
+	<optgroup label="CANADA">
+			<option value="http://www.meetup.com/NeuroTechMTL">Montreal</option>
+			<option value="http://www.meetup.com/NeuroTechto/"> Toronto</option>
+			<option value="http://www.meetup.com/NeuroTechVAN/">Vancouver</option>
+		</optgroup>
+
+	<optgroup label="UNITED STATES">
+		<option value="http://www.meetup.com/NeuroTechBOS/">Boston</option>
+		<option value="http://www.meetup.com/NeuroTechLAX">Los Angeles</option>
+		<option value="http://www.meetup.com/NeuroTechNYC">New York City</option>
+		<option value="http://www.meetup.com/NeuroTechSF">San Francisco</option>
+	</optgroup>
+
+
+	<optgroup label="NETHERLANDS">
+		<option value="http://www.meetup.com/NeuroTechAMS">Amsterdam</option>
+	</optgroup>
+
+	<optgroup label="FRANCE">
+		<option value="http://www.meetup.com/NeuroTechPAR">Paris</option>
+	</optgroup>
+
+	<optgroup label="SPAIN">
+		<option value="http://www.meetup.com/NeuroTechBCN">Barcelona</option>
+	</optgroup>
+
+	<optgroup label="UNITED KINGDOM">
+		<option value="http://www.meetup.com/NeuroTechLDN">London</option>
+	</optgroup>
+
+	<optgroup label="PERU">
+		<option value="http://www.meetup.com/NeuroTechLIMA">Lima</option>
+	</optgroup>
+
+	<optgroup label="ISRAEL">
+		<option value="http://www.meetup.com/NeuroTechTLV">Tel-Aviv</option>
+	</optgroup>
+	</select>
+			<a href="#" class="btn-default btn-sm page-scroll">GO</a>
+		</form>
+
+
+</div>
+<div class= "row"><br><br>
+	<h4>Initiatives</h4>
+					</div>
+					<div class= "row">
+
+					<form name="initForm" method="POST" action="" id="form">
+					<select name="initiatives" style = "color:#000"  onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+	<option value="">Choose a Project...</option>
+		<option value="http://news.neurotechx.com">NeurotechXNews</option>
+
+	</select><a href="#" class="btn-default btn-sm page-scroll">GO</a>
+						</form>
+
+
+					</div>
+
+					</div>
+				</div>
+
+
+	<div class="row text-center">
+	<div class="col-xs-6 col-xs-offset-2">
+
+		<table style="width:60%; padding:10px;">
+		<td>
+		<a href="https://facebook.com/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-facebook animated-small"></i></a>
+		</td>
+
+		<td>
+		<a href="https://twitter.com/NeuroTechX" target="_blank" class="btn btn-circle-small"><i class="fa fa-twitter animated-small"></i></a>
+		</td>
+
+		<td>
 		<a href="https://www.linkedin.com/company/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-linkedin animated-small"></i></a>
-		</div>
-							<div class="col-xs-1">
+		</td>
 
-							  <a href="https://neurotechx.herokuapp.com/" target="_blank" class="btn btn-circle-small"><i class="fa fa-slack animated-small"></i></a>
-		</div>
-	</div>
+		<td>
+		<a href="https://neurotechx.herokuapp.com/" target="_blank" class="btn btn-circle-small"><i class="fa fa-slack animated-small"></i></a>
+		</td>
+		<td>
+		<a href="http://eepurl.com/bEQDKX" target="_blank" class="btn btn-circle-small"><i class="fa fa-envelope animated-small"></i></a>
+		</td>
+		<td>
+		<a href="https://github.com/NeuroTechX/" target="_blank" class="btn btn-circle-small"><i class="fa fa-github animated-small"></i></a>
+		</td>
+			</table>
 
+
+			</div>
+
+
+			</div>
 </section>
 
 
