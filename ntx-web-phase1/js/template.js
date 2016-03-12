@@ -13,21 +13,21 @@
 //jQuery to hide menu on load
 //$(document).ready(function () {
   //  "use strict";
-	// hide .navbar first
-//	$(".navbar").hide();
+    // hide .navbar first
+//  $(".navbar").hide();
 
 //});
 
 // jQuery to unhide + collapse the navbar on scroll
 $(window).scroll(function () {
-	"use strict";
+    "use strict";
     if ($(".navbar").offset().top > 50) {
-		//fade-in unhide
-		//$(".navbar").fadeIn();
+        //fade-in unhide
+        //$(".navbar").fadeIn();
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
-		//fade-out hide
-		//$(".navbar").fadeOut();
+        //fade-out hide
+        //$(".navbar").fadeOut();
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
@@ -35,7 +35,7 @@ $(window).scroll(function () {
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
     "use strict";
-	$('a.page-scroll').bind('click', function (event) {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -46,6 +46,6 @@ $(function () {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function () {
-	"use strict";
+    "use strict";
     $('.navbar-toggle:visible').click();
 });
