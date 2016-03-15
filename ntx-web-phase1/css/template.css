@@ -81,8 +81,9 @@ h3{
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
+	 
+    margin: 0 0 0px;
+   
     font-family: Armata;
     font-weight: 500;
     letter-spacing: 1px;
@@ -735,7 +736,7 @@ th, td {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background-color : #222;
+    background-color : #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -749,7 +750,7 @@ th, td {
     
 }
 
-.noBG-section-dark2{
+.noBG-section-medium{
     padding-top: 50px;
     width: 100%;
     padding: 50px 0;
@@ -847,7 +848,7 @@ th, td {
 }
 
 .heading h4 {
-    
+   
 	display: inline-block;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
@@ -1580,6 +1581,21 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     color: #fff;
     background-color: #23b3c6;
 }
+
+.btn-white {
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    border: 1px solid #23b3c6;
+    outline: 0;
+    color: #fff;
+    background-color: #23b3c6;
+}
+
 
 ul.banner-social-buttons {
     margin-top: 0;
