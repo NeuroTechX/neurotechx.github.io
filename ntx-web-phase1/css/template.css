@@ -1537,6 +1537,12 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     display: table;
 }
 
+#WhereWeAre-description {
+    width: 100%;
+    margin: 0;
+    padding: 0 10% 5% 10%;
+}
+
 #map {
     display: inline-block;
     float: left;
@@ -1550,7 +1556,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 #chapter-details {
     display: inline-block;
     float: left;
-    background-color: #41A8D8;
+    background-color: #23B2C6;
     width: 25%;
     height: 500px;
     margin: 0 !important;
@@ -1615,7 +1621,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     }
 
     #map {
-        height: 400px;
+        height: 500px;
         margin-top: 250px;
     }
 }

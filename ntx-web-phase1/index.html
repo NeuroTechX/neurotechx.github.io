@@ -302,22 +302,25 @@
 		  </div>
 
 
-		 <div  class="col-xs-10 col-xs-offset-1">
+		 <div  class="col-xs-10 col-xs-offset-1" id="WhereWeAre-description">
 		 <p style="font-size:16px; font-weight:400;">NeuroTechX has chapters in over 11 cities in North America, Europe and Latin America.<br>
 			  <br>Meet other neurotech enthusiasts in your local community, learn and exchange knowledge through our meetups, build innovative and collaborative projects at our Hack Nights and have access to the latest technologies at our events. If your city isn't included on our map, contact us to help bring NeuroTechX to your community!</p>
 			  <a href="" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" style="font-family:Armata;">Get Involved</a>
 
         </div>
-        <div id="map"></div>
-        <div id="chapter-details">
-          <div class='details-container'>
-                <h2>Default card</h2>
-                    <a href='https://mtl.neurotechx.com' target='_blank' class='btn btn-circle-small'><span>Website</span></a>
-                    <a href='https://meetup.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>
-                    <a href='https://twitter.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>
-                    <img src='http://placehold.it/300x220'>
-          </div>
-        </div>
+
+        <div id="map-container">
+	        <div id="map"></div>
+	        <div id="chapter-details">
+	          <div class='details-container'>
+	                <h2>Default card</h2>
+	                    <a href='https://mtl.neurotechx.com' target='_blank' class='btn btn-circle-small'><span>Website</span></a>
+	                    <a href='https://meetup.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>
+	                    <a href='https://twitter.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>
+	                    <img src='http://placehold.it/300x220'>
+	          </div>
+	        </div>
+	      </div>
 
 		 <!-- this is where I'm not sure how to proceed. Obviously, there's the map Div + a slider for chapter info.
 		yeah. For the map, go to template.js to see how it's been made.
@@ -787,7 +790,6 @@ We believe neurotechnology is key to better understanding and to improving who w
 
 <!-- Custom Google Map -->
 <script src="js/map.js"></script>
-
 
 <!-- Custom js-->
 <script src="js/custom.js"></script>
