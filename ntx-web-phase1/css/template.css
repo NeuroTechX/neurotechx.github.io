@@ -1604,7 +1604,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 #chapter-details .details-container h2 {
     font-size: 1.6em;
     padding-top: 15px;
-   max-width:100% !important;
+    max-width: 100% !important;
 }
 
 #WhereWeAre{
@@ -1615,6 +1615,13 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding-top: 15px;
 }
 
+.WhatWeDo-card {
+    background:#333;
+    margin: 5px;
+    background:#333; padding:0px;
+    outline: 20px solid #eee;
+    border-spacing:0;
+}
 
 @media(min-width:767px) {
     .content-section {
