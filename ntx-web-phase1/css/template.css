@@ -1543,31 +1543,55 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding: 0 10% 5% 10%;
 }
 
-#map {
-    display: inline-block;
-    float: left;
-    width: 75%;
+#map-container {
+    height: 500px;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+#map-inner {
+    position: relative;
+    height: 100%;
+/*    padding: 50px;*/
+
+}
+
+#map {
+    display: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 500px;
-    max-height: 500px;
+    z-index: 0;
+}
+
+#chapter-details-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    margin: auto;
+    width: 300px;
+    height: 75%;
+    padding: 4px !important;
 }
 
 #chapter-details {
-    display: inline-block;
-    float: left;
-    background-color: #23B2C6;
-    width: 25%;
-    height: 500px;
-    margin: 0 !important;
     padding: 0 !important;
+    /*border: 4px solid #333;*/
+    background-color: #333;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.23);
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
 }
-
-
 
 #chapter-details .btn-circle-small:hover, .btn-circle-small:focus {
     outline: 0;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 100%!important;
     color: #000;
     background: #fff;
@@ -1578,33 +1602,30 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 }
 
 #chapter-details .btn-circle-small {
+
     width: 65px;
     height: 65px;
     padding-top: 12px;
-    margin: 8px;
+    margin: 35px 8px 8px 8px;
+    border: 2px solid white;
 }
 
 #chapter-details .fa-twitter {
     font-size: 35px;
 }
 
-#chapter-details .details-container {
-    width: 85%;
-    margin: auto;
-    height: 430px;
-    background-color: grey;
-    margin-top: 35px;
-}
-
-#chapter-details .details-container img {
+#chapter-details img {
     margin-top: 36px;
     max-width:100% !important;
+       border: 4px solid #333;
 }
 
-#chapter-details .details-container h2 {
-    font-size: 1.6em;
+#chapter-details h2 {
+    font-size: 25px;
     padding-top: 15px;
+    color: #23b2c6;
     max-width: 100% !important;
+    margin: auto;
 }
 
 #WhereWeAre{
@@ -1618,9 +1639,14 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 .WhatWeDo-card {
     background:#333;
     margin: 5px;
-    background:#333; padding:0px;
+    padding: 0px;
     outline: 20px solid #eee;
     border-spacing:0;
+}
+
+.AboutUs-card {
+    background:#222; padding:0px;padding:none; outline: 20px solid #eee; ;border-spacing:0;
+
 }
 
 @media(min-width:767px) {

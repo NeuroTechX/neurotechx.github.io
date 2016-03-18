@@ -168,20 +168,21 @@ function initialize() {
     // neuroTechMTL
     google.maps.event.addListener(neuroTechMTL, 'click', function() {
 
-        $('.details-container').hide( "drop", {direction: "left", easing: "easeInQuart" }, 500, function() {
-                $('#chapter-details').empty().append(
-                "<div class='details-container'>"+
+        $('#chapter-details').hide( "drop", {direction: "left", easing: "easeInQuart" }, 500, function() {
+                $('#chapter-details-container').empty().append(
+                "<div id='chapter-details'>"+
                     "<h2>NeuroTechMTL</h2>"+
-                    "<a href='http://mtl.neurotechx.com/' target='_blank' class='btn btn-circle-small'><span>Website</span></a>"+
-                    "<a href='http://www.meetup.com/NeuroTechmtl/' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>"+
+                    "<a href='https://mtl.neurotechx.com' target='_blank' class='btn btn-circle-small'><span>Website</span></a>"+
+                    "<a href='https://meetup.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>"+
                     "<a href='https://twitter.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>"+
-                    "<img src='http://placehold.it/300x220'>"+
+                    "<img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'>"+
                 "</div>"
                 );
 
-          $('.details-container').hide();
-          $('.details-container').show("drop", {direction: "right"}, 500 );
+          $('#chapter-details').hide();
+          $('#chapter-details').show("drop", {direction: "right"}, 500 );
         });
+
 
     // resize marker icon when clicked
     // var newIcon = {
@@ -195,26 +196,26 @@ function initialize() {
     // neuroTechTO
     google.maps.event.addListener(neuroTechTO, 'click', function() {
 
-        $('.details-container').hide( "drop", {direction: "left", easing: "easeInQuart" }, 500, function() {
-                $('#chapter-details').empty().append(
-                "<div class='details-container'>"+
+        $('#chapter-details').hide( "drop", {direction: "left", easing: "easeInQuart" }, 700, function() {
+                $('#chapter-details-container').empty().append(
+                "<div id='chapter-details'>"+
                     "<h2>NeuroTechTO</h2>"+
-                    "<a href='http://to.neurotechx.com/' target='_blank' class='btn btn-circle-small'><span>Website</span></a>"+
-                    "<a href='http://www.meetup.com/NeuroTechto/' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>"+
-                    "<a href='https://twitter.com/neurotechto' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>"+
-                    "<img src='http://placehold.it/300x220'>"+
+                    "<a href='https://mtl.neurotechx.com' target='_blank' class='btn btn-circle-small'><span>Website</span></a>"+
+                    "<a href='https://meetup.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Meetup</span></a>"+
+                    "<a href='https://twitter.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>"+
+                    "<img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'>"+
                 "</div>"
-            );
+                );
 
-          $('.details-container').hide();
-          $('.details-container').show("drop", {direction: "right"}, 500 );
+          $('#chapter-details').hide();
+          $('#chapter-details').show("drop", {direction: "right"}, 500 );
         });
     });
 
     // neuroTechBOS
     google.maps.event.addListener(neuroTechBOS, 'click', function() {
 
-        $('.details-container').hide( "drop", {direction: "left", easing: "easeInQuart" }, 500, function() {
+        $('.details-container').hide( "drop", {direction: "left", easing: "easeInQuart" }, 700, function() {
                 $('#chapter-details').empty().append(
                 "<div class='details-container'>"+
                     "<h2>NeuroTechBOS</h2>"+
