@@ -14,7 +14,7 @@ google.maps.event.addDomListener(window, "resize", function() {
 });
 
 function setMapZoom(){
-    if($(window).width() > 945){
+    if($(window).width() > 1260){
         mapZoom = 3;
     }else{
         mapZoom = 2;
@@ -31,7 +31,7 @@ function initialize() {
         zoom: mapZoom,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(27, -44),  // Centered on Atlantic Ocean
+        center: new google.maps.LatLng(27, -15),  // Centered on Atlantic Ocean
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
