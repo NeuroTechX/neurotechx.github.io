@@ -165,6 +165,10 @@ function initialize() {
 
     /////////////////////////// Chapter Details Cards /////////////////////////////////
 
+
+
+
+
     var lastSelected;
 
     var resizeMarkers = function(chapterName){
@@ -189,6 +193,7 @@ function initialize() {
     }
 
     // Content and Transitions of Details Cards
+
 
     // NeuroTechMTL
     var mtlCard = function() {
@@ -229,11 +234,27 @@ function initialize() {
     };
 
 
+    $('#chapter-details').hide();
 
+    google.maps.event.addListener(neuroTechMTL, 'click', function(){
+        clearInterval(chapterInterval);
+        mtlCard();
+    });
 
-    google.maps.event.addListener(neuroTechMTL, 'click', mtlCard);
+    google.maps.event.addListener(neuroTechTO, 'click', function(){
+        clearInterval(chapterInterval);
+        toCard();
+    });
 
-    google.maps.event.addListener(neuroTechTO, 'click', toCard);
+var chapterDetailsCards = [mtlCard, toCard];
+var chapterInterval = window.setInterval(displayNextDetailsCard, 5000);
+
+var i = 0;
+function displayNextDetailsCard() {
+    if (i >= chapterDetailsCards.length) {i = 0};
+    chapterDetailsCards[i]();
+    i++;
+}
 
 
     // neuroTechBOS
