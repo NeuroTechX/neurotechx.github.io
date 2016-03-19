@@ -59,11 +59,11 @@ function initialize() {
     // Custom Map Marker Icon
     var image = new google.maps.MarkerImage(
 
-        'img/blue-pin.png', //'img/pin.png',
+        'img/charcoal-pin.png', //'img/pin.png',
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
-        new google.maps.Size(28,37)
+        new google.maps.Size(37,37)
     );
 
     var neuroTechMTL = new google.maps.Marker({
@@ -174,16 +174,16 @@ function initialize() {
 
         if(lastSelected){
             var newIcon = {
-                url: 'img/blue-pin.png',
-                scaledSize: new google.maps.Size(28,37)
+                url: 'img/charcoal-pin.png',
+                scaledSize: new google.maps.Size(37,37)
             };
 
             lastSelected.setIcon(newIcon);
         };
 
         var newIcon = {
-            url: 'img/blue-pin.png',
-            scaledSize: new google.maps.Size(38,47)
+            url: 'img/teal-pin.png',
+            scaledSize: new google.maps.Size(47,47)
         };
 
         chapterName.setIcon(newIcon);
@@ -217,7 +217,6 @@ function initialize() {
     }
 
 
-
     var mtlCard = cardAndTransitionFactory('mtl');
     var toCard = cardAndTransitionFactory('to');
     var bosCard = cardAndTransitionFactory('bos');
@@ -232,9 +231,6 @@ function initialize() {
     var limaCard = cardAndTransitionFactory('lima');
 
 
-
-
-
     var chapterAcronyms = ['MTL', 'TO', 'BOS', 'NYC', 'SF', 'LAX', 'AMS', 'PAR', 'LDN', 'BCN', 'TLV', 'LIMA']
 
     $.each(chapterAcronyms, function( i, acronym ) {
@@ -246,7 +242,6 @@ function initialize() {
         });
     });
 
-
     var chapterInterval = window.setInterval(displayNextDetailsCard, 5000);
     var chapterDetailsCards = [mtlCard, toCard, bosCard, nycCard, sfCard, laxCard, amsCard, parCard, ldnCard, bcnCard, tlvCard, limaCard];
 
@@ -256,5 +251,4 @@ function initialize() {
         chapterDetailsCards[i]();
         i++;
     }
-
 }
