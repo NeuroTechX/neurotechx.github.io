@@ -165,12 +165,17 @@ function initialize() {
 
     /////////////////////////// Chapter Details Cards /////////////////////////////////
 
+    var lastSelected;
+
     var resizeMarkers = function(chapterName){
+        var chapterName = chapterName;
+
         if(lastSelected){
             var newIcon = {
                 url: 'img/blue-pin.png',
                 scaledSize: new google.maps.Size(28,37)
             };
+
             lastSelected.setIcon(newIcon);
         };
 
@@ -183,7 +188,9 @@ function initialize() {
         lastSelected = chapterName;
     }
 
+    // Content and Transitions of Details Cards
 
+    // NeuroTechMTL
     var mtlCard = function() {
         $('#chapter-details').hide( "drop", {direction: "left", easing: "easeInQuart" }, 750, function() {
             $('#chapter-details-container').empty().append(
@@ -199,19 +206,13 @@ function initialize() {
             $('#chapter-details').hide().show("drop", {direction: "right"}, 750);
         });
 
-        // resize markers
-        resizeMarkers(this.title);
-
+        resizeMarkers(neuroTechMTL);
     };
 
-    var lastSelected = neuroTechMTL;
-    google.maps.event.addListener(neuroTechMTL, 'click', mtlCard);
-
-    // neuroTechTO
-    google.maps.event.addListener(neuroTechTO, 'click', function() {
-
+    // NeuroTechTO
+    var toCard = function() {
         $('#chapter-details').hide( "drop", {direction: "left", easing: "easeInQuart" }, 750, function() {
-                $('#chapter-details-container').empty().append(
+            $('#chapter-details-container').empty().append(
                 "<div id='chapter-details'>"+
                     "<h2>NeuroTechTO</h2>"+
                     "<a href='https://mtl.neurotechx.com' target='_blank' class='btn btn-circle-small'><span>Website</span></a>"+
@@ -219,26 +220,21 @@ function initialize() {
                     "<a href='https://twitter.com/neurotechmtl' target='_blank' class='btn btn-circle-small'><span>Twitter</span></a>"+
                     "<img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'>"+
                 "</div>"
-                );
+            );
 
-          $('#chapter-details').hide();
-          $('#chapter-details').show("drop", {direction: "right"}, 750 );
+            $('#chapter-details').hide().show("drop", {direction: "right"}, 750);
         });
 
-    var newIcon = {
-        url: 'img/blue-pin.png',
-        scaledSize: new google.maps.Size(28,37)
+        resizeMarkers(neuroTechTO);
     };
-    lastSelected.setIcon(newIcon);
 
-    var newIcon = {
-        url: 'img/blue-pin.png',
-        scaledSize: new google.maps.Size(38,47)
-    };
-    neuroTechTO.setIcon(newIcon);
-    lastSelected = neuroTechTO;
 
-    });
+
+
+    google.maps.event.addListener(neuroTechMTL, 'click', mtlCard);
+
+    google.maps.event.addListener(neuroTechTO, 'click', toCard);
+
 
     // neuroTechBOS
     google.maps.event.addListener(neuroTechBOS, 'click', function() {
