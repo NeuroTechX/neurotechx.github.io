@@ -1588,7 +1588,6 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     text-align: center;
 }
 
-
 #chapter-details .btn-circle-small:hover, .btn-circle-small:focus {
     outline: 0;
     border: 2px solid #fff;
@@ -1608,7 +1607,10 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 
 #chapter-details #twitter-btn {
     padding-top: 15px;
+}
 
+#chapter-details .fa-twitter {
+    font-size: 35px;
 }
 
 .fa-home {
@@ -1625,10 +1627,6 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding-top: 12px;
     margin: 35px 8px 8px 8px;
     border: 2px solid white;
-}
-
-#chapter-details .fa-twitter {
-    font-size: 35px;
 }
 
 #chapter-details img {

@@ -213,6 +213,17 @@ function initialize() {
                     );
 
                     $('#chapter-details').hide().show("drop", {direction: "right"}, 750);
+
+
+                    var meetupButton = document.getElementById("meetup-btn");
+
+                    meetupButton.addEventListener("mouseover", function( event ){
+                        $('#chapter-details #meetupNew').css('transition', 'all .3s ease-in-out').css("fill", '#000');
+                    }, true);
+
+                    meetupButton.addEventListener("mouseout", function( event ){
+                        $('#chapter-details #meetupNew').css("fill", 'fff');
+                    }, true);
                 });
 
                 var mapMarker = eval('neuroTech' + chapterAcronym.toUpperCase());
@@ -262,8 +273,6 @@ function initialize() {
 
 
 
-        $('.btn').hover(function() {
-            console.log('aya');
-        });
+
 
 }
