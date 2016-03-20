@@ -1582,7 +1582,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     border-radius: 2px;
     height: 100%;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.23);
+    box-shadow: 5px -2px 6px rgba(0,0,0,0.16), 5px -2px 6px rgba(0,0,0,0.23);
     overflow: hidden;
     padding-top: 10px;
     text-align: center;
