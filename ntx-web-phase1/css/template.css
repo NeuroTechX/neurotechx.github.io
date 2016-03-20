@@ -217,6 +217,11 @@ a:focus {
     padding-right:0;
 }
 
+.navbar-custom #join-us-link {
+    border: 1px solid #fff;
+    padding-bottom: 13px;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 10px 0;
