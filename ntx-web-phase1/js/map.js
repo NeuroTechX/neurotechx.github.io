@@ -63,7 +63,7 @@ function initialize() {
         null, /* size is determined at runtime */
         null, /* origin is 0,0 */
         null, /* anchor is bottom center of the scaled image */
-        new google.maps.Size(37,37)
+        new google.maps.Size(34,37)
     );
 
     var neuroTechMTL = new google.maps.Marker({
@@ -175,7 +175,7 @@ function initialize() {
         if(lastSelected){
             var newIcon = {
                 url: 'img/charcoal-pin.png',
-                scaledSize: new google.maps.Size(37,37)
+                scaledSize: new google.maps.Size(34,37)
             };
 
             lastSelected.setIcon(newIcon);
@@ -183,7 +183,7 @@ function initialize() {
 
         var newIcon = {
             url: 'img/teal-pin.png',
-            scaledSize: new google.maps.Size(47,47)
+            scaledSize: new google.maps.Size(41,44)
         };
 
         chapterName.setIcon(newIcon);
