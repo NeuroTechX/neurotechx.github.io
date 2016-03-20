@@ -208,7 +208,7 @@ function initialize() {
 
                             "</span></a>"+
                             "<a href='https://twitter.com/neurotech"+chapterAcronym+"' target='_blank' id='twitter-btn' class='btn btn-circle-small'><span><i class='fa fa-twitter animated-small'></i></span></a>"+
-                            "<div class='img-container'><img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'></div>"+
+                            "<div class='img-container'><img src='img/chapters/"+chapterAcronym+".jpg'></div>"+
                         "</div>"
                     );
 
