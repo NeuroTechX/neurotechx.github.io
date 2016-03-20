@@ -213,6 +213,10 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom .nav-icons {
+    padding-right:0;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 10px 0;
