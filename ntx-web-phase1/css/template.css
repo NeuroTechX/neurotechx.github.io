@@ -222,6 +222,11 @@ a:focus {
     padding-bottom: 13px;
 }
 
+#intro-arrow {
+    margin-top: 10%;
+}
+
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 10px 0;
@@ -513,7 +518,7 @@ th, td {
 
     display: table;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -541,7 +546,7 @@ th, td {
 
 @media(min-width:768px) {
     .intro {
-        height: 100%;
+        height: 100vh;
         padding: 0;
     }
 
