@@ -199,7 +199,7 @@ function initialize() {
                     $('#chapter-details-container').empty().append(
                         "<div id='chapter-details'>"+
                             "<h2>NeuroTech"+chapterAcronym.toUpperCase()+"</h2>"+
-                            "<a href='https://"+chapterAcronym+".neurotechx.com' target='_blank' id='home-btn' class='btn btn-circle-small'><span><i class='fa fa-home'></i></span></a>"+
+                            "<a href='http://"+chapterAcronym+".neurotechx.com' target='_blank' id='home-btn' class='btn btn-circle-small'><span><i class='fa fa-home'></i></span></a>"+
 
                             "<a href='https://meetup.com/neurotech"+chapterAcronym+"' target='_blank' id='meetup-btn' class='btn btn-circle-small'>"+
 
