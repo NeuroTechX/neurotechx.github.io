@@ -942,7 +942,7 @@ th, td {
 
 
 .panel-default .in{
-background-color: #000;
+  background-color: #000;
   padding-left:10px;
   margin-left: 20px;
   -webkit-transition: all 0.5s;
@@ -1053,7 +1053,13 @@ div[data-dimension] {
   font-weight: bold;
 }
 
+.AboutUs-card p {
+    padding-right: 40px !important;
+}
 
+.inside {
+    height: 325px;
+}
 
 /******************************
 *
