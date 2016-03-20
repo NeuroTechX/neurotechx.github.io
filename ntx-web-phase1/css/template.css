@@ -1577,7 +1577,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 }
 
 #chapter-details {
-    padding: 0 !important;
+    padding: 0 0 0 0 !important;
     background-color: #333;
     border-radius: 2px;
     height: 100%;
@@ -1632,7 +1632,12 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 #chapter-details img {
     margin-top: 36px;
     max-width:100% !important;
-       border: 4px solid #333;
+    border: 4px solid #333;
+}
+
+#chapter-details .img-container {
+    height: 214px;
+    overflow: hidden
 }
 
 #chapter-details h2 {

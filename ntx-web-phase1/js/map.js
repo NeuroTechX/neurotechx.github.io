@@ -208,13 +208,13 @@ function initialize() {
 
                             "</span></a>"+
                             "<a href='https://twitter.com/neurotech"+chapterAcronym+"' target='_blank' id='twitter-btn' class='btn btn-circle-small'><span><i class='fa fa-twitter animated-small'></i></span></a>"+
-                            "<img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'>"+
+                            "<div class='img-container'><img class='img-responsive' src='img/whatwedo/ntx_edu.jpg'></div>"+
                         "</div>"
                     );
 
                     $('#chapter-details').hide().show("drop", {direction: "right"}, 750);
 
-
+                    // Add styling to the Meetup SVG when hovering over the button
                     var meetupButton = document.getElementById("meetup-btn");
 
                     meetupButton.addEventListener("mouseover", function( event ){
