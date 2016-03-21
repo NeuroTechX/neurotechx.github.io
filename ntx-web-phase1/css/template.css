@@ -1676,9 +1676,29 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding-bottom: 0;
 }
 
-
 .JoinUs-description {
     padding-top: 15px;
+}
+
+.JoinUs-banner {
+    display: inline-block;
+    height: 100px;
+    width: 30vw;
+    min-width: 280px;
+    max-width: 400px;
+    background-color: #23b3c6;
+    border: 2px solid #fff;
+    overflow: hidden;
+    margin: 3vw;
+}
+
+#mediakit {
+    padding-top: 25px;
+}
+
+.JoinUs-banner h3 {
+    color: #fff;
+    line-height: 48px;
 }
 
 .WhatWeDo-card {
