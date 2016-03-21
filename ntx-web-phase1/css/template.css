@@ -1721,6 +1721,10 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     margin-left: -10px
 }
 
+.WhatWeDo-card a > h4:hover {
+    color: #fff !important;
+}
+
 .AboutUs-card {
     background:#000;
     padding:0px;
