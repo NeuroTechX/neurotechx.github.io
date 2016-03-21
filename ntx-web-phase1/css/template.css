@@ -222,8 +222,12 @@ a:focus {
     padding-bottom: 13px;
 }
 
+.intro .subscribeButton {
+    margin-top: 5vh;
+}
+
 #intro-arrow {
-    margin-top: 10%;
+    margin-top: 10vh;
 }
 
 
@@ -1598,7 +1602,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 
 #chapter-details {
     padding: 0 0 0 0 !important;
-    background-color: #333;
+    background-color: #000;
     border-radius: 2px;
     height: 100%;
     width: 100%;
@@ -1652,7 +1656,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 #chapter-details img {
     margin-top: 36px;
     max-width:100% !important;
-    border: 4px solid #333;
+    border: 4px solid #000;
 }
 
 #chapter-details .img-container {
