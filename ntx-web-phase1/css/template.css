@@ -1672,12 +1672,13 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     padding-bottom: 0;
 }
 
+
 .JoinUs-description {
     padding-top: 15px;
 }
 
 .WhatWeDo-card {
-    background:#333;
+    background: #000;
     margin: 5px;
     padding: 0px;
     outline: 20px solid #eee;
@@ -1693,9 +1694,30 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 }
 
 .AboutUs-card {
-    background:#222; padding:0px;padding:none; outline: 20px solid #eee; ;border-spacing:0;
-
+    background:#000;
+    padding:0px;
+    outline: 20px solid #eee;
+    border-spacing:0;
 }
+
+.widget-container {
+    display: inline-block;
+    margin: 30px 6vw;
+}
+
+.widget {
+    border: 2px solid black;
+    background-color: #fff;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.widget-container h2 {
+    font-size: 1.6em;
+}
+
 
 @media(min-width:767px) {
     .content-section {
