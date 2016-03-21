@@ -1726,6 +1726,9 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     font-size: 1.6em;
 }
 
+.social-btn {
+    padding-left: 0;
+}
 
 @media(min-width:767px) {
     .content-section {
@@ -1802,6 +1805,8 @@ footer {
     background-color: #000;
     padding: 10px 0;
 }
+
+
 
 footer p {
     margin: 0;
