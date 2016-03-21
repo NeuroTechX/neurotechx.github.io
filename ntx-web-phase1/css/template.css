@@ -1057,8 +1057,8 @@ div[data-dimension] {
     padding-right: 40px !important;
 }
 
-.inside {
-    height: 325px;
+.AboutUs-card .inside {
+    height: 300px;
 }
 
 /******************************
@@ -1696,11 +1696,6 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 
     .download-section {
         padding: 100px 0;
-    }
-
-    #map {
-        height: 500px;
-        margin-top: 250px;
     }
 }
 
