@@ -1681,15 +1681,14 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 }
 
 .JoinUs-banner {
-    display: inline-block;
-    height: 100px;
-    width: 30vw;
-    min-width: 280px;
-    max-width: 400px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    min-height: 100px;
+/*    min-width: 300px;
+    max-width: 400px;*/
     background-color: #23b3c6;
-    border: 2px solid #fff;
+    border: 1px solid #fff !important;
     overflow: hidden;
-    margin: 3vw;
 }
 
 #mediakit {
@@ -1697,8 +1696,10 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 }
 
 .JoinUs-banner h3 {
+    margin-bottom: 0;
     color: #fff;
     line-height: 48px;
+    font-weight: normal;
 }
 
 .WhatWeDo-card {
@@ -1706,7 +1707,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     margin: 5px;
     padding: 0px;
     outline: 20px solid #eee;
-    border-spacing:0;
+    border-spacing: 0;
 }
 
 .WhatWeDo-card .inside {
@@ -1732,10 +1733,10 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     border-spacing:0;
 }
 
-.widget-container {
+/*.widget-container {
     display: inline-block;
     margin: 30px 6vw;
-}
+}*/
 
 .widget {
     border: 2px solid black;
