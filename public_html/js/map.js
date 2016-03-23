@@ -84,7 +84,7 @@ var createCardAndTransition = function(city) {
     $('#chapter-details').hide( "drop", {direction: "left", easing: "easeInQuart" }, 750, function() {
         $('#chapter-details-container').empty().append(
             "<div id='chapter-details'>"+
-                "<h2>NeuroTech<span>"+city.toUpperCase()+"</span</h2>"+
+                "<h2>NeuroTech<span class='city-abbreviation'>"+city.toUpperCase()+"</span></h2>"+
                 "<a href='http://"+city+".neurotechx.com' target='_blank' id='home-btn' class='btn btn-circle-small'><span><i class='fa fa-home'></i></span></a>"+
                 "<a href='https://meetup.com/neurotech"+city+"' target='_blank' id='meetup-btn' class='btn btn-circle-small'>"+
                 // Meetup icon
