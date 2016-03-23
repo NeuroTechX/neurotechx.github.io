@@ -1,118 +1,74 @@
-
 <!--
- *
  * NEUROTECHX TEMPLATE V2
  * based on Grayscale Bootstrap Theme and Singlepro Theme
- *
- * The Goal is to make a sleek, easily customizable template
- * that can be used to realize Rouffi's Wireframe.
- *
- *
- *
- *
- * Don't forget to customize your background images in the template.css file!
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NeuroTechX - The International Neurotech Network</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 
+  <!-- CSS
+  ================================================== -->
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
- <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Template CSS -->
+  <link href="css/template.css" rel="stylesheet">
 
-  <!--
-   * Page title; change "Template" for your chapter name
-  -->
+  <!--Equal Column sizes-->
+  <link href="css/columns.css" rel="stylesheet">
 
-    <title>NeuroTechX - The International Neurotech Network</title>
+  <!-- SinglePro CSS -->
+  <link href="css/singlepro.css">
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font awesome css file-->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+  <!-- NeurotechX icon font file-->
+  <link href="neurotechx.css" rel="stylesheet">
 
-    <!-- CSS
-    ================================================== -->
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Superslide css file-->
+  <link rel="stylesheet" href="css/superslides.css">
 
-    <!-- Template CSS -->
-    <link href="css/template.css" rel="stylesheet">
+  <!-- Slick slider css file -->
+  <link href="css/slick.css" rel="stylesheet">
 
-	<!--Equal Column sizes-->
-	<link href="css/columns.css" rel="stylesheet">
+  <!-- smooth animate css file -->
+  <link rel="stylesheet" href="css/animate.css">
 
-    <!-- SinglePro CSS
-    <link href="css/singlepro.css">-->
+  <!-- Elastic grid css file -->
+  <link rel="stylesheet" href="css/elastic_grid.css">
 
-    <!-- Font awesome css file-->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Circle counter cdn css file -->
+  <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
 
-	 <!-- NeurotechX icon font file-->
-     <link href="neurotechx.css" rel="stylesheet">
+  <!-- Default Theme css file -->
+  <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
 
-    <!-- Superslide css file-->
-    <link rel="stylesheet" href="css/superslides.css">
-    <!-- Slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet">
-    <!-- smooth animate css file -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Elastic grid css file -->
-    <link rel="stylesheet" href="css/elastic_grid.css">
-    <!-- Circle counter cdn css file -->
-    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
-    <!-- Default Theme css file -->
-    <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
-
-
-    <!-- Custom Fonts
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-
-
+  <!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
-
-
-	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
-
 	<link href='https://fonts.googleapis.com/css?family=Aldrich:400' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
-
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-<!--Facebook Feed Script -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=940162346069615";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 
         <!-- Navigation -->
@@ -555,6 +511,9 @@
 <section id= "socialwall" class="container noBG-section text-center" >
 
 
+<!--Facebook Feed Script -->
+
+
   <div class="row">
 		<div class="col-xs-5 col-xs-offset-1  widget-container">
 			<h2>NeuroTechX on Facebook</h2>
@@ -722,7 +681,6 @@
 <!--google analytics -->
 
 <!-- add/change your google analytics if needed.-->
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -732,6 +690,15 @@
   ga('create', 'UA-65979944-1', 'auto');
   ga('send', 'pageview');
 </script>
+
+<!-- Facebook Feed -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=940162346069615";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- For smooth animatin  -->
 <script src="js/wow.min.js"></script>
