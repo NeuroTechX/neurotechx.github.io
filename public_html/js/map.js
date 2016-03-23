@@ -1,5 +1,3 @@
-// Google Maps Scripts
-// When the window has finished loading create our google map below
 var map;
 var mapZoom;
 
@@ -14,11 +12,7 @@ google.maps.event.addDomListener(window, "resize", function() {
 });
 
 function setMapZoom(){
-    if($(window).width() > 1260){
-        mapZoom = 3;
-    }else{
-        mapZoom = 2;
-    };
+    mapZoom = ($(window).width() > 1260 ? 3 : 2);
 };
 
 function initialize() {
