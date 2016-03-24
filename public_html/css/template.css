@@ -1672,6 +1672,10 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     margin: auto;
 }
 
+#chapter-details .city-abbreviation{
+    color: #fff;
+}
+
 #WhereWeAre{
     padding-bottom: 0;
 }
