@@ -5,32 +5,32 @@
 ******************************/
 
 .intro {
-    display: table;
-    width: 100%;
-    height: 100vh;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.6)),
-                    url(../img/backgrounds/01.png) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.6)),
+                  url(../img/backgrounds/01.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #intro-logo {
@@ -40,31 +40,29 @@
 }
 
 .intro .subscribeButton {
-    margin-top: 5vh;
-    font-family: Orbitron;
+  margin-top: 5vh;
+  font-family: Orbitron;
 }
 
 #intro-arrow {
-    margin-top: 10vh;
+  margin-top: 10vh;
 }
-
-
 
 
 
 @media(min-width:768px) {
-    .intro {
-        height: 100vh;
-        padding: 0;
-    }
+  .intro {
+    height: 100vh;
+    padding: 0;
+  }
 
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
 
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
 }
 
 
@@ -74,6 +72,10 @@
 *   About Us Section
 *
 ******************************/
+
+#AboutUs {
+  padding-top: 100px;
+}
 
 .about {
   display: inline;
@@ -86,32 +88,30 @@
 }
 
 .about_area{
-    float: left;
-    display: inline;
-    width: 100%;
-    min-height: 200px;
-
+  float: left;
+  display: inline;
+  width: 100%;
+  min-height: 200px;
 }
 
 .about_content{
-    float: left;
-    display: inline;
-    width: 100%;
-    padding: 50px 0px;
+  float: left;
+  display: inline;
+  width: 100%;
+  padding: 50px 0px;
 }
 
-
 .about_featured{
-    float: left;
-    display: inline;
-    width: 100%;
+  float: left;
+  display: inline;
+  width: 100%;
 }
 
 .about_slider{
-    float: left;
-    display: inline;
-    width: 100%;
-    height: 350px;
+  float: left;
+  display: inline;
+  width: 100%;
+  height: 350px;
 }
 
 .about_slider .slick-dots li button:before {
@@ -125,13 +125,23 @@
 }
 
 .AboutUs-card p {
-    padding-right: 40px !important;
+  padding-right: 40px !important;
+}
+
+.AboutUs-card .img-reponsive {
+  margin-top: 0px;
 }
 
 .AboutUs-card .inside {
-    height: 300px;
+  height: 300px;
 }
 
+.AboutUs-card .inside p {
+  color:#fff;
+  font-size:16px;
+  font-weight:400;
+  padding:20px
+}
 
 
 /******************************
@@ -141,121 +151,121 @@
 ******************************/
 
 #WhereWeAre-description {
-    width: 100%;
-    margin: 0;
-    padding: 0 10% 5% 10%;
+  width: 100%;
+  margin: 0;
+  padding: 0 10% 5% 10%;
 }
 
 
 #map-container {
-    height: 500px;
-    margin: 0 !important;
-    padding: 0 !important;
+  height: 500px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #map-inner {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 #map {
-    display: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    z-index: 0;
+  display: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 0;
 }
 
 #chapter-details-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 3%;
-    margin: auto;
-    width: 300px;
-    height: 75%;
-    padding: 4px !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 3%;
+  margin: auto;
+  width: 300px;
+  height: 75%;
+  padding: 4px !important;
 }
 
 #chapter-details {
-    padding: 0 0 0 0 !important;
-    background-color: #000;
-    border-radius: 2px;
-    height: 100%;
-    width: 100%;
-    box-shadow: 5px -2px 6px rgba(0,0,0,0.16), 5px -2px 6px rgba(0,0,0,0.23);
-    overflow: hidden;
-    padding-top: 10px;
-    text-align: center;
+  padding: 0 0 0 0 !important;
+  background-color: #000;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px -2px 6px rgba(0,0,0,0.16), 5px -2px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;
 }
 
 #chapter-details .btn-circle-small:hover, .btn-circle-small:focus {
-    outline: 0;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    color: #000;
-    background: #fff;
+  outline: 0;
+  border: 2px solid #fff;
+  border-radius: 100%!important;
+  color: #000;
+  background: #fff;
 }
 
 #chapter-details .btn-circle-small span {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 #chapter-details #meetup-btn {
-    padding-left: 5px;
-    padding-top: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 
 #chapter-details #twitter-btn {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 #chapter-details .fa-twitter {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .fa-home {
-    zoom: 4;
+  zoom: 4;
 }
 
 #chapter-details #home-btn {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 #chapter-details .btn-circle-small {
-    width: 65px;
-    height: 65px;
-    padding-top: 12px;
-    margin: 35px 8px 8px 8px;
-    border: 2px solid white;
+  width: 65px;
+  height: 65px;
+  padding-top: 12px;
+  margin: 35px 8px 8px 8px;
+  border: 2px solid white;
 }
 
 #chapter-details img {
-    margin-top: 36px;
-    max-width:100% !important;
-    border: 4px solid #000;
+  margin-top: 36px;
+  max-width:100% !important;
+  border: 4px solid #000;
 }
 
 #chapter-details .img-container {
-    height: 213px;
-    overflow: hidden
+  height: 213px;
+  overflow: hidden
 }
 
 #chapter-details h2 {
-    font-size: 25px;
-    padding-top: 15px;
-    color: #23b2c6;
-    max-width: 100% !important;
-    margin: auto;
+  font-size: 25px;
+  padding-top: 15px;
+  color: #23b2c6;
+  max-width: 100% !important;
+  margin: auto;
 }
 
 #chapter-details .city-abbreviation {
-    color: #fff;
+  color: #fff;
 }
 
 #WhereWeAre {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .counter_section {
@@ -305,27 +315,27 @@
 ******************************/
 
 .WhatWeDo-card {
-    background: #000;
-    margin: 5px;
-    padding: 0px;
-    outline: 20px solid #eee;
-    border-spacing: 0;
+  background: #000;
+  margin: 5px;
+  padding: 0px;
+  outline: 20px solid #eee;
+  border-spacing: 0;
 }
 
 .WhatWeDo-card .inside {
-    padding-right: 40px !important;
+  padding-right: 40px !important;
 }
 
 .WhatWeDo-card .inside p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .WhatWeDo-card #ntnews {
-    margin-left: -10px
+  margin-left: -10px
 }
 
 .WhatWeDo-card a > h4:hover {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 
@@ -338,51 +348,51 @@
 
 
 .JoinUs-description {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .JoinUs-banner {
-    margin-top: 75px;
-    margin-bottom: 50px;
-    min-height: 100px;
-    background-color: #23b3c6;
-    border: 1px solid #fff !important;
-    overflow: hidden;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  min-height: 100px;
+  background-color: #23b3c6;
+  border: 1px solid #fff !important;
+  overflow: hidden;
 }
 
 .JoinUs-banner h3 {
-    margin-bottom: 0;
-    color: #fff;
-    line-height: 35px;
-    font-weight: normal;
-    padding: 20px;
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 35px;
+  font-weight: normal;
+  padding: 20px;
 }
 
 .AboutUs-card {
-    background:#000;
-    padding:0px;
-    outline: 20px solid #eee;
-    border-spacing:0;
+  background:#000;
+  padding:0px;
+  outline: 20px solid #eee;
+  border-spacing:0;
 }
 
 .widget {
-    border: 2px solid black;
-    background-color: #fff;
-    height: 500px;
-    overflow: hidden;
+  border: 2px solid black;
+  background-color: #fff;
+  height: 500px;
+  overflow: hidden;
 }
 
 .widget-container {
-    padding: 50px;
+  padding: 50px;
 }
 
 
 .widget-container h2 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .social-btn {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 /* Icons */
