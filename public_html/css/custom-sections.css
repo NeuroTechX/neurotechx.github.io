@@ -284,6 +284,10 @@
   padding-bottom: 0;
 }
 
+#stats {
+  background:#23b2c6;
+}
+
 .counter_section {
   background-color:#000;
   display: inline;
