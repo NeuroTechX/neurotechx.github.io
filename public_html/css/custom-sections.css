@@ -124,6 +124,13 @@
   opacity: 0.75;
 }
 
+.AboutUs-card {
+  background:#000;
+  padding:0px;
+  outline: 20px solid #eee;
+  border-spacing:0;
+}
+
 .AboutUs-card p {
   padding-right: 40px !important;
 }
@@ -380,12 +387,25 @@
 *
 ******************************/
 
-
-.JoinUs-description {
-  padding-top: 15px;
+#JoinUs{
+  padding-top: 100px;
 }
 
-.JoinUs-banner {
+.cta-content {
+  padding:20px;
+}
+
+.cta-content .description {
+  padding-top: 35px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cta-content a {
+  font-family: Armata;
+}
+
+.cta-banner {
   margin-top: 75px;
   margin-bottom: 50px;
   min-height: 100px;
@@ -394,19 +414,12 @@
   overflow: hidden;
 }
 
-.JoinUs-banner h3 {
+.cta-banner  h3 {
   margin-bottom: 0;
   color: #fff;
   line-height: 35px;
   font-weight: normal;
   padding: 20px;
-}
-
-.AboutUs-card {
-  background:#000;
-  padding:0px;
-  outline: 20px solid #eee;
-  border-spacing:0;
 }
 
 .widget {
@@ -419,7 +432,6 @@
 .widget-container {
   padding: 50px;
 }
-
 
 .widget-container h2 {
   font-size: 1.4em;
