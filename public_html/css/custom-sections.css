@@ -143,6 +143,11 @@
   padding:20px
 }
 
+.AboutUs-card .inside h4 {
+  text-transform: uppercase;
+  color:#23b2c6;
+}
+
 
 /******************************
 *
@@ -155,7 +160,6 @@
   margin: 0;
   padding: 0 10% 5% 10%;
 }
-
 
 #map-container {
   height: 500px;
