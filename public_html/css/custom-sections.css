@@ -463,4 +463,32 @@
 *
 ******************************/
 
+#aboutNTX .description {
+  text-align:left;
+}
 
+#aboutNTX .dropdowns {
+  text-align:left;
+  padding-left: 5%;
+}
+
+#aboutNTX h4 {
+  text-transform: uppercase;
+}
+
+#aboutNTX .description p {
+  font-size: 14px;
+}
+
+#initiatives-header {
+  padding-top: 18%
+}
+
+#aboutNTX .social-media-icons{
+  text-align:left;
+}
+
+#aboutNTX .social-media-icons table {
+  width:60%;
+  padding:10px;
+}

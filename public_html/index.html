@@ -496,7 +496,7 @@
   <div class="row">
 
     <!--Facebook Feed-->
-  	<div class="col-xs-5 col-xs-offset-1  widget-container">
+  	<div class="col-xs-5 col-xs-offset-1 widget-container">
   		<h2>NeuroTechX on Facebook</h2>
 			<div class="widget">
 				<div class="fb-page"
@@ -527,24 +527,28 @@
 
 </section>
 
-<section id="aboutNTX" class="container noBG-section-dark" style="background:#000;">
+
+<!--=================== ABOUT NEUROTECHX ====================-->
+
+
+<section id="aboutNTX" class="container noBG-section-dark">
 
   <div class="row heading">
 
-    <div class="col-xs-6 col-xs-offset-1">
-        <div class="row" style="text-align:left;">
-    			<h4 style=" text-transform: uppercase;">About NeurotechX</h4>
-    			<p style="font-size:14px;">
-            NeuroTechX brings hackers, enthusiasts, researchers and experts together to drive innovation and foster collaboration at local and international scales. Our core mission is to build a strong global neurotech community by providing key resources, learning opportunities, and by being leaders in local and worldwide technological initiatives.We believe neurotechnology is key to better understanding and to improving who we are. Join us to take part in the conversation and help shape the future of neurotechnology!
-          </p>
-    		</div>
-      </div>
+    <div class="col-xs-6 col-xs-offset-1 description">
+      <div class="row">
+  			<h4>About NeurotechX</h4>
+  			<p>
+          NeuroTechX brings hackers, enthusiasts, researchers and experts together to drive innovation and foster collaboration at local and international scales. Our core mission is to build a strong global neurotech community by providing key resources, learning opportunities, and by being leaders in local and worldwide technological initiatives.We believe neurotechnology is key to better understanding and to improving who we are. Join us to take part in the conversation and help shape the future of neurotechnology!
+        </p>
+  		</div>
+    </div>
 
-  	<div class="col-xs-4" style="text-align:left;padding-left: 5%">
+  	<div class="col-xs-4 dropdowns">
 
-      <h4 style="text-transform: uppercase;">Chapter Meetups</h4>
+      <h4>Chapter Meetups</h4>
       <form name="linkForm" method="POST" action="" id="form">
-        <select name="chapters" style = "color:#000"  onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+        <select name="chapters" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
           <option value="">Choose a City...</option>
 
   	      <optgroup label="CANADA">
@@ -588,9 +592,9 @@
 			  <a href="#" class="btn-default btn-sm page-scroll">GO</a>
 		  </form>
 
-      <h4 style="text-transform: uppercase; text-align: left; padding-top: 18%">Initiatives</h4>
+      <h4 id="initiatives-header">Initiatives</h4>
       <form name="initForm" method="POST" action="" id="form">
-        <select name="initiatives" style = "color:#000"  onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+        <select name="initiatives" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
           <option value="">Choose a Project...</option>
           <option value="http://news.neurotechx.com">NeurotechXNews</option>
         </select>
@@ -602,8 +606,8 @@
 
   <div class="row heading">
     <div class="col-xs-6 col-xs-offset-1">
-      <div class ="row" style="text-align:left;">
-        <table style="width:60%; padding:10px;">
+      <div class="row social-media-icons">
+        <table>
 
           <td class="social-btn">
   		      <a href="https://facebook.com/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-facebook animated-small"></i></a>
