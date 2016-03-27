@@ -334,6 +334,11 @@
 *
 ******************************/
 
+#WhatWeDo {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
 .WhatWeDo-card {
   background: #000;
   margin: 5px;
@@ -343,20 +348,29 @@
 }
 
 .WhatWeDo-card .inside {
-  padding-right: 40px !important;
+  padding: 20px;
+  padding-right: 40px;
 }
 
 .WhatWeDo-card .inside p {
   margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.WhatWeDo-card .inside h4 {
+  color:#23b2c6;
+}
+
+.WhatWeDo-card a > h4:hover {
+  color: #fff !important;
 }
 
 .WhatWeDo-card #ntnews {
   margin-left: -10px
 }
 
-.WhatWeDo-card a > h4:hover {
-  color: #fff !important;
-}
+
 
 
 
