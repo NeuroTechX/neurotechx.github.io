@@ -148,17 +148,29 @@
   color:#23b2c6;
 }
 
-
 /******************************
 *
 *   Where We Are Section
 *
 ******************************/
 
+#WhereWeAre {
+  padding-top: 100px;
+}
+
 #WhereWeAre-description {
   width: 100%;
   margin: 0;
   padding: 0 10% 5% 10%;
+}
+
+#WhereWeAre-description p {
+  font-size:16px;
+  font-weight:400;
+}
+
+#WhereWeAre .subscribeButton {
+  font-family: Armata;
 }
 
 #map-container {
