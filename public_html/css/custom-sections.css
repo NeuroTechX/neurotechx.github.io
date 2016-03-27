@@ -48,7 +48,17 @@
   margin-top: 10vh;
 }
 
+.subscribeButton {
+  width: 200px;
+}
 
+.stay-tuned {
+  float: right;
+}
+
+.get-involved {
+  float: left;
+}
 
 @media(min-width:768px) {
   .intro {
@@ -462,6 +472,7 @@
 *   About NeurotechX Section
 *
 ******************************/
+
 
 #aboutNTX .description {
   text-align:left;
