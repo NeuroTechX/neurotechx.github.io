@@ -33,6 +33,25 @@
     font-size: 18px;
 }
 
+#intro-logo {
+  width: 40%;
+  height: 40%;
+  padding: 10vh 0 25px 0 ;
+}
+
+.intro .subscribeButton {
+    margin-top: 5vh;
+    font-family: Orbitron;
+}
+
+#intro-arrow {
+    margin-top: 10vh;
+}
+
+
+
+
+
 @media(min-width:768px) {
     .intro {
         height: 100vh;

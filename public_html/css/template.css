@@ -222,14 +222,6 @@ a:focus {
     padding-bottom: 13px;
 }
 
-.intro .subscribeButton {
-    margin-top: 5vh;
-}
-
-#intro-arrow {
-    margin-top: 10vh;
-}
-
 
 @media(min-width:768px) {
     .navbar-custom {
