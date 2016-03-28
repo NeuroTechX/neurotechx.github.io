@@ -241,16 +241,7 @@ a:focus {
     }
 }
 
-@media(max-width:450px) {
-    .navbar-header {
-        width: 100vw;
-    }
 
-    .navbar-brand {
-        margin-top: 5px;
-        zoom: 0.75;
-  }
-}
 
 
 
