@@ -73,7 +73,36 @@
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
+
+
 }
+
+@media(max-width:475px) {
+  #intro-logo {
+    padding: 2vh 0 25px 0;
+  }
+
+  .intro .intro-body h1 {
+    font-size: 2.5em;
+  }
+
+  .intro .intro-body h2 {
+    font-size: 1.2em;
+  }
+
+  .subscribeButton {
+    font-size: 0.75em;
+    width: 125px;
+  }
+
+  #intro-arrow {
+    zoom: 0.8;
+    margin-top: 10vh;
+  }
+
+
+)
+
 
 
 

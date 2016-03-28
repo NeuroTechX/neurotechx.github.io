@@ -151,6 +151,7 @@ a:focus {
 *
 ****************/
 
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -169,8 +170,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -223,7 +223,7 @@ a:focus {
 }
 
 
-@media(min-width:768px) {
+@media(min-width:800px) {
     .navbar-custom {
         padding: 10px 0;
         border-bottom: 10;
@@ -241,7 +241,16 @@ a:focus {
     }
 }
 
+@media(max-width:450px) {
+    .navbar-header {
+        width: 100vw;
+    }
 
+    .navbar-brand {
+        margin-top: 5px;
+        zoom: 0.75;
+  }
+}
 
 
 
