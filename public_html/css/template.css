@@ -32,11 +32,13 @@
 
 */
 
-
-
+html {
+    width: 100%;
+    height: 100%;
+}
 
 body {
-    width: 100%;
+    min-width: 100% !important;
     height: 100%;
    font-family: Armata;
 
@@ -44,11 +46,6 @@ body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
     color: #fff;
     background-color: #000;
-}
-
-html {
-    width: 100%;
-    height: 100%;
 }
 
 h1{
@@ -78,6 +75,7 @@ h3{
     font-weight: 700;
     letter-spacing: 1px;
 }
+
 h4,
 h5,
 h6 {
@@ -144,13 +142,15 @@ a:focus {
   margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
+section {
+    overflow: hidden;
+}
 
 /***************
 *
 * Navbar custom
 *
 ****************/
-
 
 .navbar-custom {
     margin-bottom: 0;
@@ -222,6 +222,10 @@ a:focus {
     padding-bottom: 13px;
 }
 
+.navbar .navbar-custom .navbar-fixed-top {
+    max-width: 90% !important;
+}
+
 
 @media(min-width:800px) {
     .navbar-custom {
@@ -242,6 +246,7 @@ a:focus {
 
 
 }
+
 
 @media(max-width: 768px) {
 
