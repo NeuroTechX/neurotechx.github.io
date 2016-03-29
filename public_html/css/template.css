@@ -239,11 +239,16 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
+
+
 }
 
-
-
-
+@media(max-width:768px) {
+    .navbar-nav .nav-icons {
+        display: inline-block;
+        float: left;
+        padding-right: 5px;
+    }
 
 /*******************
 * TABLES
