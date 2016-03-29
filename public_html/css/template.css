@@ -979,6 +979,7 @@ Singlepro: start responsive style
 
 @media(max-width:991px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
+  .navbar-collapse{background-color: rgba(0,0,0,0.8);}
   // .navbar-brand {font-size: 2px;}
   #slides{height: 600px !important;}
   .slider_caption > h2 {font-size: 48px;line-height: 48px;}
