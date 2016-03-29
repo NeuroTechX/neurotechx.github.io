@@ -39,7 +39,9 @@ function initialize() {
 
   var chapterLatLng = {
     neuroTechMTL: [45.5016, -73.5672],
-    neuroTechTO: [43.7000, -79.4000],
+    neuroTechTO: [43.4129, -79.4000],
+    neuroTechKW: [43.7000, -80.4771],
+    neuroTechVAN: [45.6387, -122.6614],
     neuroTechBOS: [42.360082, -71.058880],
     neuroTechNYC: [40.7127, -74.0059],
     neuroTechSF: [37.7833, -122.4167],
