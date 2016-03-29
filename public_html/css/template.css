@@ -243,12 +243,14 @@ a:focus {
 
 }
 
-@media(max-width:768px) {
+@media(max-width: 768px) {
+
     .navbar-nav .nav-icons {
         display: inline-block;
         float: left;
         padding-right: 5px;
     }
+}
 
 /*******************
 * TABLES
