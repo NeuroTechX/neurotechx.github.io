@@ -142,9 +142,6 @@ a:focus {
   margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
-// #JoinUs {
-//     overflow: hidden;
-// }
 
 /***************
 *
@@ -259,6 +256,10 @@ a:focus {
         display: inline-block;
         float: left;
         padding-right: 5px;
+    }
+
+    .navbar-custom #join-us-link {
+        border: 0;
     }
 }
 
@@ -1131,19 +1132,6 @@ Singlepro: start responsive style
   .blogdetails_content > h2 {font-size: 18px;line-height: 25px;}
   .similar_post h2 {font-size: 17px;}
   .single_blogsidebar > h2 {font-size: 18px;}
-
-//     .navbar-custom.top-nav-collapse {
-//             position: fixed;
-//     right: 0;
-//     margin: 0;
-//     left: 0;
-//     z-index: 1030;
-//     }
-
-//     .past-main {
-//   background-color: rgba(0,0,0,0.85) !important;
-//   margin-top: -25px !important;
-// }
 
 }
 
