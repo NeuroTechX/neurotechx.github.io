@@ -172,7 +172,6 @@
 }
 
 .aboutus-boxes {
-  text-align: center;
   max-width: 90%;
   margin: auto;
 }
@@ -194,26 +193,12 @@
 
 .AboutUs-card .inside h4 {
   text-transform: uppercase;
-  color:#23b2c6;
+  color: #23b2c6;
 }
 
-
-
-@media(max-width:768px) {
-  .aboutus-boxes {
-    padding-top: 20px;
-  }
-
-  .aboutus_description p {
-    font-size: 16px;
-  }
-
-  .aboutus-boxes {
-    max-width: 95%;
-  }
-}
 
 @media(min-width: 650px) and (max-width:991px) {
+
   .AboutUs-card {
     max-width: 48%;
     overflow: hidden;
@@ -253,12 +238,29 @@
 }
 
 @media(max-width:850px) {
+
     .AboutUs-card .inside p {
       font-size: 14px;
     }
 }
 
+@media(max-width:768px) {
+
+  .aboutus-boxes {
+    padding-top: 20px;
+  }
+
+  .aboutus_description p {
+    font-size: 16px;
+  }
+
+  .aboutus-boxes {
+    max-width: 95%;
+  }
+}
+
 @media(max-width:650px) {
+
   .AboutUs-card {
     margin-right: 10%;
     margin-left:10%;
@@ -268,15 +270,18 @@
   }
 
   .AboutUs-card .inside{
-    height: 270px;
+    height: 220px;
   }
 
   .AboutUs-card .inside p {
     font-size: 15px;
   }
 
-  .aboutus-boxes {
-    text-align: center;
+}
+
+@media(max-width:500px) {
+  .AboutUs-card .inside{
+    height: 270px;
   }
 }
 
@@ -458,8 +463,6 @@
   text-transform: uppercase;
 }
 
-
-
 /******************************
 *
 *   What We Do Section
@@ -501,9 +504,6 @@
 .WhatWeDo-card #ntnews {
   margin-left: -10px
 }
-
-
-
 
 
 /******************************
