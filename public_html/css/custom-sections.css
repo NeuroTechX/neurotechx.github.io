@@ -514,6 +514,7 @@
 
 #JoinUs{
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .cta-content {
