@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "neurotechx";
-  src:url("fonts/neurotechx.eot");
-  src:url("fonts/neurotechx.eot?#iefix") format("embedded-opentype"),
-    url("fonts/neurotechx.woff") format("woff"),
-    url("fonts/neurotechx.ttf") format("truetype"),
-    url("fonts/neurotechx.svg#neurotechx") format("svg");
+  src:url("../fonts/neurotechx.eot");
+  src:url("../fonts/neurotechx.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/neurotechx.woff") format("woff"),
+    url("../fonts/neurotechx.ttf") format("truetype"),
+    url("../fonts/neurotechx.svg#neurotechx") format("svg");
   font-weight: normal;
   font-style: normal;
 

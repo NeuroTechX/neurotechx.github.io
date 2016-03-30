@@ -1,0 +1,533 @@
+/******************************
+*
+*   Introduction panel
+*
+******************************/
+
+.intro {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.6)),
+                  url(../img/backgrounds/01.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+
+#intro-logo {
+  width: 40%;
+  height: 40%;
+  padding: 10vh 0 25px 0 ;
+}
+
+.intro .subscribeButton {
+  margin-top: 5vh;
+  font-family: Orbitron;
+}
+
+#intro-arrow {
+  margin-top: 10vh;
+}
+
+.subscribeButton {
+  width: 200px;
+}
+
+.stay-tuned {
+  float: right;
+}
+
+.get-involved {
+  float: left;
+}
+
+@media(min-width:768px) {
+  .intro {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+
+
+}
+
+@media(max-width:475px) {
+  #intro-logo {
+    padding: 2vh 0 25px 0;
+  }
+
+  .intro .intro-body h1 {
+    font-size: 2.5em;
+  }
+
+  .intro .intro-body h2 {
+    font-size: 1.2em;
+  }
+
+  .subscribeButton {
+    font-size: 0.75em;
+    width: 125px;
+  }
+
+  #intro-arrow {
+    zoom: 0.8;
+    margin-top: 10vh;
+  }
+
+}
+
+
+
+
+/******************************
+*
+*   About Us Section
+*
+******************************/
+
+#AboutUs {
+  padding-top: 100px;
+}
+
+.about {
+  display: inline;
+  float: none;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  width: 80%;
+  padding: 80px 0px;
+}
+
+.about_area{
+  float: left;
+  display: inline;
+  width: 100%;
+  min-height: 200px;
+}
+
+.about_content{
+  float: left;
+  display: inline;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.about_featured{
+  float: left;
+  display: inline;
+  width: 100%;
+}
+
+.about_slider{
+  float: left;
+  display: inline;
+  width: 100%;
+  height: 350px;
+}
+
+.about_slider .slick-dots li button:before {
+  color: #ccc;
+  content: "•";
+  font-size: 28px;
+}
+
+.about_slider .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+}
+
+.AboutUs-card {
+  background:#000;
+  padding:0px;
+  outline: 20px solid #eee;
+  border-spacing:0;
+}
+
+.AboutUs-card p {
+  padding-right: 40px !important;
+}
+
+.AboutUs-card .img-reponsive {
+  margin-top: 0px;
+}
+
+.AboutUs-card .inside {
+  height: 300px;
+}
+
+.AboutUs-card .inside p {
+  color:#fff;
+  font-size:16px;
+  font-weight:400;
+  padding:20px
+}
+
+.AboutUs-card .inside h4 {
+  text-transform: uppercase;
+  color:#23b2c6;
+}
+
+/******************************
+*
+*   Where We Are Section
+*
+******************************/
+
+#WhereWeAre {
+  padding-top: 100px;
+}
+
+#WhereWeAre-description {
+  width: 100%;
+  margin: 0;
+  padding: 0 10% 5% 10%;
+}
+
+#WhereWeAre-description p {
+  font-size:16px;
+  font-weight:400;
+}
+
+#WhereWeAre .subscribeButton {
+  font-family: Armata;
+}
+
+#map-container {
+  height: 500px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#map-inner {
+  position: relative;
+  height: 100%;
+}
+
+#map {
+  display: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+}
+
+#chapter-details-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 3%;
+  margin: auto;
+  width: 300px;
+  height: 75%;
+  padding: 4px !important;
+}
+
+#chapter-details {
+  padding: 0 0 0 0 !important;
+  background-color: #000;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px -2px 6px rgba(0,0,0,0.16), 5px -2px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#chapter-details .btn-circle-small:hover, .btn-circle-small:focus {
+  outline: 0;
+  border: 2px solid #fff;
+  border-radius: 100%!important;
+  color: #000;
+  background: #fff;
+}
+
+#chapter-details .btn-circle-small span {
+  font-size: 10px;
+}
+
+#chapter-details #meetup-btn {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#chapter-details #twitter-btn {
+  padding-top: 15px;
+}
+
+#chapter-details .fa-twitter {
+  font-size: 35px;
+}
+
+.fa-home {
+  zoom: 4;
+}
+
+#chapter-details #home-btn {
+  padding-top: 8px;
+}
+
+#chapter-details .btn-circle-small {
+  width: 65px;
+  height: 65px;
+  padding-top: 12px;
+  margin: 35px 8px 8px 8px;
+  border: 2px solid white;
+}
+
+#chapter-details img {
+  margin-top: 36px;
+  max-width:100% !important;
+  border: 4px solid #000;
+}
+
+#chapter-details .img-container {
+  height: 213px;
+  overflow: hidden
+}
+
+#chapter-details h2 {
+  font-size: 25px;
+  padding-top: 15px;
+  color: #23b2c6;
+  max-width: 100% !important;
+  margin: auto;
+}
+
+#chapter-details .city-abbreviation {
+  color: #fff;
+}
+
+#WhereWeAre {
+  padding-bottom: 0;
+}
+
+#stats {
+  background:#23b2c6;
+}
+
+.counter_section {
+  background-color:#000;
+  display: inline;
+  float: none;
+  min-height: 350px;
+  padding: 80px 0;
+  position: relative;
+  width: 100%;
+}
+
+.counter_area {
+  position: relative;
+  z-index: 999;
+}
+
+.counter {
+ padding: 20px 0;
+ border-radius: 5px;
+}
+
+.count-title {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.count-text {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+/******************************
+*
+*   What We Do Section
+*
+******************************/
+
+#WhatWeDo {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.WhatWeDo-card {
+  background: #000;
+  margin: 5px;
+  padding: 0px;
+  outline: 20px solid #eee;
+  border-spacing: 0;
+}
+
+.WhatWeDo-card .inside {
+  padding: 20px;
+  padding-right: 40px;
+}
+
+.WhatWeDo-card .inside p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.WhatWeDo-card .inside h4 {
+  color:#23b2c6;
+}
+
+.WhatWeDo-card a > h4:hover {
+  color: #fff !important;
+}
+
+.WhatWeDo-card #ntnews {
+  margin-left: -10px
+}
+
+
+
+
+
+/******************************
+*
+*   Join Us Section
+*
+******************************/
+
+#JoinUs{
+  padding-top: 100px;
+}
+
+.cta-content {
+  padding:20px;
+}
+
+.cta-content .description {
+  padding-top: 35px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cta-content a {
+  font-family: Armata;
+}
+
+.cta-banner {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  min-height: 100px;
+  background-color: #23b3c6;
+  border: 1px solid #fff !important;
+  overflow: hidden;
+}
+
+.cta-banner  h3 {
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 35px;
+  font-weight: normal;
+  padding: 20px;
+}
+
+.widget {
+  border: 2px solid black;
+  background-color: #fff;
+  height: 500px;
+  overflow: hidden;
+}
+
+.widget-container {
+  padding: 50px;
+}
+
+.widget-container h2 {
+  font-size: 1.4em;
+}
+
+.social-btn {
+  padding-left: 0;
+}
+
+/* Icons */
+.fa-2x {
+  color: #23b3c6;
+  display: table;
+  float: none;
+  margin: 0 auto;
+}
+
+.fa-5x {
+  color: #23b3c6;
+  display: table;
+  float: none;
+  margin: 0 auto;
+}
+
+
+/******************************
+*
+*   About NeurotechX Section
+*
+******************************/
+
+
+#aboutNTX .description {
+  text-align:left;
+}
+
+#aboutNTX .dropdowns {
+  text-align:left;
+  padding-left: 5%;
+}
+
+#aboutNTX h4 {
+  text-transform: uppercase;
+}
+
+#aboutNTX .description p {
+  font-size: 14px;
+}
+
+#initiatives-header {
+  padding-top: 18%
+}
+
+#aboutNTX .social-media-icons{
+  text-align:left;
+}
+
+#aboutNTX .social-media-icons table {
+  width:60%;
+  padding:10px;
+}
