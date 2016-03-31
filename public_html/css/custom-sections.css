@@ -463,11 +463,16 @@
   text-transform: uppercase;
 }
 
+@media(max-width:991px) {
+// remove chapter details box
+}
+
 @media(max-width:768px) {
   #WhereWeAre .subscribeButton {
     margin: 35px;
   }
 }
+
 
 
 /******************************

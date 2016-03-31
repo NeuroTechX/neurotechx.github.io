@@ -19,9 +19,13 @@ function setMapZoom(){
 
 function initialize() {
   setMapZoom();
+
+  var centerLong = 27;
+  var centerLat = ($(window).width() > 991 ? -15 : -45);
+
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: mapZoom,
-    center: new google.maps.LatLng(27, -15),
+    center: new google.maps.LatLng(centerLong, centerLat),
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,
@@ -67,11 +71,20 @@ function initialize() {
       animation: google.maps.Animation.DROP
     });
 
-    markersArray.push(chapterMarker);
-    addListenerForMapMarker(chapterMarker);
+
+    if ($(window ).width() > 991){
+      markersArray.push(chapterMarker);
+      addListenerForMapMarker(chapterMarker);
+    } else {
+      $('#chapter-details').hide();
+
+    };
+
   }
 
-  startCardSlideShow(markersArray);
+  if ($(window ).width() > 991){
+    startCardSlideShow(markersArray);
+  };
 }
 
 
