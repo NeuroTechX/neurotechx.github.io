@@ -1137,7 +1137,7 @@ Singlepro: start responsive style
 
 }
 
-@media(max-width:360px ){
+@media(max-width:385px ){
     .slider_caption {margin-top: 28%;}
     .slider_caption > a {margin-top: 10px;}
     .slides-navigation h3 {display: none;}

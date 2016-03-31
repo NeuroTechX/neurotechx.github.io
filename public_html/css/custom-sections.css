@@ -463,17 +463,39 @@
   text-transform: uppercase;
 }
 
-@media(max-width:991px) {
-// remove chapter details box
+
+@media(max-width: 991px) {
+  #chapter-details-container {
+    display: none;
+  }
 }
 
-@media(max-width:768px) {
+@media(max-width: 768px) {
   #WhereWeAre .subscribeButton {
     margin: 35px;
   }
 }
 
+@media(max-width: 650px) {
+  #map-container {
+    height: 350px;
+  }
 
+  #map {
+    height: 350px;
+  }
+
+}
+
+@media(max-width:500px) {
+  #map-container {
+    display: none;
+  }
+
+  .count-text {
+    font-size: 14px;
+  }
+}
 
 /******************************
 *
