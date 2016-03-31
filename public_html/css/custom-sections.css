@@ -91,8 +91,8 @@
   }
 
   .subscribeButton {
-    font-size: 0.75em;
-    width: 125px;
+    font-size: 0.85em;
+    width: 137px;
   }
 
   #intro-arrow {
@@ -463,6 +463,13 @@
   text-transform: uppercase;
 }
 
+@media(max-width:768px) {
+  #WhereWeAre .subscribeButton {
+    margin-top: 35px;
+  }
+}
+
+
 /******************************
 *
 *   What We Do Section
@@ -514,7 +521,7 @@
 
 #JoinUs{
   padding-top: 100px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .cta-content {
