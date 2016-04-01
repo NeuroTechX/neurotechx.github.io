@@ -74,7 +74,6 @@
     font-size: 26px;
   }
 
-
 }
 
 @media(max-width:475px) {
@@ -101,8 +100,6 @@
   }
 
 }
-
-
 
 
 /******************************
@@ -220,7 +217,9 @@
   }
 
   .aboutus-boxes .wider-box .inside {
+    margin-top: 5%;
     margin-bottom: 0;
+
     height: 100%;
     display: inline-block;
     float: right;
@@ -237,7 +236,7 @@
   }
 
   .aboutus-boxes .wider-box p {
-    padding-bottom: 0;
+    padding: 20px 8px 10px 8px;
     margin-bottom: 0;
   }
 }
@@ -582,6 +581,10 @@
 
   .WhatWeDo-card .inside p {
     font-size:16px;
+  }
+
+  #WhatWeDo {
+    padding-bottom: 75px;
   }
 }
 
