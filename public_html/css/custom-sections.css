@@ -185,10 +185,10 @@
 }
 
 .AboutUs-card .inside p {
-  color:#fff;
-  font-size:16px;
-  font-weight:400;
-  padding:20px
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px
 }
 
 .AboutUs-card .inside h4 {
@@ -196,6 +196,11 @@
   color: #23b2c6;
 }
 
+@media(min-width: 1250px) {
+  .AboutUs-card .inside {
+    height: 260px;
+  }
+}
 
 @media(min-width: 650px) and (max-width:991px) {
 
@@ -262,11 +267,9 @@
 @media(max-width:650px) {
 
   .AboutUs-card {
-    margin-right: 10%;
-    margin-left:10%;
     max-width: 80%;
-    min-width: 310px;
-    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .AboutUs-card .inside {
@@ -279,9 +282,15 @@
 
 }
 
-@media(max-width:500px) {
+@media(max-width:465px) {
   .AboutUs-card .inside{
-    height: 270px;
+    height: 300px;
+  }
+}
+
+@media(max-width:350px) {
+  .AboutUs-card .inside{
+    height: 360px;
   }
 }
 
