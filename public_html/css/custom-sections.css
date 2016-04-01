@@ -269,7 +269,7 @@
     width: 80%;
   }
 
-  .AboutUs-card .inside{
+  .AboutUs-card .inside {
     height: 220px;
   }
 
@@ -509,26 +509,30 @@
 }
 
 .WhatWeDo-card {
-  background: #000;
-  margin: 5px;
-  padding: 0px;
+  background:#000;
+  margin: 1%;
+  padding: 0;
   outline: 20px solid #eee;
-  border-spacing: 0;
+  border-spacing:0;
+  max-width: 23%
 }
 
 .WhatWeDo-card .inside {
-  padding: 20px;
-  padding-right: 40px;
+  height: 150px;
+  padding: 8% 5px;
 }
 
 .WhatWeDo-card .inside p {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #fff;
+  color:#fff;
+  font-size:16px;
+  font-weight:400;
+  padding: 20px
 }
 
 .WhatWeDo-card .inside h4 {
-  color:#23b2c6;
+  text-transform: uppercase;
+  color: #23b2c6;
+
 }
 
 .WhatWeDo-card a > h4:hover {
@@ -539,6 +543,57 @@
   margin-left: -10px
 }
 
+.whatwedo-boxes {
+  max-width: 90%;
+  margin: auto;
+}
+
+.WhatWeDo-card .img-reponsive {
+  margin-top: 0px;
+}
+
+@media(max-width: 1250px) {
+  .WhatWeDo-card h4 {
+   font-size:16px;
+  }
+
+  .WhatWeDo-card .inside p {
+    font-size:14px;
+  }
+}
+
+@media(max-width: 991px) {
+  .WhatWeDo-card {
+    max-width: 48%;
+  }
+
+  .WhatWeDo-card h4 {
+   font-size: 20px;
+  }
+
+  .WhatWeDo-card .inside p {
+    font-size:16px;
+  }
+}
+
+@media(max-width: 650px) {
+  .WhatWeDo-card {
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+@media(max-width: 350px) {
+  .WhatWeDo-card h4 {
+   font-size:16px;
+  }
+
+  .WhatWeDo-card .inside p {
+    font-size:14px;
+  }
+
+}
 
 /******************************
 *
