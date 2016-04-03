@@ -257,6 +257,10 @@ a:focus {
         padding-bottom: 0;
     }
 
+    .navbar-nav {
+        width: 50%;
+    }
+
     .navbar-nav .nav-icons {
         display: inline-block;
         float: left;
