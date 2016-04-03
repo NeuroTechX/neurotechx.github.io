@@ -269,28 +269,17 @@
     max-width: 80%;
     margin-right: 10%;
     margin-left: 10%;
+        height: auto;
   }
 
   .AboutUs-card .inside {
-    height: 220px;
+    height: auto;
   }
 
   .AboutUs-card .inside p {
     font-size: 15px;
   }
 
-}
-
-@media(max-width:465px) {
-  .AboutUs-card .inside{
-    height: 300px;
-  }
-}
-
-@media(max-width:350px) {
-  .AboutUs-card .inside{
-    height: 360px;
-  }
 }
 
 /******************************
