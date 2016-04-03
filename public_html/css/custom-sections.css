@@ -546,10 +546,6 @@
   color: #fff !important;
 }
 
-.WhatWeDo-card #ntnews {
-  margin-left: -10px
-}
-
 .whatwedo-boxes {
   max-width: 90%;
   margin: auto;
@@ -894,7 +890,7 @@
   text-align:left;
 }
 
-#aboutNTX .dropdowns {
+.aboutntx-outer .dropdowns {
   text-align:left;
   padding-left: 5%;
 }
@@ -918,4 +914,25 @@
 #aboutNTX .social-media-icons table {
   width:60%;
   padding:10px;
+}
+
+@media(max-width: 650px) {
+  .aboutntx-outer > *, .social-icons-outer {
+    width: 80%;
+    margin: 2.5% 10%;
+  }
+
+  .aboutntx-outer .dropdowns {
+    padding-left: 0;
+  }
+
+  .aboutntx-outer .dropdowns form {
+    margin-bottom: 25px;
+  }
+
+  .aboutntx-outer .dropdowns h4, #initiatives-header{
+    font-size: 18px;
+    padding: 25px 0 0 0;
+  }
+
 }

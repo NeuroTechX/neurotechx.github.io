@@ -143,7 +143,7 @@ a:focus {
 }
 
 
-
+// display: inline-block;
 /***************
 *
 * Navbar custom
@@ -708,8 +708,6 @@ footer p {
     font-size: 12px;
 }
 
-
-
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
@@ -724,6 +722,17 @@ footer p {
 
 img::selection {
     background: 0 0;
+}
+
+@media(max-width: 650px) {
+  .footer-outer {
+    width: 80%;
+    margin: 2.5% 10%;
+  }
+
+  .footer-outer p {
+    font-size: 14px;
+  }
 }
 
 
