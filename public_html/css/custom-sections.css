@@ -653,21 +653,6 @@
   padding: 3%;
 }
 
-.widget {
-  border: 2px solid black;
-  background-color: #fff;
-  height: 500px;
-  overflow: hidden;
-}
-
-.widget-container {
-  padding: 50px;
-}
-
-.widget-container h2 {
-  font-size: 1.4em;
-}
-
 .social-btn {
   padding-left: 0;
 }
@@ -693,6 +678,7 @@
     font-size:22px;
     line-height: 35px;
   }
+
 }
 
 @media(max-width: 1200px) {
@@ -808,6 +794,92 @@
   .cta-banner-container .cta-banner {
     margin: 3%;
     width: 44%;
+  }
+}
+
+/******************************
+*
+*   Social Wall Section
+*
+******************************/
+
+.widget {
+  border: 2px solid black;
+  background-color: #fff;
+  height: 500px;
+  overflow: hidden;
+}
+
+.widget-container {
+  padding: 50px;
+}
+
+.widget-container h2 {
+  font-size: 1.4em;
+}
+
+
+@media(max-width: 1250px) {
+
+  .widget-container {
+    padding: 25px;
+  }
+}
+
+@media(max-width: 991px) {
+
+  .widget-container h2 {
+    font-size: 1.15em;
+  }
+
+}
+
+@media(max-width: 830px) {
+
+  .widget-outer{
+    width: 90%;
+    margin: auto;
+  }
+
+  .widget-container {
+    width: 48%;
+    padding: 0;
+    margin: 1%
+  }
+
+}
+
+@media(max-width: 700px) {
+  .widget-container h2 {
+    font-size: 1.1em;
+  }
+}
+
+
+@media(max-width: 650px) {
+  .widget-container h2 {
+    font-size: 1.25em;
+  }
+
+  .widget-container {
+    width: 80%;
+    margin: 5% 10% 15% 10%;
+  }
+
+  .widget-container .widget {
+    height: 150vw;
+    max-height: 500px;
+  }
+}
+
+
+@media(max-width: 475px) {
+  .widget-outer, .widget-container {
+    width: 90%;
+  }
+
+  .widget-container {
+    margin: 5% 5% 15% 5%;
   }
 }
 
