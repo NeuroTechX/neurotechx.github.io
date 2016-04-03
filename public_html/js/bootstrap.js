@@ -4,9 +4,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+/*jshint strict: true */
+
 if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap\'s JavaScript requires jQuery')
-}
+	throw new Error('Bootstrap\'s JavaScript requires jQuery')}
 
 +function ($) {
   'use strict';
