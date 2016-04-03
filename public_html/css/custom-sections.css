@@ -574,9 +574,9 @@
 
 @media(max-width: 650px) {
   .WhatWeDo-card {
-    max-width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+    max-width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
