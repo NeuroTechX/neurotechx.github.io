@@ -23,11 +23,11 @@ $(window).scroll(function () {
     "use strict";
     if ($(".navbar").offset().top > 50) {
         //fade-in unhide
-        //$(".navbar").fadeIn();
+        $(".navbar").fadeOut();
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         //fade-out hide
-        //$(".navbar").fadeOut();
+        $(".navbar").fadeIn();
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });

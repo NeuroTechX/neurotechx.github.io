@@ -48,6 +48,8 @@ body {
     background-color: #000;
 }
 
+
+
 h1{
     margin: 0 0 35px;
     text-transform: uppercase;
@@ -142,8 +144,13 @@ a:focus {
   margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
 
-// display: inline-block;
+
 /***************
 *
 * Navbar custom
