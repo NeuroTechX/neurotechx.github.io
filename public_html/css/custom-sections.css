@@ -265,10 +265,12 @@
 
 @media(max-width:650px) {
 
+  .aboutus-boxes {
+    max-width: 80%;
+  }
+
   .AboutUs-card {
-    max-width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -536,7 +538,7 @@
 }
 
 .whatwedo-boxes {
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -574,9 +576,7 @@
 
 @media(max-width: 650px) {
   .WhatWeDo-card {
-    max-width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+    max-width: 100%;
   }
 }
 
