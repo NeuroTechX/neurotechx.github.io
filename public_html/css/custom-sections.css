@@ -200,7 +200,7 @@
   }
 }
 
-@media(min-width: 650px) and (max-width:991px) {
+@media(min-width: 651px) and (max-width:991px) {
 
   .aboutus-boxes .box {
     max-width: 48%;
@@ -254,7 +254,7 @@
     padding-top: 20px;
   }
 
-  .aboutus_description p {
+  #AboutUs .text-content p {
     font-size: 16px;
   }
 
