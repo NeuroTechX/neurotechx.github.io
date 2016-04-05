@@ -36,7 +36,7 @@
 #intro-logo {
   width: 40%;
   height: 40%;
-  padding: 10vh 0 25px 0 ;
+  padding: 10vh 0 25px 0;
 }
 
 .intro .subscribeButton {
@@ -102,6 +102,7 @@
 }
 
 
+
 /******************************
 *
 *   About Us Section
@@ -159,7 +160,12 @@
   opacity: 0.75;
 }
 
-.AboutUs-card {
+.aboutus-boxes {
+  max-width: 90%;
+  margin: auto;
+}
+
+.aboutus-boxes .box {
   background:#000;
   margin: 1%;
   padding: 0;
@@ -168,45 +174,40 @@
   max-width: 31.3%
 }
 
-.aboutus-boxes {
-  max-width: 90%;
-  margin: auto;
-}
-
-.AboutUs-card .img-reponsive {
+.aboutus-boxes .box .img-reponsive {
   margin-top: 0px;
 }
 
-.AboutUs-card .inside {
+.aboutus-boxes .box .inside {
   height: 330px;
 }
 
-.AboutUs-card .inside p {
+.aboutus-boxes .box .inside p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   padding: 20px
 }
 
-.AboutUs-card .inside h4 {
+.aboutus-boxes .box .inside h4 {
   text-transform: uppercase;
   color: #23b2c6;
 }
 
 @media(min-width: 1250px) {
-  .AboutUs-card .inside {
+  .aboutus-boxes .box .inside {
     height: 260px;
   }
 }
 
 @media(min-width: 650px) and (max-width:991px) {
 
-  .AboutUs-card {
+  .aboutus-boxes .box {
     max-width: 48%;
     overflow: hidden;
   }
 
-  .aboutus-boxes .AboutUs-card:nth-child(-n+2) .inside{
+  .aboutus-boxes .box:nth-child(-n+2) .inside{
     height: 260px;
   }
 
@@ -219,12 +220,10 @@
   .aboutus-boxes .wider-box .inside {
     margin-top: 5%;
     margin-bottom: 0;
-
     height: 100%;
     display: inline-block;
     float: right;
     width: 55%;
-
   }
 
   .aboutus-boxes .wider-box img {
@@ -235,7 +234,7 @@
     width: 50%
   }
 
-  .aboutus-boxes .wider-box p {
+  .aboutus-boxes .wider-box .inside p {
     padding: 20px 8px 10px 8px;
     margin-bottom: 0;
   }
@@ -243,7 +242,7 @@
 
 @media(max-width:850px) {
 
-    .AboutUs-card .inside p {
+    .aboutus-boxes .box .inside p {
       font-size: 14px;
     }
 }
@@ -251,6 +250,7 @@
 @media(max-width:768px) {
 
   .aboutus-boxes {
+    max-width: 95%;
     padding-top: 20px;
   }
 
@@ -258,31 +258,27 @@
     font-size: 16px;
   }
 
-  .aboutus-boxes {
-    max-width: 95%;
-  }
 }
 
 @media(max-width:650px) {
 
-  .aboutus-boxes {
-    max-width: 80%;
-  }
-
-  .AboutUs-card {
-    max-width: 100%;
+  .aboutus-boxes .box {
+    max-width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     height: auto;
   }
 
-  .AboutUs-card .inside {
+  .aboutus-boxes .box .inside {
     height: auto;
   }
 
-  .AboutUs-card .inside p {
+  .aboutus-boxes .box .inside p {
     font-size: 15px;
   }
 
 }
+
 
 /******************************
 *
@@ -924,5 +920,3 @@
   }
 
 }
-
-

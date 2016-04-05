@@ -492,7 +492,7 @@ ul.banner-social-buttons {
 *
 ****************************/
 
-.noBG-section{
+.noBG-section {
     padding-top: 50px;
     width: 100%;
     padding: 50px 0;
@@ -506,7 +506,7 @@ ul.banner-social-buttons {
     display: table;
 }
 
-.noBG-section-dark{
+.noBG-section-dark {
     padding-top: 50px;
     width: 100%;
     padding: 50px 0;
@@ -520,7 +520,7 @@ ul.banner-social-buttons {
     display: table;
 }
 
-.noBG-section-medium{
+.noBG-section-medium {
     padding-top: 50px;
     width: 100%;
     padding: 50px 0;
@@ -534,8 +534,7 @@ ul.banner-social-buttons {
     display: table;
 }
 
-
-.parallaxBG-section{
+.parallaxBG-section {
      width: 100%;
         padding: 50px 0;
         color: #fff;
@@ -554,7 +553,7 @@ ul.banner-social-buttons {
 * HEADINGS
 ********************/
 
-.heading{
+.heading {
     float: left;
     display: inline;
     width: 100%;
@@ -591,7 +590,7 @@ ul.banner-social-buttons {
 }
 
 
-.heading p{
+.heading p {
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -655,7 +654,7 @@ ul.banner-social-buttons {
   padding-bottom: 10px;
 }
 
-.panel-default .in{
+.panel-default .in {
   background-color: #000;
   padding-left:10px;
   margin-left: 20px;
@@ -664,7 +663,7 @@ ul.banner-social-buttons {
   transition: all 0.5s;
 }
 
-.panel-title a span{
+.panel-title a span {
   margin-right: 5px;
 }
 
