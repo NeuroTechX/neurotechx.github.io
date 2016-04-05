@@ -40,10 +40,7 @@ html {
 body {
     min-width: 100% !important;
     height: 100%;
-   font-family: Armata;
-
-    /*font-weight: 600;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family: Armata;
     color: #fff;
     background-color: #000;
 }
@@ -54,7 +51,7 @@ h1{
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Orbitron;
-    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+
     font-size: 48px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -64,11 +61,11 @@ h2{
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Orbitron;
-    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1px;
 }
+
 h3{
     margin: 0 0 35px;
     text-transform: uppercase;
@@ -81,17 +78,13 @@ h3{
 h4,
 h5,
 h6 {
-
     margin: 0 0 0px;
-
     font-family: Armata;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 p {
-    padding: 10px 20px 15px 20px
-    margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
 }
