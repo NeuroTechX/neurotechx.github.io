@@ -19,9 +19,13 @@ function setMapZoom(){
 
 function initialize() {
   setMapZoom();
+
+  var centerLong = 27;
+  var centerLat = ($(window).width() > 991 ? -15 : -45);
+
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: mapZoom,
-    center: new google.maps.LatLng(27, -15),
+    center: new google.maps.LatLng(centerLong, centerLat),
     disableDefaultUI: true,
     scrollwheel: false,
     draggable: false,
@@ -39,8 +43,8 @@ function initialize() {
 
   var chapterLatLng = {
     neuroTechMTL: [45.5016, -73.5672],
-    neuroTechTO: [43.4129, -79.4000],
-    neuroTechKW: [43.7000, -80.4771],
+    neuroTechTO: [43.4129, -78.4000],
+    neuroTechKW: [43.7000, -81.4771],
     neuroTechVAN: [45.6387, -122.6614],
     neuroTechBOS: [42.360082, -71.058880],
     neuroTechNYC: [40.7127, -74.0059],
@@ -67,11 +71,20 @@ function initialize() {
       animation: google.maps.Animation.DROP
     });
 
-    markersArray.push(chapterMarker);
-    addListenerForMapMarker(chapterMarker);
+
+    if ($(window ).width() > 991){
+      markersArray.push(chapterMarker);
+      addListenerForMapMarker(chapterMarker);
+    } else {
+      $('#chapter-details').hide();
+
+    };
+
   }
 
-  startCardSlideShow(markersArray);
+  if ($(window ).width() > 991){
+    startCardSlideShow(markersArray);
+  };
 }
 
 
