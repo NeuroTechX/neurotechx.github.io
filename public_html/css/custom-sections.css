@@ -487,9 +487,14 @@
     display: none;
   }
 
+  #stats .container {
+    padding: 0;
+  }
+
   .count-text {
     font-size: 14px;
   }
+
 }
 
 /******************************
