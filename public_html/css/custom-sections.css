@@ -60,7 +60,7 @@
   float: left;
 }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
   .intro {
     height: 100vh;
     padding: 0;
@@ -70,8 +70,15 @@
     font-size: 100px;
   }
 
-  .intro .intro-body .intro-text {
-    font-size: 26px;
+  .intro .intro-body h2 {
+    font-size: 27px;
+  }
+
+}
+
+@media(max-width:650px) {
+  .intro .intro-body h2 {
+    font-size: 22px;
   }
 
 }
@@ -487,9 +494,14 @@
     display: none;
   }
 
+  #stats .container {
+    padding: 0;
+  }
+
   .count-text {
     font-size: 14px;
   }
+
 }
 
 /******************************
