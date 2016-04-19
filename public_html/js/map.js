@@ -70,8 +70,7 @@ function initialize() {
       position: new google.maps.LatLng(chapterLatLng[chapter][0], chapterLatLng[chapter][1]),
       map: map,
       icon: image,
-      title: chapter,
-      // animation: google.maps.Animation.DROP
+      title: chapter
     });
 
     if (currentMarker && chapter === currentMarker['title']){
@@ -176,7 +175,6 @@ var resizeMarkers = function(currentMarker){
 
   currentMarker.setIcon(newIcon);
   lastSelected = currentMarker;
-
 }
 
 function startCardSlideShow(markersArray){
@@ -198,9 +196,6 @@ function startCardSlideShow(markersArray){
 }
 
 var stopCardSlideShow = function(){
-
   intervalSet = false;
   clearInterval(chapterInterval);
-
-
 }
