@@ -1,5 +1,7 @@
 var map;
 var mapZoom;
+var currentMarker;
+var lastSelected;
 
 google.maps.event.addDomListener(window, 'load', initialize);
 google.maps.event.addDomListener(window, "resize", centerAndZoom);
@@ -18,6 +20,7 @@ function setMapZoom(){
 };
 
 function initialize() {
+  console.log("initialize");
   setMapZoom();
 
   var centerLong = 27;
@@ -68,30 +71,43 @@ function initialize() {
       map: map,
       icon: image,
       title: chapter,
-      animation: google.maps.Animation.DROP
+      // animation: google.maps.Animation.DROP
     });
+
+    if (currentMarker && chapter === currentMarker['title']){
+      currentMarker = chapterMarker;
+    }
 
 
     if ($(window ).width() > 991){
       markersArray.push(chapterMarker);
       addListenerForMapMarker(chapterMarker);
+
     } else {
       $('#chapter-details').hide();
 
     };
-
   }
 
   if ($(window ).width() > 991){
-    startCardSlideShow(markersArray);
+    // startCardSlideShow(markersArray);
   };
+
+  if (currentMarker){ resizeMarkers(currentMarker) }
 }
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible'){ initialize() }
+});
 
 
 $('#chapter-details').hide();
 var intervalSet;
 var chapterInterval;
-var lastSelected;
+
+
+
+
 
 // Content and Transitions of Details Cards
 var createCardAndTransition = function(city) {
@@ -137,6 +153,7 @@ function addListenerForMapMarker(chapterMarker){
     if (lastSelected != chapterMarker) {
       createCardAndTransition(cityAbbreviation);
       resizeMarkers(chapterMarker);
+      currentMarker = chapterMarker;
     }
 
   });
@@ -157,16 +174,20 @@ var resizeMarkers = function(currentMarker){
     scaledSize: new google.maps.Size(41,44)
   };
 
-currentMarker.setIcon(newIcon);
-lastSelected = currentMarker;
+  currentMarker.setIcon(newIcon);
+  lastSelected = currentMarker;
+
 }
 
 function startCardSlideShow(markersArray){
+
   var i = 0;
   displayNextDetailsCard();
   chapterInterval = window.setInterval(displayNextDetailsCard, 5000);
 
+
   function displayNextDetailsCard() {
+
     if (i >= markersArray.length) {i = 0};
     var chapterName = markersArray[i]['title'];
     var cityAbbreviation = chapterName.match(/[A-Z]*$/)[0];
@@ -177,6 +198,9 @@ function startCardSlideShow(markersArray){
 }
 
 var stopCardSlideShow = function(){
+
   intervalSet = false;
   clearInterval(chapterInterval);
+
+
 }
