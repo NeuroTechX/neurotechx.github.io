@@ -22,7 +22,6 @@ function setMapZoom(){
 
 function initialize() {
   setMapZoom();
-  console.log('init');
 
   var centerLong = 27;
   var centerLat = ($(window).width() > 991 ? -15 : -45);
@@ -151,18 +150,15 @@ function addListenerForMapMarker(chapterMarker){
   var cityAbbreviation = chapterName.match(/[A-Z]*$/)[0];
 
   google.maps.event.addListener(chapterMarker, 'click', function(){
-
     if (lastSelected != chapterMarker) {
       createCardAndTransition(cityAbbreviation);
       resizeMarkers(chapterMarker);
       currentMarker = chapterMarker;
     }
-
   });
 
 
   if (mtlChapterIsSet === false && cityAbbreviation === 'MTL'){
-    console.log('setting mtl');
     mtlChapterIsSet = true;
     createCardAndTransition(cityAbbreviation);
     resizeMarkers(chapterMarker);
