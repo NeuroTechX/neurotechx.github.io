@@ -2,6 +2,7 @@ var map;
 var mapZoom;
 var currentMarker;
 var lastSelected;
+var mtlChapterIsSet = false;
 
 google.maps.event.addDomListener(window, 'load', initialize);
 google.maps.event.addDomListener(window, "resize", centerAndZoom);
@@ -20,7 +21,6 @@ function setMapZoom(){
 };
 
 function initialize() {
-  console.log("initialize");
   setMapZoom();
 
   var centerLong = 27;
@@ -77,36 +77,40 @@ function initialize() {
       currentMarker = chapterMarker;
     }
 
-
     if ($(window ).width() > 991){
       markersArray.push(chapterMarker);
       addListenerForMapMarker(chapterMarker);
 
     } else {
       $('#chapter-details').hide();
-
     };
   }
 
-  if ($(window ).width() > 991){
-    // startCardSlideShow(markersArray);
-  };
-
   if (currentMarker){ resizeMarkers(currentMarker) }
+
 }
 
 document.addEventListener("visibilitychange", function() {
   if (document.visibilityState === 'visible'){ initialize() }
 });
 
+var scrollOverMap;
+
+$(window).scroll(function(){
+    var currentScrollPosition = $(window).scrollTop();
+    var aboutUsPosition = $('#AboutUs').position().top;
+
+    if ($('#where-we-are-link').parents(".active").length){ scrollOverMap = true }
+
+    if (scrollOverMap && $('#what-we-do-link').parents(".active").length || scrollOverMap && currentScrollPosition < aboutUsPosition){
+        scrollOverMap = false; //reset value back to false
+        initialize();
+    }
+});
 
 $('#chapter-details').hide();
 var intervalSet;
 var chapterInterval;
-
-
-
-
 
 // Content and Transitions of Details Cards
 var createCardAndTransition = function(city) {
@@ -147,8 +151,6 @@ function addListenerForMapMarker(chapterMarker){
 
   google.maps.event.addListener(chapterMarker, 'click', function(){
 
-    if (intervalSet){ stopCardSlideShow() }
-
     if (lastSelected != chapterMarker) {
       createCardAndTransition(cityAbbreviation);
       resizeMarkers(chapterMarker);
@@ -156,6 +158,15 @@ function addListenerForMapMarker(chapterMarker){
     }
 
   });
+
+  console.log(mtlChapterIsSet);
+
+  if (mtlChapterIsSet === false && cityAbbreviation === 'MTL'){
+    mtlChapterIsSet = true;
+    createCardAndTransition(cityAbbreviation);
+    resizeMarkers(chapterMarker);
+    currentMarker = chapterMarker;
+  }
 }
 
 var resizeMarkers = function(currentMarker){
@@ -175,27 +186,4 @@ var resizeMarkers = function(currentMarker){
 
   currentMarker.setIcon(newIcon);
   lastSelected = currentMarker;
-}
-
-function startCardSlideShow(markersArray){
-
-  var i = 0;
-  displayNextDetailsCard();
-  chapterInterval = window.setInterval(displayNextDetailsCard, 5000);
-
-
-  function displayNextDetailsCard() {
-
-    if (i >= markersArray.length) {i = 0};
-    var chapterName = markersArray[i]['title'];
-    var cityAbbreviation = chapterName.match(/[A-Z]*$/)[0];
-    createCardAndTransition(cityAbbreviation);
-    resizeMarkers(markersArray[i]);
-    i++;
-  }
-}
-
-var stopCardSlideShow = function(){
-  intervalSet = false;
-  clearInterval(chapterInterval);
 }
