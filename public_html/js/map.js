@@ -22,6 +22,7 @@ function setMapZoom(){
 
 function initialize() {
   setMapZoom();
+  console.log('init');
 
   var centerLong = 27;
   var centerLat = ($(window).width() > 991 ? -15 : -45);
@@ -159,9 +160,9 @@ function addListenerForMapMarker(chapterMarker){
 
   });
 
-  console.log(mtlChapterIsSet);
 
   if (mtlChapterIsSet === false && cityAbbreviation === 'MTL'){
+    console.log('setting mtl');
     mtlChapterIsSet = true;
     createCardAndTransition(cityAbbreviation);
     resizeMarkers(chapterMarker);
