@@ -1,3 +1,5 @@
+/* MAIN OPPORTUNITIES PAGE */
+
 .intro {
 	height: 100vh;
 }
@@ -21,6 +23,15 @@
 .opportunity-posting {
 	background: black;
 }
+
+.panel-title a {
+	margin-top: 25px;
+}
+
+
+
+
+/* OPPORTUNITY POSTINGS */
 
 #opportunity {
 	margin: 10%;
