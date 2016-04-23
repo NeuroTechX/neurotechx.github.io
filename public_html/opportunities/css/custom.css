@@ -17,3 +17,42 @@
 #opportunities h2 {
 	margin-top: 75px;
 }
+
+.opportunity-posting {
+	background: black;
+}
+
+#opportunity {
+	margin: 10%;
+}
+
+.opp-title, h3 {
+	color: #23b3c6;
+	margin: 50px 0 25px 0;
+}
+
+.opp-title {
+	font-size: 3em;
+	display: inline-block;
+	border-bottom: 5px solid #F9F9F9;
+	margin-bottom: 35px;
+}
+
+
+.opp-list {
+	font-size: 20px;
+	margin-left: 15px;
+
+}
+
+.opp-list li {
+	margin: 10px;
+}
+
+#opportunity p, .opp-list, footer p  {
+	color: #fff;
+}
+
+#opportunity p {
+	 margin: 0;
+}
