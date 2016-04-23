@@ -1,0 +1,15 @@
+.intro {
+	height: 100vh;
+}
+
+#intro-arrow {
+  margin-top: 20vh;
+}
+
+.intro-container {
+	padding-top: 20%;
+}
+
+.intro-container h3 {
+	margin-top: 20px;
+}
