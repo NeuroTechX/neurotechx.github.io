@@ -3,13 +3,17 @@
 }
 
 #intro-arrow {
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .intro-container {
-	padding-top: 20%;
+	padding-top: 15vh;
 }
 
 .intro-container h3 {
 	margin-top: 20px;
+}
+
+#opportunities h2 {
+	margin-top: 75px;
 }
