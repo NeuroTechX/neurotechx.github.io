@@ -1,0 +1,69 @@
+/* MAIN OPPORTUNITIES PAGE */
+
+.intro {
+	height: 100vh;
+}
+
+#intro-arrow {
+  margin-top: 15vh;
+}
+
+.intro-container {
+	padding-top: 15vh;
+}
+
+.intro-container h3 {
+	margin-top: 20px;
+}
+
+#opportunities h2 {
+	margin-top: 75px;
+}
+
+.opportunity-posting {
+	background: black;
+}
+
+.panel-title a {
+	margin-top: 25px;
+}
+
+
+
+
+/* OPPORTUNITY POSTINGS */
+
+#opportunity {
+	margin: 10% 0;
+}
+
+.opp-title, h3 {
+	color: #23b3c6;
+	margin: 50px 0 25px 0;
+}
+
+.opp-title {
+	font-size: 3em;
+	display: inline-block;
+	border-bottom: 5px solid #F9F9F9;
+	margin-bottom: 35px;
+}
+
+
+.opp-list {
+	font-size: 20px;
+	margin-left: 15px;
+
+}
+
+.opp-list li {
+	margin: 10px;
+}
+
+#opportunity p, .opp-list, footer p  {
+	color: #fff;
+}
+
+#opportunity p {
+	 margin: 0;
+}
