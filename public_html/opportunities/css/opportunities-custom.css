@@ -37,23 +37,12 @@ p, .panel-body {
   .intro p {
     font-size: 16px;
   }
-
-
 }
-
-
-// @media(max-width:768px) {
-//   .intro p {
-//     font-size: 15px;
-//   }
-
-// }
 
 @media(max-width:650px) {
   #intro-arrow {
 	  margin-top: 5vh;
 	}
-
 }
 
 @media(max-width:475px) {
