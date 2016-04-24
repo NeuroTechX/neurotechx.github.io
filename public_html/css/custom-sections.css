@@ -36,7 +36,7 @@
 #intro-logo {
   width: 40%;
   height: 40%;
-  padding: 10vh 0 25px 0;
+  padding: 5vh 0 25px 0;
 }
 
 .intro .subscribeButton {
@@ -61,6 +61,11 @@
 }
 
 @media(max-width:768px) {
+
+  #intro-logo {
+    width: 40%;
+  }
+
   .intro {
     height: 100vh;
     padding: 0;

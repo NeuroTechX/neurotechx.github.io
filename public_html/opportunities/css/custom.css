@@ -1,19 +1,26 @@
-/* MAIN OPPORTUNITIES PAGE */
+h1,h2,h3,a {
+	font-family: Orbitron;
+}
 
-.intro {
-	height: 100vh;
+p, .panel-body {
+	 font-family: Armata;
+}
+
+#intro-logo {
+	max-width: 275px;
+	padding-top: 50px;
 }
 
 #intro-arrow {
-  margin-top: 15vh;
+    margin-top: 5vh;
 }
 
-.intro-container {
-	padding-top: 15vh;
-}
 
-.intro-container h3 {
-	margin-top: 20px;
+/* MAIN OPPORTUNITIES PAGE */
+
+
+#opportunities {
+	margin-bottom: 10%;
 }
 
 #opportunities h2 {
@@ -27,7 +34,6 @@
 .panel-title a {
 	margin-top: 25px;
 }
-
 
 
 
@@ -49,11 +55,9 @@
 	margin-bottom: 35px;
 }
 
-
 .opp-list {
 	font-size: 20px;
 	margin-left: 15px;
-
 }
 
 .opp-list li {
