@@ -4,6 +4,28 @@ h1,h2,h3,a {
 
 p, .panel-body {
 	font-family: Armata;
+
+}
+
+.panel-heading, .panel-body, .panel-default, .in {
+  background-color: #eee !important;
+  border: none;
+}
+
+.panel-title {
+	color: #333;
+	margin-top: 5%;
+}
+
+.panel {
+
+	text-align: left;
+}
+
+.panel-body {
+	    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
 }
 
 hr {
@@ -21,20 +43,16 @@ hr {
   margin-top: 0vh;
 }
 
-#opportunities {
-	margin-bottom: 10%;
-}
-
 #opportunities h2 {
-	margin-top: 75px;
+	margin-top: 50px;
 }
 
 .opportunity-posting {
-	background: black;
+	background: #eee;
 }
 
 .panel-title a {
-	margin-top: 25px;
+	margin-top: 8%;
 }
 
 @media(max-width:991px) {
