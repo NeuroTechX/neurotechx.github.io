@@ -15,6 +15,7 @@ p, .panel-body {
 .panel-title {
 	color: #333;
 	margin-top: 5%;
+	font-size: 24px;
 }
 
 .panel {
@@ -34,6 +35,12 @@ hr {
 }
 /* MAIN OPPORTUNITIES PAGE */
 
+header p {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 75%;
+}
+
 #intro-logo {
 	max-width: 275px;
 	padding-top: 25px;
@@ -45,6 +52,14 @@ hr {
 
 #opportunities h2 {
 	margin-top: 50px;
+}
+
+#opportunities p {
+	font-size: 20px;
+}
+
+#opportunities img {
+	margin-top: 25px;
 }
 
 .opportunity-posting {
