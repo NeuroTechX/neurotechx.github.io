@@ -1,0 +1,140 @@
+h1,h2,h3,a {
+	font-family: Orbitron;
+}
+
+p, .panel-body {
+	font-family: Armata;
+
+}
+
+.panel-heading, .panel-body, .panel-default, .in {
+  background-color: #eee !important;
+  border: none;
+}
+
+.panel-title {
+	color: #333;
+	margin-top: 5%;
+	font-size: 24px;
+}
+
+.panel {
+	text-align: left;
+}
+
+.panel-body {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+hr {
+	width: 106%;
+	margin: 6% 0;
+}
+/* MAIN OPPORTUNITIES PAGE */
+
+header p {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 75%;
+}
+
+#intro-logo {
+	max-width: 275px;
+	padding-top: 25px;
+}
+
+#intro-arrow {
+  margin-top: 0vh;
+}
+
+#opportunities h2 {
+	margin-top: 50px;
+}
+
+#opportunities p {
+	font-size: 20px;
+}
+
+#opportunities img {
+	margin-top: 25px;
+}
+
+.panel-title a {
+	margin-top: 8%;
+}
+
+@media(max-width:991px) {
+  .intro p {
+    font-size: 16px;
+  }
+}
+
+@media(max-width:650px) {
+  #intro-arrow {
+	  margin-top: 5vh;
+	}
+}
+
+@media(max-width:475px) {
+  .intro p {
+    font-size: 1em;
+  }
+}
+
+/* OPPORTUNITY POSTINGS */
+
+#opportunity {
+	margin: 10% 0;
+	text-align: left;
+}
+
+.opp-title, h3 {
+	color: #23b3c6;
+	margin: 50px 0 25px 0;
+}
+
+.opp-title {
+	font-size: 3em;
+	display: inline-block;
+	border-bottom: 5px solid #F9F9F9;
+	margin-bottom: 35px;
+}
+
+.opp-list {
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.opp-list li {
+	margin: 10px;
+}
+
+#opportunity p, .opp-list, footer p {
+	color: #fff;
+}
+
+#opportunity p {
+	 margin: 0;
+}
+
+.newsletter-btn {
+	display: block;
+	margin-bottom: 25px;
+	border: 1px white solid;
+	width: 300px;
+	height: 50px;
+	margin-left: 0;
+}
+
+.newsletter-btn, .newsletter-btn:hover, .newsletter-btn:focus {
+	border-radius: 0 !important;
+}
+
+.newsletter-btn p {
+	margin: 0;
+	padding-top: 5px;
+}
+
+

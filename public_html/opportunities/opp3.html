@@ -42,38 +42,47 @@
   <!-- CSS
   ================================================== -->
   <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Grayscale CSS -->
-  <link href="css/template.css" rel="stylesheet">
-
-  <!-- SinglePro CSS -->
-  <link href="css/singlepro.css">
+  <!--Equal Column sizes-->
+  <link href="../css/columns.css" rel="stylesheet">
 
   <!-- Font awesome css file-->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- NeurotechX icon font file-->
+  <link href="../css/neurotechx.css" rel="stylesheet">
 
   <!-- Superslide css file-->
-  <link rel="stylesheet" href="css/superslides.css">
+  <link href="../css/superslides.css" rel="stylesheet">
+
   <!-- Slick slider css file -->
-  <link href="css/slick.css" rel="stylesheet">
+  <link href="../css/slick.css" rel="stylesheet">
+
   <!-- smooth animate css file -->
-  <link rel="stylesheet" href="css/animate.css">
+  <link href="../css/animate.css" rel="stylesheet">
+
   <!-- Elastic grid css file -->
-  <link rel="stylesheet" href="css/elastic_grid.css">
+  <link href="../css/elastic_grid.css" rel="stylesheet">
+
   <!-- Circle counter cdn css file -->
-  <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
+  <link href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css' rel='stylesheet prefetch'>
+
   <!-- Default Theme css file -->
-  <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
+  <link id="orginal" href="../css/themes/default-theme.css" rel="stylesheet">
+
+  <!-- Custom Template CSS -->
+  <link href="../css/template.css" rel="stylesheet">
+
+  <!-- Custom Sections CSS -->
+  <link href="../css/custom-sections.css" rel="stylesheet">
+  <link href="css/opportunities-custom.css" rel="stylesheet">
 
 
-  <!-- Section Content css file -->
-  <link href="css/template.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
+  <link href='https://fonts.googleapis.com/css?family=Aldrich:400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -82,49 +91,87 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+
 </head>
+
 
 <body id="page-top" class="opportunity-posting" data-spy="scroll" data-target=".navbar-fixed-top" bgcolor="#000000">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          <i class="fa fa-bars"></i>
-        </button>
+  <!-- Navbar -->
 
-        <!-- CHAPTER NAME AND NAVIGATION GOES HERE -->
-        <!-- Change "Chapter Name" for your chapter's abbreviation  -->
-        <a class="navbar-brand page-scroll" href="index.html">NeuroTech<span style="color:#23b3c6">X</span> Opportunities</a>
+<!-- Navbar -->
 
-      </div>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="http://neurotechx.com" target="_blank"><span style="color:#23b3c6;">Neurotech</span>X</a>
-          <li>
-        </ul>
-      </div>
-                <!-- /.navbar-collapse -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- Chapter Name and Logo -->
+      <a class="navbar-brand page-scroll" href="http://neurotechx.com">
+       <i class="icon-neurotechx-vector"></i>
+       <span style="color:#fff; font-family:Orbitron">NeuroTech</span>
+       <span style="color:#23b3c6; font-family:Orbitron">X</span>
+      </a>
+
     </div>
-            <!-- /.container -->
-  </nav>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+
+        <li>
+          <a id="about-us-link" class="page-scroll" href="index.html">Opportunities</a>
+        </li>
+
+        <li>
+          <a class="nav-icons" href="https://facebook.com/neurotechx" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-icons" href="https://twitter.com/neurotechx" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-icons" href="https://www.linkedin.com/company/neurotechx" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-icons" href="https://neurotechx.herokuapp.com/" target="_blank">
+            <i class="fa fa-slack"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-icons" href="https://github.com/NeuroTechX/" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        </ul>
+    </div>
+
+  </div>
+</nav>
 
 
 <section id="opportunity">
-  <div class="container">
+  <div class="col-xs-9 col-xs-offset-1 text-content">
 
-    <h2 class="opp-title">OPPORTUNITY 3</h2>
+    <h2 class="opp-title">Opp 3</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula tempor massa, id vehicula turpis imperdiet ac. Nunc ex metus, lacinia non commodo id, consectetur vel magna. Nulla dictum arcu et dui tempor imperdiet. Proin sagittis sit amet metus ultrices interdum. Vestibulum eget sem imperdiet, posuere nisi ac, porttitor sem. Aliquam accumsan ipsum et tempor ullamcorper. Curabitur magna diam, tempus a nulla sed, blandit dignissim purus. Vivamus tristique sollicitudin diam a ultrices. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.
     </p>
@@ -151,15 +198,135 @@
 
     <h3 class="opp-contact">Contact Us</h3>
     <p>Send your resume to <a href="mailto:yannick@neurotechx.com">yannick@neurotechx.com</a></p>
-
+  <hr/>
 </div>
+
+</section>
+
+
+
+<!--=================== ABOUT NEUROTECHX ====================-->
+
+<section id="aboutNTX" class="container noBG-section-dark">
+
+  <div class="row heading aboutntx-outer">
+
+    <div class="col-xs-6 col-xs-offset-1 text-content">
+      <div class="row">
+        <h4>About NeurotechX</h4>
+        <p>
+          NeuroTechX brings hackers, enthusiasts, researchers and experts together to drive innovation and foster collaboration at local and international scales. Our core mission is to build a strong global neurotech community by providing key resources, learning opportunities, and by being leaders in local and worldwide technological initiatives.We believe neurotechnology is key to better understanding and to improving who we are. Join us to take part in the conversation and help shape the future of neurotechnology!
+        </p>
+      </div>
+    </div>
+
+    <div class="col-xs-4 dropdowns">
+
+      <h4>Chapter Meetups</h4>
+      <form name="linkForm" method="POST" action="" id="form">
+        <select name="chapters" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+          <option value="">Choose a City...</option>
+
+          <optgroup label="CANADA">
+            <option value="http://www.meetup.com/NeuroTechMTL">Montreal</option>
+            <option value="http://www.meetup.com/NeuroTechto/"> Toronto</option>
+            <option value="http://www.meetup.com/NeuroTechVAN/">Vancouver</option>
+          </optgroup>
+
+          <optgroup label="UNITED STATES">
+            <option value="http://www.meetup.com/NeuroTechBOS/">Boston</option>
+            <option value="http://www.meetup.com/NeuroTechLAX">Los Angeles</option>
+            <option value="http://www.meetup.com/NeuroTechNYC">New York City</option>
+            <option value="http://www.meetup.com/NeuroTechSF">San Francisco</option>
+          </optgroup>
+
+          <optgroup label="NETHERLANDS">
+            <option value="http://www.meetup.com/NeuroTechAMS">Amsterdam</option>
+          </optgroup>
+
+          <optgroup label="FRANCE">
+            <option value="http://www.meetup.com/NeuroTechPAR">Paris</option>
+          </optgroup>
+
+          <optgroup label="SPAIN">
+            <option value="http://www.meetup.com/NeuroTechBCN">Barcelona</option>
+          </optgroup>
+
+          <optgroup label="UNITED KINGDOM">
+            <option value="http://www.meetup.com/NeuroTechLDN">London</option>
+          </optgroup>
+
+          <optgroup label="PERU">
+            <option value="http://www.meetup.com/NeuroTechLIMA">Lima</option>
+          </optgroup>
+
+          <optgroup label="ISRAEL">
+            <option value="http://www.meetup.com/NeuroTechTLV">Tel-Aviv</option>
+          </optgroup>
+
+        </select>
+        <a href="#" class="btn-default btn-sm page-scroll">GO</a>
+      </form>
+
+      <h4 id="initiatives-header">Initiatives</h4>
+      <form name="initForm" method="POST" action="" id="form">
+        <select name="initiatives" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
+          <option value="">Choose a Project...</option>
+          <option value="http://news.neurotechx.com">NeurotechXNews</option>
+        </select>
+        <a href="#" class="btn-default btn-sm page-scroll">GO</a>
+      </form>
+    </div>
+  </div>
+
+  <div class="row heading">
+    <div class="col-xs-6 col-xs-offset-1 social-icons-outer">
+      <div>
+        <a class="newsletter-btn btn btn-circle-small" href="http://eepurl.com/bEQDKX" target="_blank">
+          <p>SUBSCRIBE TO THE NEWSLETTER</p>
+        </a>
+      </div>
+
+      <div class="row social-media-icons">
+        <table>
+
+          <td class="social-btn">
+            <a href="https://facebook.com/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-facebook animated-small"></i></a>
+          </td>
+
+          <td class="social-btn">
+            <a href="https://twitter.com/NeuroTechX" target="_blank" class="btn btn-circle-small"><i class="fa fa-twitter animated-small"></i></a>
+          </td>
+
+          <td class="social-btn">
+            <a href="https://www.linkedin.com/company/neurotechx" target="_blank" class="btn btn-circle-small"><i class="fa fa-linkedin animated-small"></i></a>
+          </td>
+
+          <td class="social-btn">
+            <a href="http://eepurl.com/bEQDKX" target="_blank" class="btn btn-circle-small"><i class="fa fa-envelope animated-small"></i></a>
+          </td>
+
+          <td class="social-btn">
+            <a href="https://github.com/NeuroTechX/" target="_blank" class="btn btn-circle-small"><i class="fa fa-github animated-small"></i></a>
+          </td>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
 <!-- Footer -->
+
 <footer>
-  <div class="container text-center">
-    <p>Copyright &copy; NeuroTechX 2016</p>
+  <div class="row heading">
+    <div class="col-xs-6 col-xs-offset-1 footer-outer">
+      <div class ="row" style="text-align:left;">
+        <p>Copyright &copy; NeuroTechX 2016</p>
+      </div>
+    </div>
   </div>
 </footer>
 
