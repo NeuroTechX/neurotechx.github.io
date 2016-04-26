@@ -63,6 +63,7 @@ header p {
 
 .panel-title a {
 	margin-top: 8%;
+	display: inline-block;
 }
 
 #dream_position_text {
