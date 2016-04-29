@@ -53,20 +53,11 @@ header p {
 }
 
 #opportunities img {
-	margin-top: 25px;
+	margin: 25px 0 75px 0;
 }
 
 .panel-title a {
-	margin-top: 8%;
 	display: inline-block;
-}
-
-#dream_position_text {
-	margin-top: 15%;
-}
-
-#dream_position_text a {
-	font-family: Armata;
 }
 
 @media(max-width:991px) {
