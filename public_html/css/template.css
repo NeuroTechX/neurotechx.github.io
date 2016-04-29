@@ -250,14 +250,14 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
+
+    .navbar-brand{
+        scale: .7;
+    }
 }
 
 
 @media(max-width: 991px) {
-    .navbar-brand{
-        scale: .7;
-    }
-
     .navbar-custom{
         padding-bottom: 0;
     }
@@ -276,6 +276,18 @@ a:focus {
         border: 0;
     }
 }
+
+@media(max-width: 1150px) {
+    .navbar-custom .navbar-brand  {
+        margin-left: 0 !important;
+    }
+
+    .navbar-custom .navbar-right {
+        margin-right: 0 !important;
+    }
+
+}
+
 
 /*******************
 * TABLES
@@ -999,7 +1011,7 @@ Singlepro: start responsive style
 
 }
 
-@media(max-width:991px ){
+@media(max-width:1050px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
   .navbar-collapse{background-color: rgba(0,0,0,0.8);}
   // .navbar-brand {font-size: 2px;}
