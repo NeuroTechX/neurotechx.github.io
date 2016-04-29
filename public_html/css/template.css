@@ -168,6 +168,14 @@ a:focus {
     margin-left: 35px !important;
 }
 
+.navbar-custom .navbar-brand span {
+    vertical-align: text-bottom;
+}
+
+.navbar-custom .navbar-brand span:nth-child(3) {
+    margin-left: -6px !important;
+}
+
 .navbar-custom .navbar-right {
     margin-right: 35px !important;
 }

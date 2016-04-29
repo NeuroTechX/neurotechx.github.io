@@ -1,21 +1,21 @@
 /*!*********************************************************
  *
  *
- * NEUROTECHX CHAPTER TEMPLATE 
+ * NEUROTECHX CHAPTER TEMPLATE
  * aka THE FRANKENTHEME v1.8
- * Ana Tavera Mendoza 
+ * Ana Tavera Mendoza
  * Latest revision: 22/11/2015
  *
- * a rather shameless mashup of Grayscale by StartBootstrap 
+ * a rather shameless mashup of Grayscale by StartBootstrap
  * and of SinglePro by WPFreeWare.
  *
- * Heavily commented for easy customization. 
+ * Heavily commented for easy customization.
  * As singlepro has more functionality than the ones embedded
  * in this stylesheet (including the possibility of blog pages)
  * These blog functionalities can be added in later during a v2.x revamp, if desired.
  * For all current purposes, this template will remain single-page for the time being.
  *
- * 
+ *
  *
  **********************************************************/
 
@@ -125,7 +125,7 @@ a:focus {
 
 /***************
 *
-* Navbar custom 
+* Navbar custom
 *
 ****************/
 
@@ -421,12 +421,12 @@ a:focus {
 
 .slider_caption>p{
 	color: #ffffff;
-	font-size: 20px;	
+	font-size: 20px;
 }
 
 
-.slider_caption>a{		
-	margin-top: 30px;	
+.slider_caption>a{
+	margin-top: 30px;
 }
 
 
@@ -468,16 +468,16 @@ a:focus {
 ******************************/
 
 .intro {
-    
-    
+
+
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-color: #000;  
-    background: linear-gradient(rgba(0, 0, 0, 1.9), rgba(0, 0, 0,0.6)), 
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 1.9), rgba(0, 0, 0,0.6)),
                     url(../img/backgrounds/01.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -560,10 +560,10 @@ a:focus {
 
 .subscribeButton.inverted {
     background: #000000;
-    
+
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -580,7 +580,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -633,13 +633,13 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
-    
+
+
     text-align: center;
-    
+
     display: table;
-    
-    
+
+
 }
 
 
@@ -647,19 +647,19 @@ a:focus {
      width: 100%;
         padding: 50px 0;
         color: #fff;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                     url(../img/backgrounds/02.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
     -o-background-size: cover;
-    
-    
+
+
     text-align: center;
-    
+
     display: table;
-    
-    
+
+
 }
 
 
@@ -685,7 +685,7 @@ a:focus {
 	display: inline;
 	width: 100%;
 	min-height: 200px;
-    
+
 }
 
 
@@ -697,7 +697,7 @@ a:focus {
 
 
 .heading h2 {
-    
+
 	display: inline-block;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
@@ -776,13 +776,13 @@ a:focus {
 }
 
 
-.panel-default .in{	
+.panel-default .in{
 background-color: #000;
   padding-left:10px;
   margin-left: 20px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s; 
+  transition: all 0.5s;
 }
 
 
@@ -791,7 +791,7 @@ background-color: #000;
 }
 
 
-.panel-body { 
+.panel-body {
   border-top-color: transparent !important;
   padding: 0px 15px;
   margin: 10px 0px;
@@ -822,7 +822,7 @@ background-color: #000;
 .about_slider .slick-dots li button:before {
   color: #ccc;
   content: "•";
-  font-size: 28px;  
+  font-size: 28px;
 }
 
 
@@ -895,7 +895,7 @@ div[data-dimension] {
 *   Events Section
 *
 *   For all intents and purposes (and avoiding having to go on a goose chase to rename variables)
-*   the Events section is the repurposed version of SinglePro's blog section. Technically, blog pages are 
+*   the Events section is the repurposed version of SinglePro's blog section. Technically, blog pages are
 *   almost ready to be implemented, but let's keep that for the next iteration of FrankenTemplate, or when/if I
 *   sit down and turn this stylesheet into a WordPress theme.
 *
@@ -926,7 +926,7 @@ div[data-dimension] {
 .post_commentbox {
   display: inline;
   float: left;
-  width: 100%;      
+  width: 100%;
 }
 
 
@@ -969,10 +969,10 @@ div[data-dimension] {
 
 
 .post_commentbox{
-	float: left;	
-	display: inline;	
-	width: 100%;	
-	margin-bottom: 15px;	
+	float: left;
+	display: inline;
+	width: 100%;
+	margin-bottom: 15px;
 }
 
 
@@ -996,8 +996,8 @@ div[data-dimension] {
 
 
 .read_more:hover,.read_more:focus{
-	text-decoration: none;	
-	outline: none;	
+	text-decoration: none;
+	outline: none;
 }
 
 
@@ -1035,7 +1035,7 @@ div[data-dimension] {
 
 
 .blog_slider .slick-prev:hover,
-.blog_slider .slick-next:hover{  
+.blog_slider .slick-next:hover{
 	opacity: 0.7;
 }
 
@@ -1162,7 +1162,7 @@ div[data-dimension] {
 
 .wagwep-container ul#portfolio-filter {
   display: inline-block;
-  float: none;  
+  float: none;
   border-bottom: medium none;
   color:#000;
   margin-top: 25px;
@@ -1174,7 +1174,7 @@ div[data-dimension] {
 
 .wagwep-container ul#portfolio-filter a {
   display: inline-block;
-  float: none;  
+  float: none;
   background: none repeat scroll 0 center rgba(0, 0, 0, 0);
   border: 1px solid #000;
   border-radius: 0;
@@ -1192,7 +1192,7 @@ div[data-dimension] {
 
 
 .wagwep-container ul#portfolio-filter a:hover{
-	color: #000;	
+	color: #000;
 }
 
 
@@ -1210,7 +1210,7 @@ div[data-dimension] {
 
 .wagwep-container ul#portfolio-filter li {
    display: inline-block;
-   float: none;  
+   float: none;
 }
 
 /******************************
@@ -1226,19 +1226,19 @@ div[data-dimension] {
     padding: 50px 0;
     color: #fff;
     background-color : #000;
-background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)), 
+background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
                     url(../img/backgrounds/03.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
-    
+
+
     text-align: center;
-    
+
     display: table;
 
-    
+
 }
 
 
@@ -1334,7 +1334,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-    
+
 
 /**************************
 *
@@ -1354,13 +1354,13 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
         -moz-background-size: cover;
         background-size: cover;
     -o-background-size: cover;
-    
-    
+
+
     text-align: center;
-    
+
     display: table;
-    
-   
+
+
 }
 
 
@@ -1376,7 +1376,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                 url(../img/backgrounds/04.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1490,7 +1490,7 @@ Singlepro: start responsive style
   .blog_slider .slick-prev {left: 91%;}
   #map_canvas{height: 404px;}
   /*only firefox browser*/
-  @-moz-document url-prefix() { 
+  @-moz-document url-prefix() {
   #map_canvas{height: 404px;	}
   }
   .slider_caption {margin-top: 25%;}
@@ -1498,7 +1498,7 @@ Singlepro: start responsive style
   .subscr_btn {width: 24%;}
 
 }
-  
+
 @media(max-width:991px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
   .navbar-brand {font-size: 28px;}
@@ -1521,11 +1521,11 @@ Singlepro: start responsive style
   .partners_slider .slick-next {right: 45%;}
   .subscr_btn {font-size: 15px;}
   .single_contact_feaured {margin-bottom: 30px;}
-  
+
 }
 
 @media(max-width:767px ){
-	.navbar-collapse{background-color: rgba(0,0,0,0.8);} 
+	.navbar-collapse{background-color: rgba(0,0,0,0.8);}
 	.main_nav{text-align: center;}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: rgba(0,0,0,0.5);}
 	#slides {height: 360px !important;}
@@ -1540,7 +1540,7 @@ Singlepro: start responsive style
 	.counter_section {background-size: cover;}
 	.portfolio_area {padding: 60px 15px 0;}
 	.wagwep-container ul#portfolio-filter a {margin: 0 5px 5px 0;padding: 6px 10px;font-size: 12px;}
-	.single_price {margin-bottom: 30px;}	
+	.single_price {margin-bottom: 30px;}
 	.single_price > h3 {font-size: 24px;line-height: 100px;}
 	.single_price .price > h4 {font-size: 60px;line-height: 60px;}
 	.price_features li {font-size: 15px;line-height: 18px;}
@@ -1567,13 +1567,13 @@ Singlepro: start responsive style
 	#subscribe {padding: 50px  0;}
 	.social_nav {margin-top: 20px;text-align: center;}
 	.footer_left {text-align: center;}
-	.single_service > .service_title:after {left: 41%;}	
+	.single_service > .service_title:after {left: 41%;}
   .wagwep-container ul#portfolio-filter li {width: auto;}
   .wagwep-container ul#portfolio-filter a {text-indent: 0;}
 
 }
 
-@media(max-width:480px ){	
+@media(max-width:480px ){
 	#slides {height: 320px !important;}
 	.slider_caption {margin-top: 20%;}
 	.slider_caption > h2 { font-size: 20px;line-height: 22px;margin-bottom: 0px;}
@@ -1581,22 +1581,22 @@ Singlepro: start responsive style
 	.slider_caption > a { font-size: 15px; margin-top: 20px;  padding: 8px 10px;}
 	.wagwep-container ul#portfolio-filter li {width: auto;}
 	.wagwep-container ul#portfolio-filter a {font-size: 10px;margin: 0 0 2px;padding: 5px;text-align: center;text-indent: 0;}
-	.blog_slider .slick-prev {left: 81.5%;} 
+	.blog_slider .slick-prev {left: 81.5%;}
 	.partners_slider .slick-prev {left: 43%;}
 	.partners_slider .slick-next {right: 43%;}
 	.subscribe_form {width: 100%;}
 	.footer_left {text-align: center;}
 	.footer_right { margin-top: 20px;}
 	.social_nav { text-align: center;}
-	.testi_content:before {left: 30%;}	
+	.testi_content:before {left: 30%;}
 	.single_service > .service_title:after {left: 38%;}
 	.wagwep-container ul#portfolio-filter {padding: 0 3%;}
   #blogBanner {height: 250px;padding: 100px 0;}
-  #blogBanner h2 {font-size: 45px;}	
+  #blogBanner h2 {font-size: 45px;}
   .blogdetails_content > h2 {font-size: 18px;line-height: 25px;}
   .similar_post h2 {font-size: 17px;}
   .single_blogsidebar > h2 {font-size: 18px;}
- 
+
 }
 
 @media(max-width:360px ){
@@ -1620,11 +1620,11 @@ Singlepro: start responsive style
 	.slides-navigation {display: none;}
   #blogBanner {height: 150px;padding: 45px 0;}
   #blogBanner h2 {font-size: 30px;}
-  .previous_nav {padding: 9px;} 
+  .previous_nav {padding: 9px;}
   .next_nav{padding: 9px;}
   .similar_post h2 {font-size: 14px;}
   .sociallink_nav li a {margin: 0px;font-size: 15px;}
-	
+
 }
 
 @media(max-width:320px ){
@@ -1632,6 +1632,6 @@ Singlepro: start responsive style
 	.single_service > .service_title:after {left: 29%;}
 	.blog_slider .slick-prev {left: 70.5%;}
 	.subscr_btn {font-size: 11px;}
-	.slider_caption {margin-top: 34%;}  
-	
+	.slider_caption {margin-top: 34%;}
+
 }
