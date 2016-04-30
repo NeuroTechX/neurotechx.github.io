@@ -41,7 +41,9 @@
 
 .intro .subscribeButton {
   margin-top: 5vh;
+  padding-top: 13px;
   font-family: Orbitron;
+
 }
 
 #intro-arrow {
