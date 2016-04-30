@@ -56,6 +56,14 @@ header p {
 	margin: 25px 0 75px 0;
 }
 
+#get-involved {
+	padding: 75px 0;
+}
+
+.subscribeButton.inverted {
+	width: 360px;
+}
+
 .panel-title a {
 	display: inline-block;
 }
@@ -113,6 +121,8 @@ header p {
 #opportunity p {
 	 margin: 0;
 }
+
+
 
 .newsletter-btn {
 	display: block;
