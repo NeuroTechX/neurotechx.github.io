@@ -232,10 +232,12 @@ a:focus {
     padding-right:0;
 }
 
-.navbar-custom #join-us-link, #get-updates-link {
+.navbar-custom #join-us-link {
     border: 1px solid #fff;
     padding-bottom: 13px;
 }
+
+
 
 .navbar .navbar-custom .navbar-fixed-top {
     max-width: 90% !important;

@@ -1,3 +1,8 @@
+.navbar-custom #get-updates-link {
+    border: 1px solid #fff;
+    padding-bottom: 13px;
+}
+
 p, .panel-body {
 	font-family: Armata;
 }
