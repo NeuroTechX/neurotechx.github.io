@@ -133,20 +133,35 @@ header p {
 	 margin: 0;
 }
 
-.newsletter-btn {
-	display: block;
-	margin-bottom: 25px;
-	border: 1px white solid;
-	width: 300px;
-	height: 50px;
-	margin-left: 0;
+
+#get-involved .btn-lg{
+  height: 50px;
+  margin-bottom: 25px;
+  transition: all .3s ease-in-out;
+  font-family: Orbitron;
+  border: 1px solid #eee;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 1px;
 }
 
-.newsletter-btn, .newsletter-btn:hover, .newsletter-btn:focus {
-	border-radius: 0 !important;
+#get-involved .btn-lg {
+  background-color: #23B3C6;
 }
 
-.newsletter-btn p {
-	margin: 0;
-	padding-top: 5px;
+
+#get-involved .btn-lg:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #000;
 }
+
+@media(max-width: 950px){
+  #get-involved .btn-lg {
+    font-size: 15px;
+    line-height: 2.1;
+    margin-top: 25px;
+  }
+}
+
+
