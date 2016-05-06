@@ -50,12 +50,40 @@ header p {
 	padding: 75px 0 0 0;
 }
 
+#get-involved .btn-lg{
+  height: 50px;
+  margin-bottom: 25px;
+  transition: all .3s ease-in-out;
+  font-family: Orbitron;
+  border: 1px solid #eee;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+#get-involved .btn-lg {
+  background-color: #23B3C6;
+}
+
+
+#get-involved .btn-lg:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #000;
+}
+
 #opportunities .subscribeButton.inverted {
 	width: 360px;
 }
 
 #opportunities .panel-title a {
 	display: inline-block;
+	color: #23B3C6;
+	transition: all .3s ease-in-out;
+}
+
+#opportunities .panel-title a:hover {
+	color: #000;
 }
 
 #opportunities .panel-heading, #opportunities .panel-body, #opportunities .panel-default, #opportunities .in {
@@ -134,27 +162,7 @@ header p {
 }
 
 
-#get-involved .btn-lg{
-  height: 50px;
-  margin-bottom: 25px;
-  transition: all .3s ease-in-out;
-  font-family: Orbitron;
-  border: 1px solid #eee;
-  font-size: 20px;
-  line-height: 1.7;
-  letter-spacing: 1px;
-}
 
-#get-involved .btn-lg {
-  background-color: #23B3C6;
-}
-
-
-#get-involved .btn-lg:hover {
-    background-color: #eee;
-    color: #000;
-    border: 1px solid #000;
-}
 
 @media(max-width: 950px){
   #get-involved .btn-lg {
