@@ -274,7 +274,7 @@ a:focus {
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 1188px) {
     .navbar-custom{
         padding-bottom: 0;
     }
