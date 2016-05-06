@@ -58,7 +58,7 @@ header p {
 	display: inline-block;
 }
 
-#opportunities.panel-heading, #opportunities.panel-body, #opportunities.panel-default, #opportunities.in {
+#opportunities .panel-heading, #opportunities .panel-body, #opportunities .panel-default, #opportunities .in {
   background-color: #eee !important;
   border: none;
 }
