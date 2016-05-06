@@ -916,6 +916,25 @@
   font-size: 14px;
 }
 
+#aboutNTX .btn-lg {
+  background-color: #23B3C6;
+  border: none;
+  height: 50px;
+  margin-bottom: 25px;
+  transition: all .3s ease-in-out;
+  font-family: Orbitron;
+  font-size: 20px;
+  line-height: 1.7;
+  border: 1px solid #fff;
+  /*max-width: 100%;*/
+}
+
+#aboutNTX .btn-lg:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
 #initiatives-header {
   padding-top: 18%
 }
@@ -927,6 +946,17 @@
 #aboutNTX .social-media-icons table {
   width:60%;
   padding:10px;
+}
+
+@media(max-width: 950px){
+  #aboutNTX .btn-lg {
+    font-size: 15px;
+    line-height: 2.1;
+
+    margin-top: 25px;
+    /*margin-bottom: 0;*/
+
+  }
 }
 
 @media(max-width: 650px) {
