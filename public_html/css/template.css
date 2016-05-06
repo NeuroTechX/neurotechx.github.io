@@ -237,10 +237,8 @@ a:focus {
     padding-bottom: 13px;
 }
 
-
-
 .navbar .navbar-custom .navbar-fixed-top {
-    max-width: 90% !important;
+    max-width: 100% !important;
 }
 
 
@@ -266,6 +264,15 @@ a:focus {
     }
 }
 
+@media(max-width: 1260px) {
+    .navbar-custom .navbar-brand  {
+        margin-left: 0 !important;
+    }
+
+    .navbar-custom .navbar-right {
+        margin-right: 0 !important;
+    }
+}
 
 @media(max-width: 991px) {
     .navbar-custom{
@@ -285,17 +292,6 @@ a:focus {
     .navbar-custom #join-us-link {
         border: 0;
     }
-}
-
-@media(max-width: 1150px) {
-    .navbar-custom .navbar-brand  {
-        margin-left: 0 !important;
-    }
-
-    .navbar-custom .navbar-right {
-        margin-right: 0 !important;
-    }
-
 }
 
 
@@ -1021,7 +1017,7 @@ Singlepro: start responsive style
 
 }
 
-@media(max-width:1050px ){
+@media(max-width:1188px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
   .navbar-collapse{background-color: rgba(0,0,0,0.8);}
   // .navbar-brand {font-size: 2px;}
