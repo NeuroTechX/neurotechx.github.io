@@ -3,29 +3,14 @@
     padding-bottom: 13px;
 }
 
+@media(max-width: 1188px) {
+    .navbar-custom #get-updates-link {
+        border: 0;
+    }
+}
+
 p, .panel-body {
 	font-family: Armata;
-}
-
-.panel-heading, .panel-body, .panel-default, .in {
-  background-color: #eee !important;
-  border: none;
-}
-
-.panel-title {
-	color: #333;
-	margin-top: 5%;
-	font-size: 24px;
-}
-
-.panel {
-	text-align: left;
-}
-
-.panel-body {
-	font-size: 16px;
-	line-height: 28px;
-	font-weight: 300;
 }
 
 hr {
@@ -65,12 +50,33 @@ header p {
 	padding: 75px 0;
 }
 
-.subscribeButton.inverted {
+#opportunities .subscribeButton.inverted {
 	width: 360px;
 }
 
-.panel-title a {
+#opportunities .panel-title a {
 	display: inline-block;
+}
+
+#opportunities.panel-heading, #opportunities.panel-body, #opportunities.panel-default, #opportunities.in {
+  background-color: #eee !important;
+  border: none;
+}
+
+#opportunities .panel-title {
+	color: #333;
+	margin-top: 5%;
+	font-size: 24px;
+}
+
+#opportunities .panel {
+	text-align: left;
+}
+
+#opportunities .panel-body {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
 }
 
 @media(max-width:991px) {
