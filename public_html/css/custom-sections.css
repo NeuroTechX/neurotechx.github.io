@@ -916,18 +916,25 @@
   font-size: 14px;
 }
 
-#aboutNTX .btn-lg {
-  background-color: #23B3C6;
-  border: none;
+#aboutNTX .btn-lg{
   height: 50px;
   margin-bottom: 25px;
   transition: all .3s ease-in-out;
   font-family: Orbitron;
+  border: 1px solid #fff;
   font-size: 20px;
   line-height: 1.7;
-  border: 1px solid #fff;
-  /*max-width: 100%;*/
+  letter-spacing: 1px;
 }
+
+#aboutNTX .btn-lg:not(.opp-btn) {
+  background-color: #23B3C6;
+}
+
+.opp-btn {
+  margin-top: 18%;
+}
+
 
 #aboutNTX .btn-lg:hover {
     background-color: #fff;
@@ -940,22 +947,19 @@
 }
 
 #aboutNTX .social-media-icons{
-  text-align:left;
+  text-align: left;
 }
 
 #aboutNTX .social-media-icons table {
-  width:60%;
-  padding:10px;
+  width: 60%;
+  padding: 10px;
 }
 
 @media(max-width: 950px){
   #aboutNTX .btn-lg {
     font-size: 15px;
     line-height: 2.1;
-
     margin-top: 25px;
-    /*margin-bottom: 0;*/
-
   }
 }
 
