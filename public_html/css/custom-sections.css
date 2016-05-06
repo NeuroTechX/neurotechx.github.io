@@ -893,6 +893,7 @@
 ******************************/
 
 
+
 #aboutNTX .text-content {
   text-align:left;
 }
@@ -901,11 +902,14 @@
   text-align:left;
   padding-left: 5%;
   padding-right: 0;
-
 }
 
 #aboutNTX h4 {
   text-transform: uppercase;
+}
+
+#aboutNTX .text-content h4 {
+  font-size: 20px;
 }
 
 #aboutNTX .text-content p {
