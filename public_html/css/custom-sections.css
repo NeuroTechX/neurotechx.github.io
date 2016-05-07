@@ -617,7 +617,7 @@
 ******************************/
 
 #JoinUs{
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .cta-container {
@@ -805,6 +805,10 @@
 *   Social Wall Section
 *
 ******************************/
+
+#socialwall {
+  padding: 100px 0;
+}
 
 .widget {
   border: 2px solid black;
