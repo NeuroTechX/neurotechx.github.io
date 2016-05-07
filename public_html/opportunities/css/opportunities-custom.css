@@ -66,9 +66,9 @@ header p {
 }
 
 #get-involved .btn-lg:hover {
-    background-color: #eee;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #eee;
 }
 
 #opportunities .subscribeButton.inverted {
