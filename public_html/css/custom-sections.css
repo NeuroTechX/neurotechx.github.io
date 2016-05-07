@@ -551,6 +551,7 @@
 .whatwedo-boxes .box .inside h4 {
   text-transform: uppercase;
   color: #23b2c6;
+  transition: all .3s ease-in-out;
 }
 
 .whatwedo-boxes .box a > h4:hover {
