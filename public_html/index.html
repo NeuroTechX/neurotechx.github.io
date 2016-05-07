@@ -524,63 +524,59 @@
     <div class="col-xs-4 dropdowns">
 
       <h4>Chapter Meetups</h4>
-      <form name="linkForm" method="POST" action="" id="form">
-        <select name="chapters" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
-          <option value="">Choose a City...</option>
+      <div class="btn-group">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose a City <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>CANADA</li>
+          <li><a href='http://www.meetup.com/NeuroTechMTL' target="_blank">Montreal</a></li>
+          <li><a href='http://www.meetup.com/NeuroTechTO' target="_blank">Toronto</a></li>
+          <li><a href='http://www.meetup.com/NeuroTechVAN' target="_blank">Vancouver</a></li>
 
-          <optgroup label="CANADA">
-            <option value="http://www.meetup.com/NeuroTechMTL">Montreal</option>
-            <option value="http://www.meetup.com/NeuroTechto/"> Toronto</option>
-            <option value="http://www.meetup.com/NeuroTechVAN/">Vancouver</option>
-          </optgroup>
+          <li>UNITED STATES</li>
+          <li><a href='http://www.meetup.com/NeuroTechBOS' target="_blank">Boston</a></li>
+          <li><a href='http://www.meetup.com/NeuroTechLAX' target="_blank">Los Angeles</a></li>
+          <li><a href='http://www.meetup.com/NeuroTechNYC' target="_blank">New York City</a></li>
+          <li><a href='http://www.meetup.com/NeuroTechSF' target="_blank">San Francisco</a></li>
 
-          <optgroup label="UNITED STATES">
-            <option value="http://www.meetup.com/NeuroTechBOS/">Boston</option>
-            <option value="http://www.meetup.com/NeuroTechLAX">Los Angeles</option>
-            <option value="http://www.meetup.com/NeuroTechNYC">New York City</option>
-            <option value="http://www.meetup.com/NeuroTechSF">San Francisco</option>
-          </optgroup>
+          <li>NETHERLANDS</li>
+          <li><a href='http://www.meetup.com/NeuroTechAMS' target="_blank">Amsterdam</a></li>
 
-          <optgroup label="NETHERLANDS">
-            <option value="http://www.meetup.com/NeuroTechAMS">Amsterdam</option>
-          </optgroup>
+          <li>FRANCE</li>
+          <li><a href='http://www.meetup.com/NeuroTechPAR' target="_blank">Paris</a></li>
 
-          <optgroup label="FRANCE">
-            <option value="http://www.meetup.com/NeuroTechPAR">Paris</option>
-          </optgroup>
+          <li>SPAIN</li>
+          <li><a href='http://www.meetup.com/NeuroTechBCN' target="_blank">Barcelona</a></li>
 
-          <optgroup label="SPAIN">
-            <option value="http://www.meetup.com/NeuroTechBCN">Barcelona</option>
-          </optgroup>
+          <li>UNITED KINGDOM</li>
+          <li><a href='http://www.meetup.com/NeuroTechLDN' target="_blank">London</a></li>
 
-          <optgroup label="UNITED KINGDOM">
-            <option value="http://www.meetup.com/NeuroTechLDN">London</option>
-          </optgroup>
+          <li>PERU</li>
+          <li><a href='http://www.meetup.com/NeuroTechLIMA' target="_blank">Lima</a></li>
 
-          <optgroup label="PERU">
-            <option value="http://www.meetup.com/NeuroTechLIMA">Lima</option>
-          </optgroup>
+          <li>UNITED KINGDOM</li>
+          <li><a href='http://www.meetup.com/NeuroTechLDN' target="_blank">London</a></li>
 
-          <optgroup label="ISRAEL">
-            <option value="http://www.meetup.com/NeuroTechTLV">Tel-Aviv</option>
-          </optgroup>
+          <li>ISREAL</li>
+          <li><a href='http://www.meetup.com/NeuroTechTLV' target="_blank">Tel-Aviv</a></li>
 
-        </select>
-        <a href="#" class="btn-default btn-sm page-scroll">GO</a>
-      </form>
+        </ul>
+      </div>
+
 
       <h4 id="initiatives-header">Initiatives</h4>
-      <form name="initForm" method="POST" action="" id="form">
-        <select name="initiatives" onchange="document.getElementById('form').setAttribute('action', this.value); document.linkForm.submit(); " >
-          <option value="">Choose a Project...</option>
-          <option value="http://news.neurotechx.com">NeurotechXNews</option>
-          <option value="http://neurotechx.com/studentclubs.html">Student Clubs</option>
-          <option value="http://neurotechx.com/studentclubs.html">Student Competition</option>
-        </select>
-        <a href="#" class="btn-default btn-sm page-scroll">GO</a>
-      </form>
 
-      <a href="http://neurotechx.com/opportunites" class="btn btn-default btn-lg opp-btn">OPPORTUNITIES</a>
+      <div class="btn-group">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose a Project <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href='http://news.neurotechx.com' target="_blank">NeurotechXNews</a></li>
+          <li><a href='http://neurotechx.com/studentclubs.html' target="_blank">Student Clubs</a></li>
+          <li><a href='http://neurotechx.com/studentclubs.html' target="_blank">Student Competition</a></li>
+        </ul>
+      </div>
+
+      <a href="http://testing.neurotechx.com/john/opportunities/" class="btn btn-default btn-lg opp-btn">OPPORTUNITIES</a>
 
     </div>
   </div>
