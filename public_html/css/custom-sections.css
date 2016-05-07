@@ -838,8 +838,6 @@
 *
 ******************************/
 
-
-
 #aboutNTX .text-content {
   text-align:left;
 }
@@ -848,6 +846,15 @@
   text-align:left;
   padding-left: 5%;
   padding-right: 0;
+}
+
+.aboutntx-outer .dropdowns .btn-group, .aboutntx-outer .dropdowns h4 {
+  display: block;
+}
+
+.aboutntx-outer .dropdowns .btn-group li {
+  color:#23b3c6;
+  font-weight: bolder;
 }
 
 #aboutNTX h4 {
@@ -882,13 +889,13 @@
 }
 
 #aboutNTX .btn-lg:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
 
 #initiatives-header {
-  padding-top: 18%
+  padding-top: 25%;
 }
 
 #aboutNTX .social-media-icons{
@@ -918,7 +925,7 @@
     padding-left: 15px;
   }
 
-  .aboutntx-outer .dropdowns form {
+  .aboutntx-outer .dropdowns .btn-group {
     margin-bottom: 25px;
   }
 
