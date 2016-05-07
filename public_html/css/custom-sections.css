@@ -644,6 +644,20 @@
   padding-left: 0;
 }
 
+#JoinUs .btn-white {
+  background-color: #23b3c6;
+  color: #eee;
+  transition: all .3s ease-in-out;
+}
+
+
+#JoinUs .btn-white:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
 /* Icons */
 .fa-2x {
   color: #23b3c6;
