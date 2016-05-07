@@ -759,6 +759,12 @@
 
 .widget-container h2 {
   font-size: 1.4em;
+  border: 1px solid black;
+  padding: 20px 0 15px 0 ;
+  margin-bottom: 0;
+  color: white;
+  background: black;
+  l
 }
 
 @media(max-width: 1250px) {
