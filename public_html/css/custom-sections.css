@@ -871,12 +871,13 @@
 
 #aboutNTX .btn-lg{
   height: 50px;
+  width: 375px;
   margin-bottom: 25px;
   transition: all .3s ease-in-out;
   font-family: Orbitron;
   border: 1px solid #fff;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 2;
   letter-spacing: 1px;
 }
 
@@ -885,7 +886,9 @@
 }
 
 .opp-btn {
-  margin-top: 18%;
+  margin-top: 25%;
+  display: block;
+  width: 250px;
 }
 
 #aboutNTX .btn-lg:hover {
