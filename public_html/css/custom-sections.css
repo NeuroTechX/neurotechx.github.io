@@ -850,7 +850,7 @@
   border: 1px solid #000;
 }
 
-#aboutNTX .social-media-icons{
+#aboutNTX .social-media-icons {
   text-align: left;
 }
 
@@ -883,7 +883,15 @@
 
   .aboutntx-outer .right-col h4{
     font-size: 18px;
+    margin-top: 0 !important;
     padding: 25px 0 0 0;
   }
+}
 
+@media(max-width: 475px) {
+    #aboutNTX .btn-lg {
+      width: 250px;
+      font-family: Armata;
+      font-size: 12px;
+    }
 }
