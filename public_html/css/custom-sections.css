@@ -839,21 +839,29 @@
 ******************************/
 
 #aboutNTX .text-content {
-  text-align:left;
+  text-align: left;
 }
 
-.aboutntx-outer .dropdowns {
-  text-align:left;
-  padding-left: 5%;
+.aboutntx-outer .right-col {
+  text-align: left;
+  padding-left: 50px;
   padding-right: 0;
 }
 
-.aboutntx-outer .dropdowns .btn-group, .aboutntx-outer .dropdowns h4 {
+.aboutntx-outer .right-col h4:not(:first-child) {
+  margin-top: 75px;
+}
+
+.aboutntx-outer .dropdown-menu {
+  padding: 5px;
+}
+
+.aboutntx-outer h4 {
   display: block;
 }
 
-.aboutntx-outer .dropdowns .btn-group li {
-  color:#23b3c6;
+.aboutntx-outer .right-col .btn-group li {
+  color: #23b3c6;
   font-weight: bolder;
 }
 
@@ -881,24 +889,14 @@
   letter-spacing: 1px;
 }
 
-#aboutNTX .btn-lg:not(.opp-btn) {
+#aboutNTX .btn-lg {
   background-color: #23B3C6;
-}
-
-.opp-btn {
-  margin-top: 25%;
-  display: block;
-  width: 250px;
 }
 
 #aboutNTX .btn-lg:hover {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
-}
-
-#initiatives-header {
-  padding-top: 25%;
 }
 
 #aboutNTX .social-media-icons{
@@ -924,15 +922,15 @@
     margin: 2.5% 10%;
   }
 
-  .aboutntx-outer .dropdowns {
+  .aboutntx-outer .right-col {
     padding-left: 15px;
   }
 
-  .aboutntx-outer .dropdowns .btn-group {
+  .aboutntx-outer .right-col .btn-group {
     margin-bottom: 25px;
   }
 
-  .aboutntx-outer .dropdowns h4, #initiatives-header{
+  .aboutntx-outer .right-col h4{
     font-size: 18px;
     padding: 25px 0 0 0;
   }
