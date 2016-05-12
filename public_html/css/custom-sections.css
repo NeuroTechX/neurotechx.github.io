@@ -800,7 +800,11 @@
 }
 
 .aboutntx-outer .right-col h4:not(:first-child) {
-  margin-top: 75px;
+  margin-top: 30px;
+}
+
+.aboutntx-outer h4{
+  margin-bottom: 0;
 }
 
 .aboutntx-outer .dropdown-menu {
@@ -818,10 +822,7 @@
 
 #aboutNTX h4 {
   text-transform: uppercase;
-}
-
-#aboutNTX .text-content h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #aboutNTX .text-content p {
@@ -838,16 +839,6 @@
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
-}
-
-#aboutNTX .btn-lg {
-  background-color: #23B3C6;
-}
-
-#aboutNTX .btn-lg:hover {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
 }
 
 #aboutNTX .social-media-icons {
