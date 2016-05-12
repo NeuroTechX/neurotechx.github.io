@@ -793,17 +793,18 @@
   text-align: left;
 }
 
-.aboutntx-outer .right-col {
+#aboutNTX .text-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#aboutNTX  .right-col {
   text-align: left;
   padding-left: 50px;
   padding-right: 0;
 }
 
-.aboutntx-outer .right-col h4:not(:first-child) {
-  margin-top: 30px;
-}
-
-.aboutntx-outer h4{
+#aboutNTX h4{
   margin-bottom: 0;
 }
 
@@ -813,16 +814,13 @@
 
 .aboutntx-outer h4 {
   display: block;
+  text-transform: uppercase;
+  padding-bottom: 0;
 }
 
 .aboutntx-outer .right-col .btn-group li {
   color: #23b3c6;
   font-weight: bolder;
-}
-
-#aboutNTX h4 {
-  text-transform: uppercase;
-  font-size: 18px;
 }
 
 #aboutNTX .text-content p {
@@ -831,12 +829,34 @@
 
 #aboutNTX .btn-lg{
   height: 50px;
-  width: 375px;
-  margin-bottom: 25px;
+  width: 350px;
+  margin-bottom: 10px;
   font-family: Orbitron;
-  font-size: 16px;
-  line-height: 2;
+  font-size: 14px;
+  line-height: 2.3;
   letter-spacing: 1px;
+}
+
+#aboutNTX .right-col .btn {
+  font-size: 10px;
+}
+#aboutNTX .right-col h4 {
+  font-size: 14px;
+}
+
+#aboutNTX .right-col h4 {
+  padding-bottom: 0;
+  margin-top: 15px;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+#aboutNTX .right-col #city-chapter {
+  margin-top: 0;
+}
+
+#aboutNTX a h4:hover {
+  color: #23b3c6;
 }
 
 #aboutNTX .social-media-icons {
@@ -850,8 +870,6 @@
 
 @media(max-width: 950px){
   #aboutNTX .btn-lg {
-    font-size: 15px;
-    line-height: 2.1;
     margin-top: 25px;
   }
 }
@@ -859,15 +877,11 @@
 @media(max-width: 650px) {
   .aboutntx-outer > *, .social-icons-outer {
     width: 80%;
-    margin: 2.5% 10%;
+    margin: 0 8.3%;
   }
 
   .aboutntx-outer .right-col {
-    padding-left: 15px;
-  }
-
-  .aboutntx-outer .right-col .btn-group {
-    margin-bottom: 25px;
+    padding-left: 15px !important;
   }
 
   .aboutntx-outer .right-col h4{
