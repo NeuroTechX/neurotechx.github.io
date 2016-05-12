@@ -855,7 +855,11 @@
   margin-top: 0;
 }
 
-#aboutNTX a h4:hover {
+#aboutNTX h4 a {
+  color: #fff;
+}
+
+#aboutNTX h4 a:hover {
   color: #23b3c6;
 }
 
