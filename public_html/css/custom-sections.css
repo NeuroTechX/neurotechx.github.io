@@ -840,6 +840,7 @@
 #aboutNTX .right-col .btn {
   font-size: 10px;
 }
+
 #aboutNTX .right-col h4 {
   font-size: 14px;
 }
@@ -851,12 +852,21 @@
   transition: all .3s ease-in-out;
 }
 
+#aboutNTX .right-col h4:nth-child(5) {
+  margin-top: 40px;
+}
+
+#aboutNTX .right-col h4:nth-child(n+6) {
+  margin-top: 5px;
+}
+
 #aboutNTX .right-col #city-chapter {
   margin-top: 0;
 }
 
 #aboutNTX h4 a {
   color: #fff;
+
 }
 
 #aboutNTX h4 a:hover {
