@@ -50,14 +50,18 @@ header p {
 	padding: 125px 0 0 0;
 }
 
+#get-involved p {
+	font-size: 17px;
+}
+
 #get-involved .btn-lg{
   height: 50px;
   margin-bottom: 25px;
   transition: all .3s ease-in-out;
   font-family: Orbitron;
   border: 1px solid #eee;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.9;
   letter-spacing: 1px;
 }
 
