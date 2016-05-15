@@ -40,4 +40,6 @@
 
 .icon-neurotechx-vector:before {
   content: "\78";
+    padding-bottom: -5px !important;
+  margin-bottom: -5px !important;
 }

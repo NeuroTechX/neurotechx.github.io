@@ -165,6 +165,19 @@ a:focus {
 .navbar-custom .navbar-brand {
     font-weight: 700;
     display: inline-block;
+    margin-left: 35px !important;
+}
+
+.navbar-custom .navbar-brand span {
+    vertical-align: text-bottom;
+}
+
+.navbar-custom .navbar-brand span:nth-child(3) {
+    margin-left: -6px !important;
+}
+
+.navbar-custom .navbar-right {
+    margin-right: 35px !important;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -219,13 +232,13 @@ a:focus {
     padding-right:0;
 }
 
-.navbar-custom #join-us-link {
+.navbar-custom #stay-tuned-link {
     border: 1px solid #fff;
     padding-bottom: 13px;
 }
 
 .navbar .navbar-custom .navbar-fixed-top {
-    max-width: 90% !important;
+    max-width: 100% !important;
 }
 
 
@@ -245,14 +258,23 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
-}
 
-
-@media(max-width: 991px) {
     .navbar-brand{
         scale: .7;
     }
+}
 
+@media(max-width: 1260px) {
+    .navbar-custom .navbar-brand  {
+        margin-left: 0 !important;
+    }
+
+    .navbar-custom .navbar-right {
+        margin-right: 0 !important;
+    }
+}
+
+@media(max-width: 1188px) {
     .navbar-custom{
         padding-bottom: 0;
     }
@@ -271,6 +293,7 @@ a:focus {
         border: 0;
     }
 }
+
 
 /*******************
 * TABLES
@@ -591,7 +614,7 @@ ul.banner-social-buttons {
 
 
 .heading p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 28px;
     font-weight: 300;
 }
@@ -994,7 +1017,7 @@ Singlepro: start responsive style
 
 }
 
-@media(max-width:991px ){
+@media(max-width:1188px ){
   .navbar-default .navbar-nav > li > a {font-size: 13px;padding: 15px 6px;}
   .navbar-collapse{background-color: rgba(0,0,0,0.8);}
   // .navbar-brand {font-size: 2px;}
