@@ -1,31 +1,16 @@
-h1,h2,h3,a {
-	font-family: Orbitron;
+.navbar-custom #get-updates-link {
+    border: 1px solid #fff;
+    padding-bottom: 13px;
+}
+
+@media(max-width: 1188px) {
+    .navbar-custom #get-updates-link {
+        border: 0;
+    }
 }
 
 p, .panel-body {
 	font-family: Armata;
-
-}
-
-.panel-heading, .panel-body, .panel-default, .in {
-  background-color: #eee !important;
-  border: none;
-}
-
-.panel-title {
-	color: #333;
-	margin-top: 5%;
-	font-size: 24px;
-}
-
-.panel {
-	text-align: left;
-}
-
-.panel-body {
-	font-size: 16px;
-	line-height: 28px;
-	font-weight: 300;
 }
 
 hr {
@@ -46,7 +31,7 @@ header p {
 }
 
 #intro-arrow {
-  margin-top: 0vh;
+  margin-top: 10vh;
 }
 
 #opportunities h2 {
@@ -58,11 +43,73 @@ header p {
 }
 
 #opportunities img {
-	margin-top: 25px;
+	margin: 25px 0 75px 0;
 }
 
-.panel-title a {
-	margin-top: 8%;
+#get-involved {
+	padding: 125px 0 0 0;
+}
+
+#get-involved p {
+	font-size: 17px;
+}
+
+#get-involved .btn-lg{
+  height: 50px;
+  margin-bottom: 25px;
+  transition: all .3s ease-in-out;
+  font-family: Orbitron;
+  border: 1px solid #eee;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 1px;
+}
+
+#get-involved .btn-lg {
+  background-color: #23B3C6;
+}
+
+#get-involved .btn-lg:hover {
+    background-color: #000;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+#opportunities .subscribeButton.inverted {
+	width: 360px;
+}
+
+#opportunities .panel-title a {
+	display: inline-block;
+	color: #23B3C6;
+	transition: all .3s ease-in-out;
+}
+
+#opportunities .panel-title a:hover {
+	color: #000;
+}
+
+#opportunities .panel-heading, #opportunities .panel-body, #opportunities .panel-default, #opportunities .in {
+  background-color: #eee !important;
+  border: none;
+}
+
+#opportunities .panel-title {
+	color: #333;
+  font-family: Orbitron;
+	margin-top: 5%;
+	font-size: 24px;
+	border-bottom: 2px solid #333;
+}
+
+#opportunities .panel {
+	text-align: left;
+}
+
+#opportunities .panel-body {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
 }
 
 @media(max-width:991px) {
@@ -103,7 +150,7 @@ header p {
 }
 
 .opp-list {
-	font-size: 20px;
+	font-size: 18px;
 	margin-left: 15px;
 }
 
@@ -117,24 +164,18 @@ header p {
 
 #opportunity p {
 	 margin: 0;
-}
-
-.newsletter-btn {
-	display: block;
-	margin-bottom: 25px;
-	border: 1px white solid;
-	width: 300px;
-	height: 50px;
-	margin-left: 0;
-}
-
-.newsletter-btn, .newsletter-btn:hover, .newsletter-btn:focus {
-	border-radius: 0 !important;
-}
-
-.newsletter-btn p {
-	margin: 0;
-	padding-top: 5px;
+	 font-size: 18px;
 }
 
 
+#opportunity p:nth-child(12) {
+	margin-top: 75px;
+}
+
+@media(max-width: 950px){
+  #get-involved .btn-lg {
+    font-size: 15px;
+    line-height: 2.1;
+    margin-top: 25px;
+  }
+}
