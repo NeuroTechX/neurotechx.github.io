@@ -866,6 +866,7 @@
 
 #aboutNTX h4 a {
   color: #fff;
+  white-space: nowrap;
 }
 
 #aboutNTX h4 a:hover {
