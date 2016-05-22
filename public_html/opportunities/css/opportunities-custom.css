@@ -150,6 +150,8 @@ header p {
 		display: none;
 	}
 }
+
+
 /* OPPORTUNITY POSTINGS */
 
 #opportunity {
@@ -163,7 +165,7 @@ header p {
 }
 
 .opp-title {
-	font-size: 3em;
+	font-size: 40px;
 	display: inline-block;
 	border-bottom: 5px solid #F9F9F9;
 	margin-bottom: 35px;
@@ -199,10 +201,27 @@ header p {
   }
 }
 
-@media(max-width: 775px){
-  #get-involved .btn-lg {
-    font-size: 15px;
-    line-height: 2.1;
-    margin-top: 25px;
-  }
+
+@media(max-width:650px) {
+
+	.opp-title {
+		font-size: 30px;
+	}
+
+	#opportunity h3 {
+		font-size: 20px;
+	}
+
+	.opp-list li {
+		font-size: 16px;
+	}
+
+	#opportunity p {
+		font-size: 16px;
+	}
+
+	.aboutntx-outer > *, .social-icons-outer, .footer-outer {
+		margin-left: 0;
+	}
+
 }
