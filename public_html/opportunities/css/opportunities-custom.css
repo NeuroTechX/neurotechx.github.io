@@ -31,7 +31,7 @@ header p {
 }
 
 #intro-arrow {
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 #opportunities h2 {
@@ -122,12 +122,26 @@ header p {
   #intro-arrow {
 	  margin-top: 5vh;
 	}
+
+	#opportunities p {
+		font-size: 16px;
+	}
+
+	#opportunities .panel {
+		padding-top: 25px;
+	}
+
+	#get-involved {
+		padding-top: 80px;
+	}
+
+  #get-involved .btn-lg {
+  	font-size: 12px;
+  }
 }
 
 @media(max-width:475px) {
-  .intro p {
-    font-size: 1em;
-  }
+
 }
 
 /* OPPORTUNITY POSTINGS */
