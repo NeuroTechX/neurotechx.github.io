@@ -118,6 +118,12 @@ header p {
   }
 }
 
+
+@media(max-width:767px) {
+
+
+}
+
 @media(max-width:650px) {
   #intro-arrow {
 	  margin-top: 5vh;
@@ -142,7 +148,15 @@ header p {
 
 @media(max-width:475px) {
 
-}
+	#opportunities .col-xs-6:first-child {
+		width: 100%;
+		margin: 0;
+	}
+
+
+	#opportunities .col-xs-6:nth-child(2){
+		display: none;
+	}
 
 /* OPPORTUNITY POSTINGS */
 
