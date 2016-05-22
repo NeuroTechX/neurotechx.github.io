@@ -205,7 +205,7 @@ header p {
 @media(max-width:650px) {
 
 	.opp-title {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	#opportunity h3 {
@@ -213,15 +213,24 @@ header p {
 	}
 
 	.opp-list li {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	#opportunity p {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
-	.aboutntx-outer > *, .social-icons-outer, .footer-outer {
-		margin-left: 0;
+	#opportunity .text-content {
+		width: 84%;
+		margin: 0 8%;
+	}
+
+	hr {
+		width: 100%
+	}
+
+	#opportunity p:nth-child(12) {
+	    margin-top: 50px;
 	}
 
 }
