@@ -31,7 +31,7 @@ header p {
 }
 
 #intro-arrow {
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 #opportunities h2 {
@@ -70,9 +70,9 @@ header p {
 }
 
 #get-involved .btn-lg:hover {
-    background-color: #000;
-    color: #eee;
-    border: 1px solid #eee;
+  background-color: #000;
+  color: #eee;
+  border: 1px solid #eee;
 }
 
 #opportunities .subscribeButton.inverted {
@@ -122,13 +122,35 @@ header p {
   #intro-arrow {
 	  margin-top: 5vh;
 	}
+
+	#opportunities p {
+		font-size: 16px;
+	}
+
+	#opportunities .panel {
+		padding-top: 25px;
+	}
+
+	#get-involved {
+		padding-top: 80px;
+	}
+
+  #get-involved .btn-lg {
+  	font-size: 14px !important;
+  }
 }
 
 @media(max-width:475px) {
-  .intro p {
-    font-size: 1em;
-  }
+	#opportunities .col-xs-6:first-child {
+		width: 100%;
+		margin: 0;
+	}
+
+	#opportunities .col-xs-6:nth-child(2){
+		display: none;
+	}
 }
+
 
 /* OPPORTUNITY POSTINGS */
 
@@ -143,7 +165,7 @@ header p {
 }
 
 .opp-title {
-	font-size: 3em;
+	font-size: 40px;
 	display: inline-block;
 	border-bottom: 5px solid #F9F9F9;
 	margin-bottom: 35px;
@@ -167,7 +189,6 @@ header p {
 	 font-size: 18px;
 }
 
-
 #opportunity p:nth-child(12) {
 	margin-top: 75px;
 }
@@ -178,4 +199,38 @@ header p {
     line-height: 2.1;
     margin-top: 25px;
   }
+}
+
+
+@media(max-width:768px) {
+
+	.opp-title {
+		font-size: 28px;
+	}
+
+	#opportunity h3 {
+		font-size: 20px;
+	}
+
+	.opp-list li {
+		font-size: 15px;
+	}
+
+	#opportunity p {
+		font-size: 15px;
+	}
+
+	#opportunity .text-content {
+		width: 84%;
+		margin: 0 8%;
+	}
+
+	hr {
+		width: 100%
+	}
+
+	#opportunity p:nth-child(12) {
+	    margin-top: 50px;
+	}
+
 }
