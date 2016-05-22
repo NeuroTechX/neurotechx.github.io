@@ -149,7 +149,7 @@ header p {
 	#opportunities .col-xs-6:nth-child(2){
 		display: none;
 	}
-
+}
 /* OPPORTUNITY POSTINGS */
 
 #opportunity {
@@ -192,6 +192,14 @@ header p {
 }
 
 @media(max-width: 950px){
+  #get-involved .btn-lg {
+    font-size: 15px;
+    line-height: 2.1;
+    margin-top: 25px;
+  }
+}
+
+@media(max-width: 775px){
   #get-involved .btn-lg {
     font-size: 15px;
     line-height: 2.1;
