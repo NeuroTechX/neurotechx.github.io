@@ -202,7 +202,7 @@ header p {
 }
 
 
-@media(max-width:650px) {
+@media(max-width:768px) {
 
 	.opp-title {
 		font-size: 28px;
