@@ -866,6 +866,7 @@
 
 #aboutNTX h4 a {
   color: #fff;
+  white-space: nowrap;
 }
 
 #aboutNTX h4 a:hover {
@@ -894,13 +895,9 @@
   }
 
   .aboutntx-outer .right-col {
+    padding-top: 20px;
     padding-left: 15px !important;
-  }
 
-  .aboutntx-outer .right-col h4{
-    font-size: 18px;
-    margin-top: 0 !important;
-    padding: 25px 0 0 0;
   }
 }
 
