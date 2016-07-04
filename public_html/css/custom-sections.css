@@ -781,6 +781,35 @@
 
 /******************************
 *
+*   Global Partners Section
+*
+******************************/
+
+#GlobalPartners {    padding: 100px 0 }
+
+#GlobalPartners .heading {
+  padding-bottom: 50px;
+}
+
+#GlobalPartners .sponsor {
+  background: #fff;
+  height: 100px;
+  width: 30%;
+  margin: 15px;
+}
+
+#GlobalPartners .sponsor img {
+  height: 80px;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+
+#GlobalPartners #muse-logo{
+  width: 260px;
+}
+
+/******************************
+*
 *   About NeurotechX Section
 *
 ******************************/
