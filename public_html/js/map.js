@@ -59,6 +59,10 @@ function initialize() {
     neuroTechBCN: [41.385064, 2.173403],
     neuroTechTLV: [32.0667, 34.8000],
     neuroTechLIMA: [-12.0463, -77.0427],
+    neuroTechMUC: [48.6412585, 9.89087],
+    neuroTechSR: [46.5532927, 6.5824551],
+    neuroTechOSLO: [59.8937805, 10.6450348],
+    neuroTechDC: [38.899265, -77.154652],
   }
 
   var markersArray = [];
