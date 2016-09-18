@@ -4,7 +4,7 @@
   include(dirname(__FILE__) . "/TwitterAPIExchange.php"); //get it from https://github.com/J7mbo/twitter-api-php
   include(dirname(__FILE__) . "/apiKeys.php");
 
-  $twitterHandleSuffixes = array('x', 'mtl', 'sf', 'bos', 'to', 'kw', 'van', 'nyc', 'xnews');
+  $twitterHandleSuffixes = array('x', 'mtl', 'sf', 'bos', 'to', 'kw', 'van', 'nyc', 'muc', 'dc', 'oslo', 'xnews');
   $followers_count_array = array('twitterFollowersCount' => array());
   $totalFollowers = 0;
 
