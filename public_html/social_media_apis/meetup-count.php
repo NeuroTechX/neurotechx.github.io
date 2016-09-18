@@ -4,7 +4,7 @@
   include dirname(__FILE__) . "/meetupAPI.php";
   include dirname(__FILE__) . "/apiKeys.php";
 
-  $cities = array('MTL', 'TO', 'KW', 'VAN', 'SF', 'BOS', 'PAR', 'AMS', 'LAX', 'NYC', 'LDN', 'LIMA', 'DC', 'OSLO', 'MUC', 'SR');
+  $cities = array('MTL', 'TO', 'KW', 'VAN', 'SF', 'BOS', 'PAR', 'AMS', 'LAX', 'NYC', 'LDN', 'BCN', 'LIMA', 'DC', 'OSLO', 'MUC', 'SR');
   $totalMembers = 0;
   $totalEvents = 0;
 
