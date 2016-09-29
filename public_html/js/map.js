@@ -23,7 +23,7 @@ function setMapZoom(){
 function initialize() {
   setMapZoom();
 
-  var centerLong = 27;
+  var centerLong = 34;
   var centerLat = ($(window).width() > 991 ? -15 : -45);
 
   map = new google.maps.Map(document.getElementById('map'), {

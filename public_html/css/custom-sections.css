@@ -271,7 +271,7 @@
 }
 
 #map-container {
-  height: 500px;
+  height: 575px;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -286,7 +286,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 575px;
   z-index: 0;
 }
 
