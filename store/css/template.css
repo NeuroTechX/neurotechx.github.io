@@ -1280,18 +1280,15 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 	float: left;
 	display: block;
 	width: 100%;
-    height:auto;
-    overflow: hidden;
 }
 
 
 .team_img > img {
   border-radius: 100%;
-  height: auto;
+  height: 250px;
   margin: 0 auto 15px;
-  width: 150px;
+  width: 250px;
 }
-
 
 .single_team h5 {
   color: #fff;
