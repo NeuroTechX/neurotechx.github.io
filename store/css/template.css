@@ -488,7 +488,9 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
+
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
@@ -1278,6 +1280,7 @@ background: linear-gradient(rgba(0, 0, 0, 4.6), rgba(0, 0, 0, 0.7)),
 	float: left;
 	display: block;
 	width: 100%;
+    overflow: hidden;
 }
 
 
