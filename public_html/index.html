@@ -6,13 +6,18 @@
 <html lang="en">
 
 <head>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Google Analytics -->
   <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-2354352917688652",
-      enable_page_level_ads: true
-    });
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65979944-1', 'auto');
+  ga('send', 'pageview');
   </script>
+  <!-- End Google Analytics -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,23 +111,23 @@
         </li>
 
         <li>
-          <a id="about-us-link" class="page-scroll" href="#AboutUs">About us</a>
+          <a id="about-us-link" class="page-scroll" href="#AboutUs" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'MM_AboutUs');">About us</a>
         </li>
 
 				<li>
-          <a id="where-we-are-link" class="page-scroll" href="#WhereWeAre">Where We Are</a>
+          <a id="where-we-are-link" class="page-scroll" href="#WhereWeAre" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'MM_WhereWeAre');">Where We Are</a>
         </li>
 
 				<li>
-          <a id="what-we-do-link" class="page-scroll" href="#WhatWeDo">What We Do</a>
+          <a id="what-we-do-link" class="page-scroll" href="#WhatWeDo" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'MM_WhatWeDo');">What We Do</a>
         </li>
 
         <li>
-          <a id="stay-tuned-link" class="page-scroll" href="http://eepurl.com/bEQDKX" target="_blank">Stay Tuned</a>
+          <a id="stay-tuned-link" class="page-scroll" href="http://eepurl.com/bEQDKX" target="_blank" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'MM_StayTuned');">Stay Tuned</a>
         </li>
 
         <li>
-          <a id="join-us-link" class="page-scroll" href="#JoinUs">Join Us</a>
+          <a id="join-us-link" class="page-scroll" href="#JoinUs" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'MM_JoinUs');">Join Us</a>
         </li>
 
 				<li>
@@ -177,11 +182,11 @@
         <div class="row text-align:center">
 
     			<div class="col-xs-4 col-xs-offset-2">
-      			<a href="http://eepurl.com/bEQDKX" class="stay-tuned subscribeButton inverted btn btn-default btn-lg">STAY TUNED</a>
+      			<a href="http://eepurl.com/bEQDKX" class="stay-tuned subscribeButton inverted btn btn-default btn-lg"  onclick="javascript:ga('send', 'event', 'Button', 'Press', 'SS_StayTuned');")>STAY TUNED</a>
           </div>
 
     			<div class="col-xs-4">
-            <a href="#JoinUs" class="get-involved subscribeButton inverted btn btn-default btn-lg">GET INVOLVED</a>
+            <a href="#JoinUs" class="get-involved subscribeButton inverted btn btn-default btn-lg" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'SS_GetInvolved');">GET INVOLVED</a>
   			  </div>
   		  </div>
   	  </div>
@@ -269,7 +274,7 @@
       Meet other neurotech enthusiasts in your local community, learn and exchange knowledge through our meetups, build innovative and collaborative projects at our Hack Nights and have access to the latest technologies at our events. If your city isn't included on our map, contact us to help bring NeuroTechX to your community!
     </p>
 
-    <a href="http://goo.gl/Tx3ZJh" target="_blank" class="subscribeButton inverted btn btn-default btn-lg">Join Local Team</a>
+    <a href="http://goo.gl/Tx3ZJh" target="_blank" class="subscribeButton inverted btn btn-default btn-lg" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'WA_JoinTeam');">Join Local Team</a>
 
 </section>
 
@@ -356,7 +361,7 @@
     <div class="col-xs-12 col-sm-6 col-lg-4 box">
       <img class="img-responsive" src="img/whatwedo/student_clubs.jpg">
       <div class="inside">
-        <a href="studentclubs.html" target="_blank">
+        <a href="https://neurotechx.github.io/studentclubs/" target="_blank">
           <h4>Student Clubs</h4>
         </a>
         <p>Supporting neurotech student clubs all over the world</p>
@@ -394,7 +399,7 @@
     <div class="col-xs-12 col-sm-6 col-lg-4 box">
       <img class="img-responsive" src="img/whatwedo/student_comp.jpg">
       <div class="inside">
-        <a href="studentclubs.html" target="_blank">
+        <a href="https://neurotechx.github.io/studentclubs/" target="_blank">
           <h4>Demo Day: The Student Edition</h4>
         </a>
         <p>Showcasing Montreal and Toronto's undergraduate neurotech student clubs</p>
@@ -437,7 +442,7 @@
 			    <p class="text-content">
             Every day, our community is making incredible things happen. Take part in the conversation and help shape the future of neurotechnology!
           </p>
-					<a href="https://neurotechx.herokuapp.com/" target="_blank" class="btn btn-white btn-lg">Join Our Slack!</a>
+					<a href="https://neurotechx.herokuapp.com/" target="_blank" class="btn btn-white btn-lg" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'JU_JoinSlack');">Join Our Slack!</a>
         </div>
 
 			  <div class="col-xs-4 cta-content">
@@ -445,7 +450,7 @@
 				  <p class="text-content">
             We are constantly on the look-out for people who share our passion for the brain and for technology. Join the team!
           </p>
-            <a href="http://neurotechx.com/opportunities/index.html" class=" btn btn-white btn-lg">Join The Team!</a>
+            <a href="http://neurotechx.com/opportunities/index.html" class=" btn btn-white btn-lg" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'JU_JoinTeam');">Join The Team!</a>
 				</div>
 
         <div class="col-xs-4 cta-content" >
@@ -453,7 +458,7 @@
 				  <p class="text-content">
             We are committed to finding partners and sponsors in line with our core values, who share our passion for sharing knowledge, creating new communities and advancing science.
           </p>
-					  <a href="mailto:partners@neurotechx.com" target="_blank" class=" btn btn-white btn-lg">Let's Partner!</a>
+					  <a href="mailto:partners@neurotechx.com" target="_blank" class=" btn btn-white btn-lg" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'JU_LetsPartner');">Let's Partner!</a>
 				</div>
 
 			</div>
@@ -552,7 +557,7 @@
         </p>
       </div>
             <div>
-        <a class="btn btn-default btn-lg" href="http://eepurl.com/bEQDKX" target="_blank"><span>SUBSCRIBE TO THE </span>NEWSLETTER</a>
+        <a class="btn btn-default btn-lg" href="http://eepurl.com/bEQDKX" target="_blank" onclick="javascript:ga('send', 'event', 'Button', 'Press', 'FT_StayTuned');"><span>SUBSCRIBE TO THE </span>NEWSLETTER</a>
       </div>
     </div>
 
@@ -583,7 +588,7 @@
           <li><a href='http://www.meetup.com/NeuroTechOSLO' target="_blank">Oslo</a></li>
           <li><a href='http://www.meetup.com/NeuroTechMUC' target="_blank">Munich</a></li>
           <li><a href='http://www.meetup.com/NeuroTechSR' target="_blank">Suisse Romande</a></li>
-          
+
           <li>ISREAL</li>
           <li><a href='http://www.meetup.com/NeuroTechTLV' target="_blank">Tel-Aviv</a></li>
 
@@ -602,8 +607,8 @@
         <ul class="dropdown-menu">
           <li><a href='#WhereWeAre'>City Chapters</a></li>
           <li><a href='http://news.neurotechx.com' target="_blank">NeurotechXNews</a></li>
-          <li><a href='http://neurotechx.com/studentclubs.html' target="_blank">Student Clubs</a></li>
-          <li><a href='http://neurotechx.com/studentclubs.html' target="_blank">Student Competition</a></li>
+          <li><a href='https://neurotechx.github.io/studentclubs/' target="_blank">Student Clubs</a></li>
+          <li><a href='https://neurotechx.github.io/studentclubs/' target="_blank">https://neurotechx.github.io/studentclubs/competition/</a></li>
         </ul>
       </div>
 
